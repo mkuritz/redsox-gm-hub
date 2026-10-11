@@ -72,7 +72,7 @@ const R=()=>D.roster||[];const C=()=>(D.contracts_manual||{}).contracts||[];
 const norm=s=>(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const contractOf=n=>C().find(c=>norm(c.name)==norm(n));
 const yrsSince=d=>d?((Date.now()-new Date(d))/31557600000):null;
-function statusOf(p){const c=contractOf(p.name);if(c){const last=[2032,2031,2030,2029,2028,2027].find(y=>c['y'+y]);if(c.y2026&&!c.y2027&&!last)return{k:'FA',t:'Contract ends after 2026',c};return{k:'Signed',t:'Under contract'+(last?' thru '+last:''),c}}
+function statusOf(p){const c=contractOf(p.name);if(c){const last=c.ends||[2032,2031,2030,2029,2028,2027].find(y=>c['y'+y]);if(last==2026)return{k:'FA',t:'Guaranteed deal ends after 2026',c};return{k:'Signed',t:last?'Under contract thru '+last:'Long-term deal on file; end year not verified',c}}
  const y=yrsSince(p.debut);if(y==null)return{k:'Pre-arb',t:'No MLB debut yet (pre-arb/minimum)'};if(y>=6)return{k:'Check',t:'~'+y.toFixed(1)+' yrs since debut - FA/arb status unverified'};if(y>=2.5)return{k:'Arb?',t:'~'+y.toFixed(1)+' yrs since debut - likely arbitration-eligible (verify service time)'};return{k:'Pre-arb',t:'~'+y.toFixed(1)+' yrs since debut - likely pre-arb'}}
 function hitLine(h){return h?`${h.avg}/${h.obp}/${h.slg} &middot; ${h.homeRuns} HR &middot; ${h.plateAppearances} PA`:''}
 function pitLine(p){return p?`${p.era} ERA &middot; ${p.inningsPitched} IP &middot; ${p.strikeOuts} K &middot; ${p.whip} WHIP`:''}
@@ -132,7 +132,7 @@ V.payroll=()=>{const {tp,cbt}=payroll();const th=cbt.thresholds||[];const pay=tp
 A.payroll=sortable;
 // ---------- DECISIONS ----------
 V.decisions=()=>{const r=R();const groups={FA:[],Option:[],Arb:[],Pre:[],Signed:[]};
- r.forEach(p=>{const st=statusOf(p);const c=st.c;if(c&&/option/i.test(c.options||'')&&!c.y2027&&c.y2026)groups.Option.push([p,st]);else if(st.k=='FA')groups.FA.push([p,st]);else if(st.k=='Arb?'||st.k=='Check')groups.Arb.push([p,st]);else if(st.k=='Pre-arb')groups.Pre.push([p,st]);else groups.Signed.push([p,st])});
+ r.forEach(p=>{const st=statusOf(p);const c=st.c;if(c&&/option/i.test(c.options||'')&&c.ends==2026)groups.Option.push([p,st]);else if(st.k=='FA')groups.FA.push([p,st]);else if(st.k=='Arb?'||st.k=='Check')groups.Arb.push([p,st]);else if(st.k=='Pre-arb')groups.Pre.push([p,st]);else groups.Signed.push([p,st])});
  const dec=store.get('dec',{});const opts=['Undecided','Keep / tender','Extend','Re-sign','Let walk / non-tender','Trade','DFA / outright'];
  const tbl=(arr,title,help)=>`<div class="card" style="margin-top:14px"><h2>${title} <span class="mut small">(${arr.length})</span></h2><div class="small mut">${help}</div><div class="tw"><table class="s"><thead><tr><th>Player</th><th>Pos</th><th>Age</th><th>Status note</th><th>2026</th><th>Your call</th></tr></thead><tbody>${arr.map(([p,st])=>`<tr><td><b>${esc(p.name)}</b></td><td>${p.pos}</td><td>${p.age??''}</td><td class="small" style="white-space:normal">${esc(st.t)}${st.c&&st.c.options?' &middot; '+esc(st.c.options):''}</td><td class="small">${p.posType=='Pitcher'?pitLine(p.pit):hitLine(p.hit)}</td><td><select onchange="setDec(${p.id},this.value)">${opts.map(o=>`<option ${dec[p.id]==o?'selected':''}>${o}</option>`).join('')}</select></td></tr>`).join('')}</tbody></table></div></div>`;
  const n=Object.values(dec).filter(v=>v&&v!='Undecided').length;

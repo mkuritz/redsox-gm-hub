@@ -1,5 +1,5 @@
 {
- "_label": "HAND-MAINTAINED. No free licensed contract API exists. Each row cites its public source and access date; blank = not verified. Edit this file to update.",
+ "_label": "HAND-MAINTAINED. No free licensed contract API exists. Each row cites its public source and access date; blank = not verified. Edit this file to update. 'ends' = last guaranteed season where verifiable (blank = not verified).",
  "updated": "2026-10-10",
  "team_payroll": {
   "as_of": "2026-09-30",
@@ -76,7 +76,8 @@
    "notes": "",
    "source": "MLB Trade Rumors payroll tracker (as of 9/30/26)",
    "source_url": "https://www.mlbtraderumors.com/payrolltracker/red-sox",
-   "accessed": "2026-10-10"
+   "accessed": "2026-10-10",
+   "ends": 2027
   },
   {
    "name": "Garrett Crochet",
@@ -95,7 +96,8 @@
    "notes": "Signing bonus $4,000,000",
    "source": "MLB Trade Rumors payroll tracker (as of 9/30/26)",
    "source_url": "https://www.mlbtraderumors.com/payrolltracker/red-sox",
-   "accessed": "2026-10-10"
+   "accessed": "2026-10-10",
+   "ends": 2032
   },
   {
    "name": "Ranger Suarez",
@@ -114,7 +116,8 @@
    "notes": "Signing bonus $3,000,000",
    "source": "MLB Trade Rumors payroll tracker (as of 9/30/26)",
    "source_url": "https://www.mlbtraderumors.com/payrolltracker/red-sox",
-   "accessed": "2026-10-10"
+   "accessed": "2026-10-10",
+   "ends": 2031
   },
   {
    "name": "Trevor Story",
@@ -133,7 +136,8 @@
    "notes": "",
    "source": "MLB Trade Rumors payroll tracker (as of 9/30/26)",
    "source_url": "https://www.mlbtraderumors.com/payrolltracker/red-sox",
-   "accessed": "2026-10-10"
+   "accessed": "2026-10-10",
+   "ends": 2028
   },
   {
    "name": "Willson Contreras",
@@ -152,7 +156,8 @@
    "notes": "",
    "source": "MLB Trade Rumors payroll tracker (as of 9/30/26)",
    "source_url": "https://www.mlbtraderumors.com/payrolltracker/red-sox",
-   "accessed": "2026-10-10"
+   "accessed": "2026-10-10",
+   "ends": 2028
   },
   {
    "name": "Masataka Yoshida",
@@ -171,7 +176,8 @@
    "notes": "",
    "source": "MLB Trade Rumors payroll tracker (as of 9/30/26)",
    "source_url": "https://www.mlbtraderumors.com/payrolltracker/red-sox",
-   "accessed": "2026-10-10"
+   "accessed": "2026-10-10",
+   "ends": 2027
   },
   {
    "name": "Roman Anthony",
@@ -190,7 +196,8 @@
    "notes": "Escalators could push it past $230M per Wikipedia; year-by-year not verified",
    "source": "Wikipedia: Roman Anthony",
    "source_url": "https://en.wikipedia.org/wiki/Roman_Anthony",
-   "accessed": "2026-10-10"
+   "accessed": "2026-10-10",
+   "ends": null
   },
   {
    "name": "Brayan Bello",
@@ -209,7 +216,8 @@
    "notes": "",
    "source": "Wikipedia: Brayan Bello",
    "source_url": "https://en.wikipedia.org/wiki/Brayan_Bello",
-   "accessed": "2026-10-10"
+   "accessed": "2026-10-10",
+   "ends": null
   },
   {
    "name": "Ceddanne Rafaela",
@@ -228,7 +236,8 @@
    "notes": "",
    "source": "Wikipedia: Ceddanne Rafaela",
    "source_url": "https://en.wikipedia.org/wiki/Ceddanne_Rafaela",
-   "accessed": "2026-10-10"
+   "accessed": "2026-10-10",
+   "ends": 2031
   },
   {
    "name": "Aroldis Chapman",
@@ -247,7 +256,8 @@
    "notes": "",
    "source": "Wikipedia: Aroldis Chapman",
    "source_url": "https://en.wikipedia.org/wiki/Aroldis_Chapman",
-   "accessed": "2026-10-10"
+   "accessed": "2026-10-10",
+   "ends": 2026
   },
   {
    "name": "Isiah Kiner-Falefa",
@@ -266,7 +276,8 @@
    "notes": "1-year deal; free agent after 2026 season",
    "source": "Wikipedia: Isiah Kiner-Falefa",
    "source_url": "https://en.wikipedia.org/wiki/Isiah_Kiner-Falefa",
-   "accessed": "2026-10-10"
+   "accessed": "2026-10-10",
+   "ends": 2026
   },
   {
    "name": "Patrick Sandoval",
@@ -285,7 +296,8 @@
    "notes": "2-year deal covering 2025-26",
    "source": "Wikipedia: Patrick Sandoval",
    "source_url": "https://en.wikipedia.org/wiki/Patrick_Sandoval",
-   "accessed": "2026-10-10"
+   "accessed": "2026-10-10",
+   "ends": 2026
   },
   {
    "name": "Garrett Whitlock",
@@ -304,7 +316,8 @@
    "notes": "4-yr extension signed 2022; option years not verified here",
    "source": "Wikipedia: Garrett Whitlock",
    "source_url": "https://en.wikipedia.org/wiki/Garrett_Whitlock",
-   "accessed": "2026-10-10"
+   "accessed": "2026-10-10",
+   "ends": null
   }
  ]
 }
