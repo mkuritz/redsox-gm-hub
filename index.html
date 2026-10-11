@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Red Sox GM Hub</title>
+<title>GM Hub</title><script src="team.js"></script>
 <style>
-:root{--navy:#0c2340;--navy2:#13294b;--bg:#08131f;--card:#0f1e33;--card2:#142a47;--line:#22395c;--red:#bd3039;--red2:#e0444e;--txt:#e8eef6;--mut:#8ea3bf;--good:#3fb37f;--warn:#e6a23c;--bad:#e0444e}
+:root{--navy:#0c2340;--navy2:#13294b;--bg:#08131f;--card:#0f1e33;--card2:#142a47;--line:#22395c;--red:#bd3039;--red2:#e0444e;--hl:#3a1419;--onp:#fff;--logobg:#bd3039;--logofg:#fff;--txt:#e8eef6;--mut:#8ea3bf;--good:#3fb37f;--warn:#e6a23c;--bad:#e0444e}
 *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.45 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
 a{color:#7fb2ff}#app{display:flex;min-height:100vh}
 #side{width:250px;background:linear-gradient(180deg,var(--navy),#060e19);border-right:1px solid var(--line);position:sticky;top:0;height:100vh;overflow:auto;flex-shrink:0;z-index:20}
 .brand{padding:18px 16px;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center}
-.logo{width:38px;height:38px;border-radius:50%;background:var(--red);display:grid;place-items:center;font:900 20px Georgia,serif;color:#fff;border:2px solid #fff}
+.logo{width:38px;height:38px;border-radius:50%;background:var(--logobg);display:grid;place-items:center;font:900 20px Georgia,serif;color:var(--logofg);border:2px solid var(--logofg)}
 .brand b{display:block;font-size:16px}.brand small{color:var(--mut)}
 .navsec{padding:10px 10px 2px;color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
 .nav a{display:flex;gap:9px;align-items:center;padding:8px 12px;margin:1px 8px;border-radius:8px;color:var(--txt);text-decoration:none;cursor:pointer}
-.nav a:hover{background:#1a3255}.nav a.on{background:var(--red);font-weight:600}
+.nav a:hover{background:#1a3255}.nav a.on{background:var(--red);color:var(--onp);font-weight:600}
 .fun{border-top:1px dashed var(--line);margin-top:10px}
 main{flex:1;min-width:0;padding:18px 24px 60px}
 .top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px}
@@ -30,30 +30,30 @@ th{color:var(--mut);font-weight:600;position:sticky;top:0;background:var(--card)
 .mut{color:var(--mut)}.small{font-size:12px}.note{background:#13243d;border-left:3px solid var(--warn);padding:8px 10px;border-radius:6px;color:#d9e3f0;font-size:12px;margin:8px 0}
 .src{font-size:11px;color:var(--mut)}
 input,select,button{background:#0b1830;color:var(--txt);border:1px solid var(--line);border-radius:8px;padding:7px 9px;font:inherit}
-button{cursor:pointer;background:var(--red);border-color:var(--red);font-weight:600}button.sec{background:#1b3256;border-color:var(--line)}
+button{cursor:pointer;background:var(--red);color:var(--onp);border-color:var(--red);font-weight:600}button.sec{color:var(--txt)}button.sec{background:#1b3256;border-color:var(--line)}
 .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
-.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}.tabs button{background:#1b3256;border-color:var(--line);font-weight:500}.tabs button.on{background:var(--red)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}.tabs button{background:#1b3256;border-color:var(--line);font-weight:500}.tabs button.on{background:var(--red);color:var(--onp)}
 .bar{height:10px;background:#1b3051;border-radius:6px;overflow:hidden;position:relative}.bar i{display:block;height:100%;background:var(--red)}
 .feed .it{padding:10px 0;border-bottom:1px solid #1b3051}.feed .it a{font-weight:600;text-decoration:none;color:var(--txt)}.feed .it a:hover{color:#7fb2ff}
 .tl{border-left:2px solid var(--red);margin-left:8px;padding-left:14px}.tl div{margin:0 0 12px;position:relative}.tl div:before{content:"";position:absolute;left:-21px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--red);border:2px solid var(--bg)}
 .heat td.c{text-align:center;font-weight:600}
 .num{font-family:Georgia,serif;font-size:30px;font-weight:900;color:var(--red2)}
 .ret{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}.ret .card{text-align:center}
-#hamb{display:none}
+#hamb{display:none}.slabs{display:flex;align-items:center;gap:8px;margin:14px 10px 18px;padding:9px 11px;border:1px solid var(--line);border-radius:10px;color:var(--mut);text-decoration:none;font-size:11.5px}.slabs:hover{color:var(--txt);border-color:var(--red)}.slabs i{font-style:normal;display:grid;place-items:center;width:24px;height:24px;border-radius:6px;background:linear-gradient(135deg,#7c5cff,#2ec5ff);color:#fff;font-weight:900;font-size:11px}.slabs b{color:var(--txt)}.slabhdr{font-size:11px;color:var(--mut);text-decoration:none}.slabhdr:hover{color:var(--txt)}
 @media(max-width:860px){#side{position:fixed;left:-260px;transition:left .2s}#side.open{left:0}#hamb{display:inline-block}main{padding:12px}#scrim{display:none;position:fixed;inset:0;background:#0008;z-index:10}#scrim.on{display:block}}
 .field{position:relative;width:100%;max-width:520px;margin:auto;aspect-ratio:1/0.85}
 </style></head>
 <body><div id="app">
-<aside id="side"><div class="brand"><div class="logo">B</div><div><b>Red Sox GM Hub</b><small>Front office &middot; fan edition</small></div></div>
-<div id="nav" class="nav"></div></aside><div id="scrim" onclick="toggleNav()"></div>
-<main><div class="top"><div class="row" style="margin:0"><button id="hamb" class="sec" onclick="toggleNav()">&#9776;</button><h1 id="title">Franchise Hub</h1></div><span class="badge" id="upd">Loading data...</span></div>
+<aside id="side"><div class="brand"><div class="logo" id="logo"></div><div><b id="hubname"></b><small>Front office &middot; fan edition</small></div></div>
+<div id="nav" class="nav"></div><a class="slabs" id="slabs" target="_blank" rel="noopener"><i>SL</i><span>Built by <b>Sports Labs</b><br>More GM Hubs &rarr;</span></a></aside><div id="scrim" onclick="toggleNav()"></div>
+<main><div class="top"><div class="row" style="margin:0"><button id="hamb" class="sec" onclick="toggleNav()">&#9776;</button><h1 id="title">Franchise Hub</h1></div><div class="row" style="margin:0"><a class="slabhdr" id="slabhdr" target="_blank" rel="noopener">&#9670; Sports Labs</a><span class="badge" id="upd">Loading data...</span></div></div>
 <div id="view"></div></main></div>
 <script>
-const LS='rsgm_';const $=s=>document.querySelector(s);
+const T=window.TEAM;const LS=T.lsPrefix;(()=>{const r=document.documentElement.style,c=T.colors;r.setProperty('--red',c.primary);r.setProperty('--red2',c.primary2);r.setProperty('--navy',c.dark);r.setProperty('--bg',c.bg);r.setProperty('--card',c.card);r.setProperty('--card2',c.card2);r.setProperty('--line',c.line);r.setProperty('--hl',c.hl);r.setProperty('--onp',c.onPrimary);r.setProperty('--logobg',c.logoBg);r.setProperty('--logofg',c.logoFg);document.title=T.hubTitle;document.addEventListener('DOMContentLoaded',()=>{})})();const $=s=>document.querySelector(s);
 const NAV=[["Front Office",[["hub","&#127968;","Franchise Hub"],["roster","&#128101;","Roster"],["payroll","&#128176;","Payroll & CBT"],["decisions","&#128221;","Offseason Decisions"],["trade","&#128260;","Trade Machine"],["scen","&#129514;","Scenarios"]]],
 ["Player Development",[["farm","&#127793;","Farm System"],["pipeline","&#128679;","Pipeline Needs"],["draft","&#127919;","Draft Room"]]],
 ["Info Desk",[["rumors","&#128483;","Rumor Mill"],["news","&#128240;","News Feed"],["calendar","&#128197;","Offseason Calendar"],["tx","&#128203;","Transactions"],["league","&#127942;","League & AL East"]]],
-["Just for Fun",[["history","&#127942;","Sox History"],["uniforms","&#128085;","Uniforms"],["fenway","&#127967;","Fenway Park"]]]];
+["Just for Fun",[["history","&#127942;",T.historyLabel],["uniforms","&#128085;","Uniforms"],["fenway",T.parkIcon,T.park]]]];
 const D={};const FILES=['meta','roster','standings','team_stats','schedule','farm','draft','news','rumors','transactions','injuries','contracts_manual','calendar_manual','franchise_manual','prospects','free_agents','trade_market','international'];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const M=v=>v==null||v===''?'<span class="mut">&mdash;</span>':'$'+(v/1e6).toFixed(v%1e6&&v<1e8?2:1).replace(/\.0+$/,'')+'M';
@@ -62,7 +62,7 @@ const ago=s=>{const d=new Date(s);if(isNaN(d))return '';const h=(Date.now()-d)/3
 const store={get:(k,d)=>{try{return JSON.parse(localStorage.getItem(LS+k))??d}catch(e){return d}},set:(k,v)=>localStorage.setItem(LS+k,JSON.stringify(v))};
 function toggleNav(){$('#side').classList.toggle('open');$('#scrim').classList.toggle('on')}
 function navHtml(cur){return NAV.map(([sec,items],i)=>`<div class="${i==3?'fun':''}"><div class="navsec">${sec}</div>${items.map(([id,ic,l])=>`<a class="${id==cur?'on':''}" href="#${id}">${ic} ${l}</a>`).join('')}</div>`).join('')}
-async function load(){try{D.credits=await (await fetch('assets/credits.json?v='+Date.now())).json()}catch(e){D.credits=[]}await Promise.all(FILES.map(async f=>{try{const r=await fetch('data/'+f+'.json?v='+Date.now());const j=await r.json();D[f]=j.data!==undefined&&!f.endsWith('manual')?j.data:j;D[f+'_upd']=j.updated}catch(e){D[f]=null}}));
+async function load(){$('#logo').textContent=T.logoText;$('#hubname').textContent=T.hubTitle;$('#slabs').href=T.sportsLabs;$('#slabhdr').href=T.sportsLabs;try{D.credits=await (await fetch('assets/credits.json?v='+Date.now())).json()}catch(e){D.credits=[]}await Promise.all(FILES.map(async f=>{try{const r=await fetch('data/'+f+'.json?v='+Date.now());const j=await r.json();D[f]=j.data!==undefined&&!f.endsWith('manual')?j.data:j;D[f+'_upd']=j.updated}catch(e){D[f]=null}}));
  const m=D.meta||{};$('#upd').innerHTML='Data updated <b>'+(m.lastRun?new Date(m.lastRun).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})+' ET':'?')+'</b>'+(m.lastFull?' &middot; full '+ago(m.lastFull):'');route()}
 window.addEventListener('hashchange',route);
 function route(){const id=(location.hash||'#hub').slice(1);const it=NAV.flatMap(x=>x[1]).find(x=>x[0]==id)||NAV[0][1][0];$('#nav').innerHTML=navHtml(it[0]);$('#title').textContent=it[2];
@@ -77,7 +77,7 @@ function statusOf(p){const c=contractOf(p.name);if(c){const last=c.ends||[2032,2
 function hitLine(h){return h?`${h.avg}/${h.obp}/${h.slg} &middot; ${h.homeRuns} HR &middot; ${h.plateAppearances} PA`:''}
 function pitLine(p){return p?`${p.era} ERA &middot; ${p.inningsPitched} IP &middot; ${p.strikeOuts} K &middot; ${p.whip} WHIP`:''}
 function sortable(){document.querySelectorAll('table.s').forEach(t=>t.querySelectorAll('th').forEach((th,i)=>th.onclick=()=>{const tb=t.tBodies[0];const rows=[...tb.rows];const dir=th.dataset.d=th.dataset.d=='a'?'d':'a';rows.sort((a,b)=>{let x=a.cells[i].dataset.v??a.cells[i].innerText,y=b.cells[i].dataset.v??b.cells[i].innerText;const nx=parseFloat(String(x).replace(/[$,M%]/g,'')),ny=parseFloat(String(y).replace(/[$,M%]/g,''));if(!isNaN(nx)&&!isNaN(ny)){x=nx;y=ny}return (x>y?1:x<y?-1:0)*(dir=='a'?1:-1)});rows.forEach(r=>tb.appendChild(r))}))}
-function soxRec(){for(const d of D.standings||[])for(const t of d.teams)if(t.id==111)return{...t,div:d.division};return null}
+function soxRec(){for(const d of D.standings||[])for(const t of d.teams)if(t.id==T.id)return{...t,div:d.division};return null}
 function payroll(){const tp=(D.contracts_manual||{}).team_payroll||{};const cbt=(D.contracts_manual||{}).cbt||{};return{tp,cbt}}
 function taxCalc(pay,rates){const th=payroll().cbt.thresholds||[244e6,264e6,284e6,304e6];rates=rates||payroll().cbt.rates_second||[30,42,75,90];if(pay<=th[0])return 0;let t=(pay-th[0])*rates[0]/100;for(let i=1;i<th.length;i++)if(pay>th[i])t+=(pay-th[i])*(rates[i]-rates[i-1])/100;return t}
 function committed(y){return C().reduce((s,c)=>s+(c['y'+y]||0),0)}
@@ -85,7 +85,7 @@ const V={},A={};
 // ---------- HUB ----------
 V.hub=()=>{const s=soxRec()||{};const sch=(D.schedule||{});const g=(sch.games||[]).filter(x=>x.type=='R'&&x.rs!=null);const last10=g.slice(-10);const post=(sch.games||[]).filter(x=>x.type!='R');
  const {tp,cbt}=payroll();const inj=(D.injuries||[]);const nx=(D.calendar_manual||{}).events||[];const today=new Date().toISOString().slice(0,10);const upcoming=nx.filter(e=>/^\d{4}-\d{2}-\d{2}/.test(e.date)&&(e.end||e.date)>=today).slice(0,5);
- const ts=D.team_stats||{};const rk=(g,k,asc)=>{const a=(ts[g]||[]).slice().sort((x,y)=>asc?x[k]-y[k]:y[k]-x[k]);const i=a.findIndex(x=>x.id==111);return i<0?'':(i+1)};
+ const ts=D.team_stats||{};const rk=(g,k,asc)=>{const a=(ts[g]||[]).slice().sort((x,y)=>asc?x[k]-y[k]:y[k]-x[k]);const i=a.findIndex(x=>x.id==T.id);return i<0?'':(i+1)};
  const hot=R().filter(p=>p.hit&&p.hit.plateAppearances>=250).sort((a,b)=>b.hit.ops-a.hit.ops).slice(0,5);const arms=R().filter(p=>p.pit&&parseFloat(p.pit.inningsPitched)>=60).sort((a,b)=>a.pit.era-b.pit.era).slice(0,5);
  return `<div class="grid g4">
  <div class="card kpi"><div class="l">2026 record</div><div class="v">${s.w??'-'}-${s.l??'-'}</div><div class="small mut">${esc(s.div||'')} &middot; ${s.gb=='-'?'1st':s.gb+' GB'} &middot; run diff ${s.diff>0?'+':''}${s.diff??''}</div></div>
@@ -122,7 +122,7 @@ V.payroll=()=>{const {tp,cbt}=payroll();const th=cbt.thresholds||[];const pay=tp
  <div class="card kpi"><div class="l">Est. 2026 tax bill</div><div class="v">${M(tp.est_tax)}</div><div class="src">Spotrac alt: ${M((tp.alt_estimate||{}).est_tax)}</div></div>
  <div class="card kpi"><div class="l">Actual (LRD) payroll</div><div class="v">${M(tp.lrd_payroll)}</div><div class="src">2025 CBT: ${M(tp.prev_cbt_2025)}</div></div>
  <div class="card kpi"><div class="l">Payor status</div><div class="v" style="font-size:16px">${esc(cbt.payor_status||'')}</div><div class="src">League min ${M(cbt.min_salary)}</div></div></div>
- <div class="card" style="margin-top:14px"><h2>CBT ladder (${cbt.season})</h2><div class="small mut">Bar starts at $200M. Red = Red Sox CBT payroll ${M(pay)}.</div><div style="position:relative;height:56px;margin:26px 0 8px">
+ <div class="card" style="margin-top:14px"><h2>CBT ladder (${cbt.season})</h2><div class="small mut">Bar starts at $200M. Bar = ${T.short} CBT payroll ${M(pay)}.</div><div style="position:relative;height:56px;margin:26px 0 8px">
  <div class="bar" style="height:16px"><i style="width:${X(pay)}%"></i></div>${th.map((x,i)=>`<div style="position:absolute;left:${X(x)}%;top:-22px;font-size:11px;color:var(--mut);transform:translateX(-50%)">${['Base','Tier 2','Tier 3','Tier 4'][i]}<br>${M(x)}</div><div style="position:absolute;left:${X(x)}%;top:0;height:16px;border-left:2px dashed #fff8"></div>`).join('')}</div>
  <table><tr><th>Status</th>${th.map(x=>`<th>&gt; ${M(x)}</th>`).join('')}</tr><tr><td>1st-time payor</td>${(cbt.rates_first||[]).map(x=>`<td>${x}%</td>`).join('')}</tr><tr><td>2nd consecutive</td>${(cbt.rates_second||[]).map(x=>`<td>${x}%</td>`).join('')}</tr><tr><td>3rd+ consecutive</td>${(cbt.rates_third_plus||[]).map(x=>`<td>${x}%</td>`).join('')}</tr></table>
  <div class="note">${esc(cbt.note)} Exceeding the base by $40M+ also drops the club's top draft pick 10 spots (per CBA).</div><div class="src">Sources: ${(cbt.sources||[]).map(s=>`<a href="${s.url}" target="_blank">${esc(s.name)}</a>`).join(' &middot; ')}</div></div>
@@ -146,7 +146,7 @@ V.trade=()=>{const t=store.get('trade',{out:[],in:[]});const r=R();const base=(p
  const outAav=t.out.reduce((s,id)=>{const p=r.find(x=>x.id==id);const c=p&&contractOf(p.name);return s+((c&&(c.aav_cbt||(c.total&&c.years?c.total/c.years:0)))||(payroll().cbt.min_salary||780000))},0);
  const inAav=t.in.reduce((s,x)=>s+(+x.aav||0)*1e6,0);const newPay=base-outAav+inAav;const rates=payroll().cbt.rates_second;
  return `<div class="note">Trade machine uses CBT AAV from the verified contracts file (or the league minimum for pre-arb players without a verified deal). Incoming salary is whatever you type. Since 2027 thresholds aren't set yet, it's measured against the 2026 lines to show direction.</div>
- <div class="grid g2"><div class="card"><h2>Sending out (Red Sox)</h2><select id="tout"><option value="">+ Add a Red Sox player...</option>${r.map(p=>`<option value="${p.id}">${esc(p.name)} (${p.pos})${contractOf(p.name)?' - '+M(contractOf(p.name).aav_cbt||contractOf(p.name).total/contractOf(p.name).years)+' AAV':''}</option>`).join('')}</select> <button onclick="tAdd()">Add</button>
+ <div class="grid g2"><div class="card"><h2>Sending out (${T.short})</h2><select id="tout"><option value="">+ Add a ${T.short} player...</option>${r.map(p=>`<option value="${p.id}">${esc(p.name)} (${p.pos})${contractOf(p.name)?' - '+M(contractOf(p.name).aav_cbt||contractOf(p.name).total/contractOf(p.name).years)+' AAV':''}</option>`).join('')}</select> <button onclick="tAdd()">Add</button>
  <table style="margin-top:8px">${t.out.map(id=>{const p=r.find(x=>x.id==id)||{};const c=contractOf(p.name);return `<tr><td>${esc(p.name)}</td><td>${p.pos||''}</td><td>${c?M(c.aav_cbt||c.total/c.years):'min (est.)'}</td><td><button class="sec" onclick="tRm('out',${id})">&times;</button></td></tr>`}).join('')}</table></div>
  <div class="card"><h2>Receiving</h2><div class="row"><input id="tin" placeholder="Player name"><input id="taav" type="number" step="0.1" placeholder="AAV $M" style="width:100px"><input id="tyrs" type="number" placeholder="Yrs" style="width:70px"><button onclick="tIn()">Add</button></div>
  <table>${t.in.map((x,i)=>`<tr><td>${esc(x.name)}</td><td>${M(x.aav*1e6)}</td><td>${esc(x.yrs||'')} yrs</td><td><button class="sec" onclick="tRm('in',${i})">&times;</button></td></tr>`).join('')}</table></div></div>
@@ -211,35 +211,35 @@ function feedView(items,kind){const q=store.get(kind+'q','');const players=[...n
  return `<div class="row"><select onchange="store.set('${kind}q',this.value);route()"><option value="">All players & topics</option>${players.map(p=>`<option ${q==p?'selected':''}>${esc(p)}</option>`).join('')}${tags.map(t=>`<option value="#${esc(t)}" ${q=='#'+t?'selected':''}>#${esc(t)}</option>`).join('')}</select><span class="small mut">${items.length} items</span></div>
  <div class="card feed">${items.filter(x=>!q||(q[0]=='#'?(x.tags||[]).includes(q.slice(1)):(x.players||[]).includes(q))).map(feedItem).join('')||'<div class="mut">Nothing yet.</div>'}</div>`}
 V.rumors=()=>{const r=D.rumors||{};const items=r.items||[];const pc={};items.forEach(x=>(x.players||[]).forEach(p=>pc[p]=(pc[p]||0)+1));
- return `<div class="note"><b>Rumors are rumors.</b> Items are aggregated from the MLB Trade Rumors Red Sox feed and auto-tagged by player and topic. Nothing here is confirmed unless the club announces it. Always check the source link.</div>
+ return `<div class="note"><b>Rumors are rumors.</b> Items are aggregated from the MLB Trade Rumors ${T.short} feed and auto-tagged by player and topic. Nothing here is confirmed unless the club announces it. Always check the source link.</div>
  <div class="card" style="margin-bottom:14px"><h2>Most-mentioned</h2>${Object.entries(pc).sort((a,b)=>b[1]-a[1]).slice(0,12).map(([p,n])=>`<span class="pill r" style="cursor:pointer" onclick="store.set('rumorsq','${esc(p)}');route()">${esc(p)} &times;${n}</span>`).join(' ')||'<span class="mut">No player mentions yet</span>'}</div>
  ${feedView(items,'rumors')}<div class="src">Sources: ${(r.sources||[]).map(s=>esc(s.name)+(s.ok?' ('+s.n+')':' (failed)')).join(' &middot; ')}</div>`};
-V.news=()=>{const n=D.news||{};return `${feedView(n.items||[],'news')}<div class="src">Sources: ${(n.sources||[]).filter(s=>!/Rumors/.test(s.name)).map(s=>esc(s.name)+(s.ok?' ('+s.n+')':' (failed)')).join(' &middot; ')}. ESPN items filtered to Red Sox mentions. Refreshes every morning and evening.</div>`};
+V.news=()=>{const n=D.news||{};return `${feedView(n.items||[],'news')}<div class="src">Sources: ${(n.sources||[]).filter(s=>!/Rumors/.test(s.name)).map(s=>esc(s.name)+(s.ok?' ('+s.n+')':' (failed)')).join(' &middot; ')}. ESPN items filtered to ${T.short} mentions. Refreshes every morning and evening.</div>`};
 // ---------- CALENDAR ----------
 V.calendar=()=>{const c=D.calendar_manual||{};const nx=(D.schedule||{}).next||{};const today=new Date().toISOString().slice(0,10);
  return `<div class="note">${esc(c._label||'')}</div><div class="card"><div class="tl">${(c.events||[]).map(e=>{const past=/^\d{4}-\d{2}-\d{2}/.test(e.date)&&(e.end||e.date)<today;return `<div style="${past?'opacity:.5':''}"><b>${/^\d{4}-\d{2}-\d{2}/.test(e.date)?fmtD(e.date)+(e.end?' - '+fmtD(e.end):''):esc(e.date)}</b> <span class="pill ${e.status=='verified'?'g':'y'}">${e.status}</span><br>${esc(e.title)}<div class="src"><a href="${esc(e.url)}" target="_blank">${esc(e.source)}</a></div></div>`}).join('')}</div>
- <p class="small">Live from MLB's ${esc(nx.season)} Red Sox schedule: first spring game <b>${fmtD(nx.firstSpring)}</b>, Opening Day <b>${fmtD(nx.openingDay)}</b> (${nx.games} dates posted).</p></div>`};
+ <p class="small">Live from MLB's ${esc(nx.season)} ${T.short} schedule: first spring game <b>${fmtD(nx.firstSpring)}</b>, Opening Day <b>${fmtD(nx.openingDay)}</b> (${nx.games} dates posted).</p></div>`};
 // ---------- TX ----------
 V.tx=()=>`<div class="card"><div class="tw"><table class="s"><thead><tr><th>Date</th><th>Type</th><th>Move</th></tr></thead><tbody>${(D.transactions||[]).map(t=>`<tr><td>${esc(t.date)}</td><td><span class="pill">${esc(t.type||'')}</span></td><td style="white-space:normal">${esc(t.desc)}</td></tr>`).join('')}</tbody></table></div><div class="src">MLB Stats API transactions, last 120 days.</div></div>`;
 A.tx=sortable;
 // ---------- LEAGUE ----------
 V.league=()=>{const st=D.standings||[];const post=(D.schedule||{}).postseason||[];const ts=D.team_stats||{};
  const series={};post.forEach(g=>{const k=g.series+': '+[g.away,g.home].sort().join(' vs ');(series[k]=series[k]||[]).push(g)});
- return `<div class="grid g2">${st.map(d=>`<div class="card"><h2>${esc(d.division)}</h2><table class="s"><thead><tr><th>Team</th><th>W</th><th>L</th><th>GB</th><th>WCGB</th><th>Diff</th><th>Home</th><th>Away</th><th>L10</th></tr></thead><tbody>${d.teams.map(t=>`<tr style="${t.id==111?'background:#3a1419':''}"><td><b>${esc(t.name)}</b> ${t.clinch?'<span class="pill g">'+t.clinch+'</span>':''}</td><td>${t.w}</td><td>${t.l}</td><td>${t.gb}</td><td>${t.wcgb??''}</td><td>${t.diff>0?'+':''}${t.diff}</td><td>${t.home||''}</td><td>${t.away||''}</td><td>${t.l10||''}</td></tr>`).join('')}</tbody></table></div>`).join('')}</div>
+ return `<div class="grid g2">${st.map(d=>`<div class="card"><h2>${esc(d.division)}</h2><table class="s"><thead><tr><th>Team</th><th>W</th><th>L</th><th>GB</th><th>WCGB</th><th>Diff</th><th>Home</th><th>Away</th><th>L10</th></tr></thead><tbody>${d.teams.map(t=>`<tr style="${t.id==T.id?'background:var(--hl)':''}"><td><b>${esc(t.name)}</b> ${t.clinch?'<span class="pill g">'+t.clinch+'</span>':''}</td><td>${t.w}</td><td>${t.l}</td><td>${t.gb}</td><td>${t.wcgb??''}</td><td>${t.diff>0?'+':''}${t.diff}</td><td>${t.home||''}</td><td>${t.away||''}</td><td>${t.l10||''}</td></tr>`).join('')}</tbody></table></div>`).join('')}</div>
  <div class="grid g2" style="margin-top:14px"><div class="card"><h2>2026 postseason</h2>${Object.entries(series).map(([k,g])=>`<div style="margin-bottom:8px"><b>${esc(k)}</b><div class="small mut">${g.map(x=>`${fmtD(x.date)}: ${esc(x.away)} ${x.as??''} @ ${esc(x.home)} ${x.hs??''} (${esc(x.status)})`).join('<br>')}</div></div>`).join('')}</div>
- <div class="card"><h2>MLB team leaderboard</h2><div class="tw" style="max-height:420px"><table class="s"><thead><tr><th>Team</th><th>R</th><th>HR</th><th>OPS</th><th>ERA</th><th>WHIP</th></tr></thead><tbody>${(ts.hitting||[]).map(h=>{const p=(ts.pitching||[]).find(x=>x.id==h.id)||{};return `<tr style="${h.id==111?'background:#3a1419':''}"><td>${esc(h.name)}</td><td>${h.runs}</td><td>${h.homeRuns}</td><td>${h.ops}</td><td>${p.era}</td><td>${p.whip}</td></tr>`}).join('')}</tbody></table></div></div></div>`};
+ <div class="card"><h2>MLB team leaderboard</h2><div class="tw" style="max-height:420px"><table class="s"><thead><tr><th>Team</th><th>R</th><th>HR</th><th>OPS</th><th>ERA</th><th>WHIP</th></tr></thead><tbody>${(ts.hitting||[]).map(h=>{const p=(ts.pitching||[]).find(x=>x.id==h.id)||{};return `<tr style="${h.id==T.id?'background:var(--hl)':''}"><td>${esc(h.name)}</td><td>${h.runs}</td><td>${h.homeRuns}</td><td>${h.ops}</td><td>${p.era}</td><td>${p.whip}</td></tr>`}).join('')}</tbody></table></div></div></div>`};
 A.league=sortable;
 // ---------- FUN ----------
 const F=()=>D.franchise_manual||{};
 V.history=()=>{const h=F().history||{};return `<div class="grid g4">${(h.championships||[]).map(y=>`<div class="card kpi" style="text-align:center"><div class="v">&#127942; ${y}</div><div class="l">World Series champions</div></div>`).join('')}</div>
  <div class="grid g2" style="margin-top:14px"><div class="card"><h2>Timeline</h2><div class="tl">${(h.timeline||[]).map(([y,t])=>`<div><b>${esc(y)}</b><br>${esc(t)}</div>`).join('')}</div></div>
- <div class="card"><h2>Retired numbers</h2><div class="ret">${(h.retired||[]).map(([n,nm,pos,dt])=>`<div class="card"><div class="num">${n}</div><b>${esc(nm)}</b><div class="small mut">${esc(pos)}<br>${esc(dt)}</div></div>`).join('')}</div><h3>The rivalry</h3><p class="small">${esc(h.rivalry||'')}</p></div></div><div class="src">Source: <a href="${esc(h.source)}" target="_blank">Wikipedia - Boston Red Sox</a> (accessed Oct 10, 2026)</div>`};
+ <div class="card"><h2>Retired numbers</h2><div class="ret">${(h.retired||[]).map(([n,nm,pos,dt])=>`<div class="card"><div class="num">${n}</div><b>${esc(nm)}</b><div class="small mut">${esc(pos)}<br>${esc(dt)}</div></div>`).join('')}</div><h3>The rivalry</h3><p class="small">${esc(h.rivalry||'')}</p></div></div><div class="src">Source: <a href="${esc(h.source)}" target="_blank">${esc(h.source_name||'Wikipedia')}</a> (accessed Oct 10, 2026)</div>`};
 V.uniforms=()=>{const u=F().uniforms||{};const sw=[['Home whites','#f4f1ea','#bd3039','RED SOX'],['Road grays','#9aa3ad','#bd3039','BOSTON'],['Red alternate','#bd3039','#0c2340','RED SOX'],['City Connect I (2021)','#f2c230','#6ca0dc','BOSTON'],['City Connect II (2025)','#2f5d3a','#f4f1ea','B'],['Patriots Day','#f4f1ea','#0c2340','BOSTON']];
  return `<div class="grid g3">${sw.map(([n,bg,fg,t])=>`<div class="card" style="text-align:center"><div style="margin:auto;width:120px;height:110px;background:${bg};border-radius:18px 18px 8px 8px;display:grid;place-items:center;font:900 ${t.length>3?18:40}px Georgia,serif;color:${fg};box-shadow:inset 0 0 0 3px #0003">${t}</div><b style="display:block;margin-top:8px">${n}</b></div>`).join('')}</div><p class="small mut">Swatches are simple illustrations, not official artwork.</p>
- <div class="card" style="margin-top:14px"><h2>Evolution</h2><div class="tl">${(u.timeline||[]).map(([y,t])=>`<div><b>${esc(y)}</b><br>${esc(t)}</div>`).join('')}</div><div class="src">Source: <a href="${esc(u.source)}" target="_blank">Wikipedia - Logos and uniforms of the Boston Red Sox</a> (accessed Oct 10, 2026)</div></div>`};
-V.fenway=()=>{const f=F().fenway||{};return `<div class="grid g2"><div class="card"><h2>Field dimensions</h2>
+ <div class="card" style="margin-top:14px"><h2>Evolution</h2><div class="tl">${(u.timeline||[]).map(([y,t])=>`<div><b>${esc(y)}</b><br>${esc(t)}</div>`).join('')}</div><div class="src">Source: <a href="${esc(u.source)}" target="_blank">${esc(u.source_name||"Wikipedia")}</a> (accessed Oct 10, 2026)</div></div>`};
+V.fenway=()=>{const f=F().fenway||F().park||{};return `<div class="grid g2"><div class="card"><h2>Field dimensions</h2>${T.id!=111?`<table>${Object.entries(f.dims||{}).map(([k,v])=>`<tr><td>${esc(k)}</td><td><b>${esc(v)}</b></td></tr>`).join('')}</table><div class="src">${esc(f.dims_note||'')}</div></div>`:`
  <svg viewBox="0 0 400 340" style="width:100%;max-width:520px;display:block;margin:auto"><path d="M200 320 L40 160 Q120 40 250 50 L340 90 L370 150 Z" fill="#1d5a32" stroke="#fff3"/><path d="M200 320 L140 260 L200 200 L260 260 Z" fill="#a8723f" opacity=".8"/><path d="M40 160 Q70 105 130 70" stroke="#2f7d4a" stroke-width="12" fill="none"/><text x="70" y="70" fill="#b8f0d3" font-size="13" font-weight="700">Green Monster</text><text x="70" y="86" fill="#cfe0f5" font-size="11">37' 2" tall</text>
- <text x="44" y="190" fill="#fff" font-size="13">LF 310'</text><text x="170" y="62" fill="#fff" font-size="12">True CF 390'</text><text x="280" y="70" fill="#fff" font-size="12">Triangle 420'</text><text x="318" y="178" fill="#fff" font-size="13">RF 302'</text><circle cx="370" cy="150" r="5" fill="#f2c230"/><text x="300" y="140" fill="#f2c230" font-size="11">Pesky's Pole</text><circle cx="300" cy="105" r="4" fill="#e0444e"/><text x="250" y="120" fill="#ffc9cc" font-size="10">Lone Red Seat</text></svg><p class="small mut">Diagram not to scale.</p></div>
- <div class="card"><h2>Fenway facts</h2><table>${(f.facts||[]).map(([k,v])=>`<tr><td><b>${esc(k)}</b></td><td style="white-space:normal">${esc(v)}</td></tr>`).join('')}</table><div class="src">Sources: ${(f.sources||[]).map(s=>`<a href="${esc(s)}" target="_blank">${esc(decodeURIComponent(s.split('/').pop()).replace(/_/g,' '))}</a>`).join(' &middot; ')} (Wikipedia, accessed Oct 10, 2026)</div></div></div>`};
+ <text x="44" y="190" fill="#fff" font-size="13">LF 310'</text><text x="170" y="62" fill="#fff" font-size="12">True CF 390'</text><text x="280" y="70" fill="#fff" font-size="12">Triangle 420'</text><text x="318" y="178" fill="#fff" font-size="13">RF 302'</text><circle cx="370" cy="150" r="5" fill="#f2c230"/><text x="300" y="140" fill="#f2c230" font-size="11">Pesky's Pole</text><circle cx="300" cy="105" r="4" fill="#e0444e"/><text x="250" y="120" fill="#ffc9cc" font-size="10">Lone Red Seat</text></svg><p class="small mut">Diagram not to scale.</p></div>`}
+ <div class="card"><h2>${T.park} facts</h2><table>${(f.facts||[]).map(([k,v])=>`<tr><td><b>${esc(k)}</b></td><td style="white-space:normal">${esc(v)}</td></tr>`).join('')}</table><div class="src">Sources: ${(f.sources||[]).map(s=>`<a href="${esc(s)}" target="_blank">${esc(decodeURIComponent(s.split('/').pop()).replace(/_/g,' '))}</a>`).join(' &middot; ')} (Wikipedia, accessed Oct 10, 2026)</div></div></div>`};
 </script>
 <script src="v2.js"></script></body></html>

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Red Sox GM Hub data fetcher. MODE=full (default) or MODE=news (news/rumors/transactions/injuries only).
+"""GM Hub data fetcher (team set by team.json). MODE=full (default) or MODE=news (news/rumors/transactions/injuries only).
 Each source is independent; on failure the previous file is kept. Contracts/calendar/franchise facts are
 hand-maintained in data/*_manual.json (no free licensed source)."""
 import json, os, re, sys, html, urllib.request, traceback
@@ -13,13 +13,11 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 DATA = os.path.join(ROOT, "data")
 MODE = os.environ.get("MODE", "full")
 SEASON = int(os.environ.get("SEASON", "2026"))
-UA = {"User-Agent": "Mozilla/5.0 (redsox-gm-hub personal demo; github.com/mkuritz)"}
+TEAM = json.load(open(os.path.join(ROOT, "team.json")))
+UA = {"User-Agent": f"Mozilla/5.0 ({TEAM['repo']} personal demo; github.com/mkuritz)"}
 S = "https://statsapi.mlb.com/api/v1"
-BOS = 111
-AFFIL = [  # (level, sportId, teamId, name)
-    ("AAA", 11, 533, "Worcester Red Sox"), ("AA", 12, 546, "Portland Sea Dogs"),
-    ("High-A", 13, 428, "Greenville Drive"), ("Low-A", 14, 414, "Salem RidgeYaks"),
-    ("Complex (FCL)", 16, 471, "FCL Red Sox"), ("DSL", 16, 626, "DSL Red Sox Blue"), ("DSL", 16, 627, "DSL Red Sox Red")]
+BOS = TEAM["id"]
+AFFIL = [tuple(a) for a in TEAM["affiliates"]]
 # Typical age at level (rough industry rule of thumb used only for an "age vs level" flag)
 LEVEL_AGE = {"AAA": 26.5, "AA": 24.5, "High-A": 23.0, "Low-A": 21.5, "Complex (FCL)": 20.0, "DSL": 18.0}
 
@@ -224,7 +222,7 @@ def rss(url, source, kind):
 
 
 def espn_news():
-    j = jget("https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/news?team=bos&limit=40")
+    j = jget(f"https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/news?team={TEAM['espn']}&limit=40")
     out = []
     for a in j.get("articles", []):
         out.append({"title": a.get("headline"), "url": ((a.get("links") or {}).get("web") or {}).get("href"),
@@ -236,7 +234,7 @@ def espn_injuries():
     j = jget("https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/injuries")
     out = []
     for t in j.get("injuries", []):
-        if "Red Sox" not in (t.get("displayName") or ""):
+        if TEAM["short"] not in (t.get("displayName") or ""):
             continue
         for i in t.get("injuries", []):
             out.append({"name": (i.get("athlete") or {}).get("displayName"), "status": i.get("status"),
@@ -260,7 +258,7 @@ def tag_players(items, names):
         low = txt.lower()
         it["tags"] = [t for t, words in {"trade": ["trade", "deal for", "acquire"], "free agency": ["free agent", "free agency", "sign"],
                       "extension": ["extension"], "injury": ["injur", "surgery", "il "], "prospect": ["prospect", "minor league", "draft"],
-                      "front office": ["breslow", "front office", "manager", "coach", "cora"], "cba": ["cba", "lockout", "collective bargaining"]}.items()
+                      "front office": ["front office", "manager", "coach"] + [w.lower() for w in TEAM.get("foWords", [])], "cba": ["cba", "lockout", "collective bargaining"]}.items()
                       if any(w in low for w in words)]
     return items
 
@@ -270,22 +268,22 @@ MLB_NAMES = set()
 
 def news_and_rumors(names):
     news, rumors, srcs = [], [], []
-    for fn, label in ((lambda: espn_news(), "ESPN Red Sox news API"),
-                      (lambda: rss("https://www.mlb.com/redsox/feeds/news/rss.xml", "MLB.com", "news"), "MLB.com Red Sox RSS")):
+    for fn, label in ((lambda: espn_news(), f"ESPN {TEAM['short']} news API"),
+                      (lambda: rss(f"https://www.mlb.com/{TEAM['mlbcom']}/feeds/news/rss.xml", "MLB.com", "news"), f"MLB.com {TEAM['short']} RSS")):
         try:
             x = fn(); news += x; srcs.append({"name": label, "ok": True, "n": len(x)})
         except Exception as e:
             srcs.append({"name": label, "ok": False, "err": str(e)[:120]})
     try:
-        x = rss("https://www.mlbtraderumors.com/boston-red-sox/feed", "MLB Trade Rumors", "rumor")
-        rumors += x; srcs.append({"name": "MLB Trade Rumors - Red Sox RSS", "ok": True, "n": len(x)})
+        x = rss(f"https://www.mlbtraderumors.com/{TEAM['mlbtr']}/feed", "MLB Trade Rumors", "rumor")
+        rumors += x; srcs.append({"name": f"MLB Trade Rumors - {TEAM['short']} RSS", "ok": True, "n": len(x)})
     except Exception as e:
-        srcs.append({"name": "MLB Trade Rumors - Red Sox RSS", "ok": False, "err": str(e)[:120]})
+        srcs.append({"name": f"MLB Trade Rumors - {TEAM['short']} RSS", "ok": False, "err": str(e)[:120]})
     def relevant(it):
         if it["source"] != "ESPN":
             return True
         t = (it.get("title") or "") + " " + (it.get("summary") or "")
-        return "Red Sox" in t or "Boston" in t or any(n in t for n in MLB_NAMES)
+        return TEAM["short"] in t or TEAM["city"] in t or any(n in t for n in MLB_NAMES)
     news = [x for x in news if relevant(x)]
     seen, nn = set(), []
     for it in sorted(news, key=lambda x: x.get("date") or "", reverse=True):
@@ -369,13 +367,13 @@ def pipeline_list(url):
 def prospects():
     yr = SEASON
     res = {"source": "MLB Pipeline (MLB.com)", "fetched": now_et()}
-    t30 = pipeline_list("https://www.mlb.com/milb/prospects/redsox")
+    t30 = pipeline_list(f"https://www.mlb.com/milb/prospects/{TEAM['mlbcom']}")
     t100 = pipeline_list("https://www.mlb.com/milb/prospects/top100")
     # team for top-100 via the table rows (team name column) as fallback
     rows = {}
     h = get("https://www.mlb.com/milb/prospects/top100").decode("utf-8", "ignore")
     res["team30"] = t30["players"]; res["top100"] = t100["players"]
-    res["team30_url"] = "https://www.mlb.com/milb/prospects/redsox"; res["top100_url"] = "https://www.mlb.com/milb/prospects/top100"
+    res["team30_url"] = f"https://www.mlb.com/milb/prospects/{TEAM['mlbcom']}"; res["top100_url"] = "https://www.mlb.com/milb/prospects/top100"
     res["slugs"] = [t30["slug"], t100["slug"]]
     return res
 
@@ -451,7 +449,7 @@ def trade_market(stats, fa, standings_):
     cands = []
     for e in stats.values():
         team = (e["teams"] or [None])[-1]
-        if not team or team == "Boston Red Sox" or nkey(e["name"]) in fa_keys:
+        if not team or team == TEAM["name"] or nkey(e["name"]) in fa_keys:
             continue
         tr = team_rec.get(team) or {}
         h, p = e.get("hitting") or {}, e.get("pitching") or {}
@@ -472,36 +470,53 @@ def trade_market(stats, fa, standings_):
     return {"candidates": cands, "feed": tagged, "teams": [{"name": k, "w": v["w"], "l": v["l"], "pct": v["pct"], "clinch": v.get("clinch")} for k, v in team_rec.items()]}
 
 
-INTL_URL = "https://soxprospects.com/international.htm"
+def _intl_tx():
+    try:
+        j = jget(f"{S}/transactions?teamId={BOS}&startDate={SEASON}-01-15&endDate={date.today()}")
+        return [{"date": t["date"], "desc": t["description"], "id": (t.get("person") or {}).get("id"), "name": (t.get("person") or {}).get("fullName")}
+                for t in j["transactions"] if t.get("typeDesc") == "Signed as Free Agent" and "minor league contract" in t.get("description", "") and t["date"] <= f"{SEASON}-06-30"]
+    except Exception as e:
+        print("intl tx", e); return []
 
 
 def international():
-    h = get(INTL_URL).decode("utf-8", "ignore")
-    rows = []
-    for r in re.findall(r"<tr[^>]*>(.*?)</tr>", h, re.S):
-        c = [re.sub(r"\s+", " ", html.unescape(re.sub("<[^>]+>", "", x))).strip() for x in re.findall(r"<td[^>]*>(.*?)</td>", r, re.S)]
-        if len(c) >= 5 and re.search(r"-\d{4}$", c[4] or ""):
-            b = re.sub(r"[^\d]", "", c[3]) if "$" in c[3] else None
-            rows.append({"name": c[0].strip('"'), "pos": c[1], "country": c[2], "bonus": int(b) if b else None, "bonus_text": c[3], "month": c[4],
-                         "period": int(c[4][-4:])})
-    txt = re.sub(r"\s+", " ", html.unescape(re.sub("<[^>]+>", " ", h)))
-    def money(lbl):
-        m = re.search(lbl + r":?\s*\$([\d,]+)", txt)
-        return int(m.group(1).replace(",", "")) if m else None
-    dr = re.search(r"Date Range:\s*([A-Za-z]+ \d+, \d{4} to [A-Za-z]+ \d+, \d{4})", txt)
-    tx = []
-    try:
-        j = jget(f"{S}/transactions?teamId={BOS}&startDate={SEASON}-01-15&endDate={date.today()}")
-        tx = [{"date": t["date"], "desc": t["description"], "id": (t.get("person") or {}).get("id")} for t in j["transactions"]
-              if t.get("typeDesc") == "Signed as Free Agent" and "minor league contract" in t.get("description", "") and t["date"] <= f"{SEASON}-06-30"]
-    except Exception as e:
-        print("intl tx", e)
-    return {"source": "SoxProspects.com International Signings", "url": INTL_URL,
-            "pool": {"amount": money("Bonus Pool"), "spent": money("Bonus Pool Spent"), "available": money("Bonus Pool Available"),
-                     "period": dr.group(1) if dr else None, "source": "SoxProspects.com; pool also listed by Baseball America / AP",
-                     "corroboration": [{"name": "Baseball America: 2026 international bonus pools ($5,940,000 for BOS, reduced $500K for Bregman QO)", "url": "https://www.baseballamerica.com/stories/2026-international-signing-bonus-pools-for-each-mlb-team/"},
-                                       {"name": "AP: 2026 international signing bonus allotment list", "url": "https://apnews.com/article/baseball-4ed06a95d4f608d689d128888d22c7ed"}]},
-            "signings": rows, "mlb_tx": tx}
+    cfg = TEAM.get("intl") or {}
+    tx = _intl_tx()
+    if cfg.get("type") == "soxprospects":
+        url = cfg["url"]
+        h = get(url).decode("utf-8", "ignore")
+        rows = []
+        for r in re.findall(r"<tr[^>]*>(.*?)</tr>", h, re.S):
+            c = [re.sub(r"\s+", " ", html.unescape(re.sub("<[^>]+>", "", x))).strip() for x in re.findall(r"<td[^>]*>(.*?)</td>", r, re.S)]
+            if len(c) >= 5 and re.search(r"-\d{4}$", c[4] or ""):
+                b = re.sub(r"[^\d]", "", c[3]) if "$" in c[3] else None
+                rows.append({"name": c[0].strip('"'), "pos": c[1], "country": c[2], "bonus": int(b) if b else None, "bonus_text": c[3], "month": c[4], "period": int(c[4][-4:])})
+        txt = re.sub(r"\s+", " ", html.unescape(re.sub("<[^>]+>", " ", h)))
+        def money(lbl):
+            m = re.search(lbl + r":?\s*\$([\d,]+)", txt)
+            return int(m.group(1).replace(",", "")) if m else None
+        dr = re.search(r"Date Range:\s*([A-Za-z]+ \d+, \d{4} to [A-Za-z]+ \d+, \d{4})", txt)
+        pool = {"amount": money("Bonus Pool"), "spent": money("Bonus Pool Spent"), "available": money("Bonus Pool Available"),
+                "period": dr.group(1) if dr else None, "source": "SoxProspects.com"}
+        src = {"name": "SoxProspects.com International Signings", "url": url}
+    else:
+        # No free per-player bonus source for this club: list official MLB transactions (names/dates only), bonus blank.
+        rows = []
+        for t in tx:
+            pid = t.get("id"); info = {}
+            try:
+                info = jget(f"{S}/people/{pid}")["people"][0] if pid else {}
+            except Exception:
+                pass
+            if (info.get("birthCountry") or "USA") == "USA":
+                continue
+            rows.append({"name": t["name"], "pos": (info.get("primaryPosition") or {}).get("abbreviation"), "country": info.get("birthCountry"),
+                         "bonus": None, "bonus_text": "not public in a free source", "month": t["date"], "period": SEASON, "age": info.get("currentAge")})
+        pool = {"amount": cfg.get("pool"), "spent": None, "available": None, "period": "January 15, 2026 to December 15, 2026", "source": "Baseball America / AP (pool allotment)"}
+        src = {"name": "MLB Stats API transactions (non-US-born players signed to minor league deals since Jan 15)", "url": f"{S}/transactions?teamId={BOS}"}
+    pool["corroboration"] = cfg.get("corroboration", [])
+    pool["note"] = cfg.get("note")
+    return {"source": src["name"], "url": src["url"], "pool": pool, "signings": rows, "mlb_tx": tx}
 
 
 def main_v2():

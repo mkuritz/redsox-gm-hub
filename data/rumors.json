@@ -2,6 +2,20 @@
  "data": {
   "items": [
    {
+    "date": "2026-10-11T11:52-04:00",
+    "kind": "rumor",
+    "players": [
+     "Caleb Durbin"
+    ],
+    "source": "MLB Trade Rumors",
+    "summary": "Red Sox infielder Caleb Durbin underwent a PIP joint reconstruction procedure on his left pinky last week, according to a team announcement. It\u2019s the same finger that Durbin partially dislocated back in June, although he did not miss any time during the season and played in the Wild Card Series against the Yankees. Dur",
+    "tags": [
+     "injury"
+    ],
+    "title": "Caleb Durbin Undergoes Finger Surgery",
+    "url": "https://www.mlbtraderumors.com/2026/10/caleb-durbin-undergoes-finger-surgery.html"
+   },
+   {
     "date": "2026-10-10T11:03-04:00",
     "kind": "rumor",
     "players": [],
@@ -184,21 +198,6 @@
     "tags": [],
     "title": "Roman Anthony Leaves ALWCS Game 1 Due To Hand Soreness",
     "url": "https://www.mlbtraderumors.com/2026/09/roman-anthony-leaves-alwcs-game-1-due-to-hand-soreness.html"
-   },
-   {
-    "date": "2026-09-29T10:55-04:00",
-    "kind": "rumor",
-    "players": [
-     "Garrett Crochet",
-     "Justin Slaten"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "The Red Sox announced their roster for the Wild Card round and it includes left-hander Garrett Crochet. He has been officially reinstated from the 60-day injured list. Right-hander Justin Slaten has been transferred onto the 60-day IL to open a 40-man spot for Crochet. The roster does not include outfielder Braiden War",
-    "tags": [
-     "injury"
-    ],
-    "title": "Garrett Crochet Included On Red Sox\u2019 Wild Card Roster",
-    "url": "https://www.mlbtraderumors.com/2026/09/garrett-crochet-included-on-red-sox-wild-card-roster.html"
    }
   ],
   "sources": [
@@ -219,5 +218,5 @@
    }
   ]
  },
- "updated": "2026-10-10T21:02:16-04:00"
+ "updated": "2026-10-11T19:34:40-04:00"
 }

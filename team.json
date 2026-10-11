@@ -1,0 +1,96 @@
+{
+ "id": 111,
+ "abbr": "BOS",
+ "name": "Boston Red Sox",
+ "short": "Red Sox",
+ "nick": "Sox",
+ "city": "Boston",
+ "espn": "bos",
+ "mlbcom": "redsox",
+ "mlbtr": "boston-red-sox",
+ "mlbtr_payroll": "red-sox",
+ "lsPrefix": "rsgm_",
+ "logoText": "B",
+ "hubTitle": "Red Sox GM Hub",
+ "repo": "redsox-gm-hub",
+ "colors": {
+  "primary": "#bd3039",
+  "primary2": "#e0444e",
+  "dark": "#0c2340",
+  "bg": "#08131f",
+  "card": "#0f1e33",
+  "card2": "#142a47",
+  "line": "#22395c",
+  "hl": "#3a1419",
+  "logoBg": "#bd3039",
+  "logoFg": "#ffffff",
+  "onPrimary": "#ffffff"
+ },
+ "park": "Fenway Park",
+ "parkIcon": "&#127967;",
+ "historyLabel": "Sox History",
+ "affiliates": [
+  [
+   "AAA",
+   11,
+   533,
+   "Worcester Red Sox"
+  ],
+  [
+   "AA",
+   12,
+   546,
+   "Portland Sea Dogs"
+  ],
+  [
+   "High-A",
+   13,
+   428,
+   "Greenville Drive"
+  ],
+  [
+   "Low-A",
+   14,
+   414,
+   "Salem RidgeYaks"
+  ],
+  [
+   "Complex (FCL)",
+   16,
+   471,
+   "FCL Red Sox"
+  ],
+  [
+   "DSL",
+   16,
+   626,
+   "DSL Red Sox Blue"
+  ],
+  [
+   "DSL",
+   16,
+   627,
+   "DSL Red Sox Red"
+  ]
+ ],
+ "intl": {
+  "type": "soxprospects",
+  "url": "https://soxprospects.com/international.htm",
+  "corroboration": [
+   {
+    "name": "Baseball America: 2026 international bonus pools ($5,940,000 for BOS, reduced $500K for Bregman QO)",
+    "url": "https://www.baseballamerica.com/stories/2026-international-signing-bonus-pools-for-each-mlb-team/"
+   },
+   {
+    "name": "AP: 2026 international signing bonus allotment list",
+    "url": "https://apnews.com/article/baseball-4ed06a95d4f608d689d128888d22c7ed"
+   }
+  ],
+  "note": "Pool reduced $500K for signing a qualifying-offer free agent (Baseball America)."
+ },
+ "sportsLabs": "https://mkuritz.github.io/sports-labs/",
+ "foWords": [
+  "Breslow",
+  "Cora"
+ ]
+}

@@ -2,6 +2,32 @@
  "data": {
   "items": [
    {
+    "date": "2026-10-11T17:38-04:00",
+    "kind": "news",
+    "players": [],
+    "source": "MLB.com",
+    "summary": "",
+    "tags": [
+     "prospect"
+    ],
+    "title": "Watch LIVE: Red Sox prospects in Arizona Fall League action",
+    "url": "https://www.mlb.com/redsox/news/watch-top-prospects-in-arizona-fall-league-winter-ball-2026"
+   },
+   {
+    "date": "2026-10-11T14:45-04:00",
+    "kind": "news",
+    "players": [
+     "Caleb Durbin"
+    ],
+    "source": "MLB.com",
+    "summary": "",
+    "tags": [
+     "injury"
+    ],
+    "title": "Durbin undergoes surgery to repair lingering left pinkie injury",
+    "url": "https://www.mlb.com/redsox/news/caleb-durbin-undergoes-surgery-on-injured-left-pinkie"
+   },
+   {
     "date": "2026-10-10T20:04-04:00",
     "kind": "news",
     "players": [],
@@ -22,18 +48,6 @@
     "tags": [],
     "title": "Sources: Phillies' Fuld declines offer to become A's president",
     "url": "https://www.espn.com/mlb/story/_/id/50148844/sources-phillies-fuld-declines-offer-become-president"
-   },
-   {
-    "date": "2026-10-10T16:42-04:00",
-    "kind": "news",
-    "players": [],
-    "source": "MLB.com",
-    "summary": "",
-    "tags": [
-     "prospect"
-    ],
-    "title": "Watch LIVE: Red Sox prospects in Arizona Fall League action",
-    "url": "https://www.mlb.com/redsox/news/watch-top-prospects-in-arizona-fall-league-winter-ball-2026"
    },
    {
     "date": "2026-10-10T10:09-04:00",
@@ -406,20 +420,6 @@
     "url": "https://www.espn.com/mlb/story/_/id/50053611/red-sox-rookie-lhp-payton-tolle-start-game-1-vs-yankees"
    },
    {
-    "date": "2026-09-28T20:28-04:00",
-    "kind": "news",
-    "players": [
-     "Franklin Arias"
-    ],
-    "source": "MLB.com",
-    "summary": "",
-    "tags": [
-     "prospect"
-    ],
-    "title": "Franklin Arias lands on Prospect Team of the Year",
-    "url": "https://www.mlb.com/redsox/news/prospect-team-of-the-year-2026"
-   },
-   {
     "date": "2026-09-28T11:00:26Z",
     "kind": "news",
     "players": [],
@@ -580,5 +580,5 @@
    }
   ]
  },
- "updated": "2026-10-10T21:02:16-04:00"
+ "updated": "2026-10-11T19:34:40-04:00"
 }

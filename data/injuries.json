@@ -1,6 +1,13 @@
 {
  "data": [
   {
+   "date": "2026-10-11T15:12Z",
+   "detail": "The Red Sox announced Sunday that Durbin underwent a successful reconstructive surgery of the PIP joint in his left pinkie finger last week, Tim Healey of The Boston Globe reports.",
+   "name": "Caleb Durbin",
+   "status": "Out",
+   "type": "Finger"
+  },
+  {
    "date": "2026-10-10T01:08Z",
    "detail": "Whitlock allowed a walk in a scoreless and hitless inning to earn the save in Thursday's 4-3 win over the Rangers.",
    "name": "Garrett Whitlock",
@@ -92,5 +99,5 @@
    "type": "Elbow"
   }
  ],
- "updated": "2026-10-10T21:01:57-04:00"
+ "updated": "2026-10-11T19:34:36-04:00"
 }

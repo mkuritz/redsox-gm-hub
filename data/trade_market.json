@@ -2832,11 +2832,6 @@
       "date": "2026-10-07T17:35-04:00",
       "title": "Mason Miller Activated From Paternity List",
       "url": "https://www.mlbtraderumors.com/2026/10/__trashed-23.html"
-     },
-     {
-      "date": "2026-10-07T09:43-04:00",
-      "title": "The Opener: King The Closer, Playoff Kik\u00e9, Acuna\u2019s Knee Injury",
-      "url": "https://www.mlbtraderumors.com/2026/10/the-opener-king-the-closer-playoff-kike-acunas-knee-injury.html"
      }
     ],
     "team": "San Diego Padres",
@@ -2901,6 +2896,11 @@
     },
     "pos": "P",
     "rumors": [
+     {
+      "date": "2026-10-11T13:23-04:00",
+      "title": "Brewers, Dodgers Announce NLCS Rosters",
+      "url": "https://www.mlbtraderumors.com/2026/10/brewers-dodgers-announce-nlcs-rosters.html"
+     },
      {
       "date": "2026-10-10T23:59-04:00",
       "title": "Poll: Who Will Win The NLCS?",
@@ -3699,13 +3699,7 @@
      "whip": "1.24"
     },
     "pos": "P",
-    "rumors": [
-     {
-      "date": "2026-10-07T14:19-04:00",
-      "title": "How Did Eduardo Rodriguez Do That?",
-      "url": "https://www.mlbtraderumors.com/2026/10/how-did-eduardo-rodriguez-do-that.html"
-     }
-    ],
+    "rumors": [],
     "team": "Arizona Diamondbacks",
     "teamL": 76,
     "teamPct": ".531",
@@ -4077,7 +4071,13 @@
      "whip": "1.12"
     },
     "pos": "P",
-    "rumors": [],
+    "rumors": [
+     {
+      "date": "2026-10-11T14:34-04:00",
+      "title": "Shane McClanahan Ruled Out For Rest Of Postseason",
+      "url": "https://www.mlbtraderumors.com/2026/10/shane-mcclanahan-ruled-out-for-rest-of-postseason.html"
+     }
+    ],
     "team": "Tampa Bay Rays",
     "teamL": 64,
     "teamPct": ".605",
@@ -4830,6 +4830,93 @@
   ],
   "feed": [
    {
+    "date": "2026-10-11T19:17-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "Mark P Just before Game 1 gets underway, let\u2019s open the floor to the Weekend Chat. The chatter will begin in a minute or two\u2026. Guards Fan Give me the Guardians path to getting past the Rays. Mark P Some key hits in big moments, more hitting in general since the lineup as a whole [\u2026]",
+    "tags": [],
+    "title": "MLBTR Chat Transcript",
+    "url": "https://www.mlbtraderumors.com/2026/10/mlbtr-live-chat-921.html"
+   },
+   {
+    "date": "2026-10-11T15:59-04:00",
+    "kind": "rumor",
+    "players": [
+     "Drew Rasmussen"
+    ],
+    "source": "MLB Trade Rumors",
+    "summary": "The American League\u2019s top two seeds will face off in the Championship Series. The Rays play host to the Guardians in the seven-game set, which begins tomorrow at 7pm CT. Tampa has tabbed their ace Drew Rasmussen for Game 1. The Guards, who just wrapped up a five-game Division Series with the White Sox, haven\u2019t announce",
+    "tags": [],
+    "title": "Poll: Who Will Win The ALCS?",
+    "url": "https://www.mlbtraderumors.com/2026/10/poll-who-will-win-the-alcs-3.html"
+   },
+   {
+    "date": "2026-10-11T14:34-04:00",
+    "kind": "rumor",
+    "players": [
+     "Drew Rasmussen",
+     "Freddy Peralta",
+     "Nick Martinez",
+     "Shane McClanahan"
+    ],
+    "source": "MLB Trade Rumors",
+    "summary": "The Rays had been hoping to get erstwhile ace Shane McClanahan back at some point in the playoffs. That\u2019s no longer a possibility. Per Marc Topkin of the Tampa Bay Times, McClanahan has been ruled out for the remainder of the postseason. He\u2019ll be unable to join Drew Rasmussen, Freddy Peralta, and Nick Martinez in [\u2026]",
+    "tags": [],
+    "title": "Shane McClanahan Ruled Out For Rest Of Postseason",
+    "url": "https://www.mlbtraderumors.com/2026/10/shane-mcclanahan-ruled-out-for-rest-of-postseason.html"
+   },
+   {
+    "date": "2026-10-11T13:23-04:00",
+    "kind": "rumor",
+    "players": [
+     "Jacob Misiorowski"
+    ],
+    "source": "MLB Trade Rumors",
+    "summary": "The top two teams from the regular season face off tonight in Game 1 of the National League Championship Series in Milwaukee. The 103-win Brewers, having defeated the Padres in four games in the NLDS, will hand the ball to NL Cy Young front-runner Jacob Misiorowski. The 100-win Dodgers, having similarly dispatched the ",
+    "tags": [],
+    "title": "Brewers, Dodgers Announce NLCS Rosters",
+    "url": "https://www.mlbtraderumors.com/2026/10/brewers-dodgers-announce-nlcs-rosters.html"
+   },
+   {
+    "date": "2026-10-11T11:52-04:00",
+    "kind": "rumor",
+    "players": [
+     "Caleb Durbin"
+    ],
+    "source": "MLB Trade Rumors",
+    "summary": "Red Sox infielder Caleb Durbin underwent a PIP joint reconstruction procedure on his left pinky last week, according to a team announcement. It\u2019s the same finger that Durbin partially dislocated back in June, although he did not miss any time during the season and played in the Wild Card Series against the Yankees. Dur",
+    "tags": [
+     "injury"
+    ],
+    "title": "Caleb Durbin Undergoes Finger Surgery",
+    "url": "https://www.mlbtraderumors.com/2026/10/caleb-durbin-undergoes-finger-surgery.html"
+   },
+   {
+    "date": "2026-10-11T10:45-04:00",
+    "kind": "rumor",
+    "players": [
+     "Tyron Guerrero"
+    ],
+    "source": "MLB Trade Rumors",
+    "summary": "Blue Jays first baseman Vladimir Guerrero Jr. recently underwent laser eye surgery, as announced on Instagram by the Laser Eye Center of Miami and confirmed by Sportsnet\u2019s Ben Nicholson-Smith. It\u2019s unclear exactly when the surgery occurred, as the Center\u2019s post was made during a post-op visit, though in any case it sho",
+    "tags": [
+     "injury"
+    ],
+    "title": "Vladimir Guerrero Jr. Undergoes Laser Eye Surgery",
+    "url": "https://www.mlbtraderumors.com/2026/10/vladimir-guerrero-jr-undergoes-laser-eye-surgery.html"
+   },
+   {
+    "date": "2026-10-11T09:12-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "After falling into an 0-2 deficit against the White Sox, the Guardians completed an epic comeback by winning the next three games to clinch the Division Series. By doing so, they became the first team to win a five-game postseason series after losing the first two games since the 2017 Yankees, who did so against [\u2026]",
+    "tags": [],
+    "title": "The Opener: Williams, Skubal vs. Miz, Offseason Outlooks",
+    "url": "https://www.mlbtraderumors.com/2026/10/the-opener-williams-skubal-vs-miz-offseason-outlooks.html"
+   },
+   {
     "date": "2026-10-10T23:59-04:00",
     "kind": "rumor",
     "players": [
@@ -4923,7 +5010,7 @@
     "kind": "rumor",
     "players": [],
     "source": "MLB Trade Rumors",
-    "summary": "Phillies president of baseball operations Sam Fuld has declined the Athletics\u2019 offer to become the team\u2019s new president of baseball operations, ESPN\u2019s Jeff Passan reports. Fuld\u2019s name surfaced in connection to the A\u2019s job earlier this week, but Fuld has now taken himself out of the running and will stay in Philadelphia",
+    "summary": "Phillies president of business operations Sam Fuld has declined the Athletics\u2019 offer to become the team\u2019s new president of baseball operations, ESPN\u2019s Jeff Passan reports. Fuld\u2019s name surfaced in connection to the A\u2019s job earlier this week, but Fuld has now taken himself out of the running and will stay in Philadelphia",
     "tags": [],
     "title": "Sam Fuld Declines Offer To Become A\u2019s President Of Baseball Operations",
     "url": "https://www.mlbtraderumors.com/2026/10/sam-fuld-declines-offer-to-become-as-president-of-baseball-operations.html"
@@ -5339,93 +5426,6 @@
     "tags": [],
     "title": "Report: 2026-27 Qualifying Offer To Be $23.15MM",
     "url": "https://www.mlbtraderumors.com/2026/10/report-2026-27-qualifying-offer-to-be-23-15mm.html"
-   },
-   {
-    "date": "2026-10-07T14:49-04:00",
-    "kind": "rumor",
-    "players": [],
-    "source": "MLB Trade Rumors",
-    "summary": "After a 78-84 record in 2025 prompted the Cardinals to (finally) go into a full rebuild, the team\u2019s record dropped to just 77-85 this year. Even after selling at the deadline, the Cards still stayed within range of a wild card slot and held a .500 record into the first week of September before fading. [\u2026]",
-    "tags": [],
-    "title": "Offseason Outlook: St. Louis Cardinals",
-    "url": "https://www.mlbtraderumors.com/2026/10/offseason-outlook-st-louis-cardinals-16.html"
-   },
-   {
-    "date": "2026-10-07T14:19-04:00",
-    "kind": "rumor",
-    "players": [
-     "Eduardo Rodriguez"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "Left-hander Eduardo Rodriguez posted an ERA over 5.00 in his first two seasons with the Diamondbacks. His four-year, $80MM contract looked like an albatross halfway through the deal. And then out of nowhere, Rodriguez emerged as one of the unlikeliest aces in the league. The 33-year-old Rodriguez put together one of hi",
-    "tags": [],
-    "title": "How Did Eduardo Rodriguez Do That?",
-    "url": "https://www.mlbtraderumors.com/2026/10/how-did-eduardo-rodriguez-do-that.html"
-   },
-   {
-    "date": "2026-10-07T12:44-04:00",
-    "kind": "rumor",
-    "players": [],
-    "source": "MLB Trade Rumors",
-    "summary": "The list of known candidates for the Athletics\u2019 general manager opening added two more names this morning. Phillies executive Sam Fuld and Cubs assistant GM Jared Banner are in the mix for the job, per Patrick Mooney and Ken Rosenthal of The Athletic. The reporters add that the vacancy is expected to be filled this [\u2026]",
-    "tags": [
-     "front office"
-    ],
-    "title": "Athletics Pursuing Sam Fuld, Jared Banner For GM Role",
-    "url": "https://www.mlbtraderumors.com/2026/10/athletics-pursuing-sam-fuld-jared-banner-for-gm-role.html"
-   },
-   {
-    "date": "2026-10-07T11:17-04:00",
-    "kind": "rumor",
-    "players": [],
-    "source": "MLB Trade Rumors",
-    "summary": "After the Phillies were rebuffed once again by Alex Cora, the club could keep its managerial decision in-house. Matt Gelb and Jayson Stark of The Athletic report that interim manager Don Mattingly could retain the position next season. Mattingly engineered a major turnaround in Philadelphia after a slow start to the ye",
-    "tags": [
-     "front office"
-    ],
-    "title": "Phillies Considering Keeping Don Mattingly As Manager",
-    "url": "https://www.mlbtraderumors.com/2026/10/phillies-considering-keeping-don-mattingly-as-manager.html"
-   },
-   {
-    "date": "2026-10-07T09:43-04:00",
-    "kind": "rumor",
-    "players": [
-     "Adrian Morejon",
-     "Mason Miller"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "The Brewers can\u2019t seem to win a playoff game away from American Family Field. Milwaukee has dropped 12 straight postseason games on the road, matching the longest streak in playoff history (h/t Adam McCalvy of MLB.com). 1. King keeps Padres alive With Adrian Morejon ailing and Mason Miller on paternity leave, the Padre",
-    "tags": [
-     "injury"
-    ],
-    "title": "The Opener: King The Closer, Playoff Kik\u00e9, Acuna\u2019s Knee Injury",
-    "url": "https://www.mlbtraderumors.com/2026/10/the-opener-king-the-closer-playoff-kike-acunas-knee-injury.html"
-   },
-   {
-    "date": "2026-10-07T00:56-04:00",
-    "kind": "rumor",
-    "players": [],
-    "source": "MLB Trade Rumors",
-    "summary": "With the regular season in the books, MLBTR is taking a position-by-position look at the 2026-27 free agent market. Next up is the lengthiest entry: the starting pitching market. There\u2019s one clear top name \u2014 and top free agent \u2014 this winter. Entering the season, the class looked solid, but many of the top names [\u2026]",
-    "tags": [
-     "free agency"
-    ],
-    "title": "Previewing The Upcoming Starting Pitching Class",
-    "url": "https://www.mlbtraderumors.com/2026/10/previewing-the-upcoming-starting-pitching-class.html"
-   },
-   {
-    "date": "2026-10-07T00:25-04:00",
-    "kind": "rumor",
-    "players": [
-     "Roman Anthony"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "The Mets announced that director of hitting Jeff Albert and quality assurance coach Danny Barnes will not be on the 2027 coaching staff. Anthony DiComo of MLB.com, who first reported the news, suggests it\u2019s possible they\u2019ll find different roles in the organization but are free to pursue other opportunities. DiComo adds",
-    "tags": [
-     "front office"
-    ],
-    "title": "Mets\u2019 Jeff Albert Not Returning To Coaching Staff In 2027",
-    "url": "https://www.mlbtraderumors.com/2026/10/mets-jeff-albert-not-returning-to-coaching-staff-in-2027.html"
    }
   ],
   "teams": [
@@ -5641,5 +5641,5 @@
    }
   ]
  },
- "updated": "2026-10-11T08:19:13-04:00"
+ "updated": "2026-10-11T19:34:50-04:00"
 }
