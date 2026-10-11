@@ -1926,7 +1926,7 @@
     "home": "Cleveland Guardians",
     "hs": 2,
     "series": "AL Division Series",
-    "status": "In Progress",
+    "status": "Final",
     "type": "D"
    },
    {
@@ -1951,7 +1951,7 @@
    },
    {
     "as": null,
-    "away": "CLE/CWS",
+    "away": "Cleveland Guardians",
     "date": "2026-10-12",
     "home": "Tampa Bay Rays",
     "hs": null,
@@ -1961,7 +1961,7 @@
    },
    {
     "as": null,
-    "away": "CLE/CWS",
+    "away": "Cleveland Guardians",
     "date": "2026-10-13",
     "home": "Tampa Bay Rays",
     "hs": null,
@@ -1983,7 +1983,7 @@
     "as": null,
     "away": "Tampa Bay Rays",
     "date": "2026-10-15",
-    "home": "CLE/CWS",
+    "home": "Cleveland Guardians",
     "hs": null,
     "series": "AL Championship Series",
     "status": "Scheduled",
@@ -2003,7 +2003,7 @@
     "as": null,
     "away": "Tampa Bay Rays",
     "date": "2026-10-16",
-    "home": "CLE/CWS",
+    "home": "Cleveland Guardians",
     "hs": null,
     "series": "AL Championship Series",
     "status": "Scheduled",
@@ -2023,7 +2023,7 @@
     "as": null,
     "away": "Tampa Bay Rays",
     "date": "2026-10-17",
-    "home": "CLE/CWS",
+    "home": "Cleveland Guardians",
     "hs": null,
     "series": "AL Championship Series",
     "status": "Scheduled",
@@ -2041,7 +2041,7 @@
    },
    {
     "as": null,
-    "away": "CLE/CWS",
+    "away": "Cleveland Guardians",
     "date": "2026-10-19",
     "home": "Tampa Bay Rays",
     "hs": null,
@@ -2061,7 +2061,7 @@
    },
    {
     "as": null,
-    "away": "CLE/CWS",
+    "away": "Cleveland Guardians",
     "date": "2026-10-20",
     "home": "Tampa Bay Rays",
     "hs": null,
@@ -2141,5 +2141,5 @@
    }
   ]
  },
- "updated": "2026-10-10T21:08:59-04:00"
+ "updated": "2026-10-11T08:19:03-04:00"
 }
