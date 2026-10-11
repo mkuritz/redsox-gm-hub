@@ -72,12 +72,12 @@
    "y2030": null,
    "y2031": null,
    "y2032": null,
-   "options": "Buyout $10,000,000 listed",
+   "options": "Buyout $10,000,000 listed; 2027 $30M listed with $10M buyout (3 guaranteed yrs = 2024-26) - treated as a 2027 option decision; verify type",
    "notes": "",
    "source": "MLB Trade Rumors payroll tracker (as of 9/30/26)",
    "source_url": "https://www.mlbtraderumors.com/payrolltracker/red-sox",
    "accessed": "2026-10-10",
-   "ends": 2027
+   "ends": 2026
   },
   {
    "name": "Garrett Crochet",
@@ -92,12 +92,12 @@
    "y2030": 28000000,
    "y2031": 30000000,
    "y2032": 15000000,
-   "options": "",
+   "options": "2032 $15M listed beyond the 6 guaranteed years - verify (option/deferral)",
    "notes": "Signing bonus $4,000,000",
    "source": "MLB Trade Rumors payroll tracker (as of 9/30/26)",
    "source_url": "https://www.mlbtraderumors.com/payrolltracker/red-sox",
    "accessed": "2026-10-10",
-   "ends": 2032
+   "ends": 2031
   },
   {
    "name": "Ranger Suarez",
@@ -112,12 +112,12 @@
    "y2030": 35000000,
    "y2031": 35000000,
    "y2032": null,
-   "options": "Buyout $10,000,000 listed",
+   "options": "Buyout $10,000,000 listed; 2031 $35M listed with $10M buyout - likely option year; verify",
    "notes": "Signing bonus $3,000,000",
    "source": "MLB Trade Rumors payroll tracker (as of 9/30/26)",
    "source_url": "https://www.mlbtraderumors.com/payrolltracker/red-sox",
    "accessed": "2026-10-10",
-   "ends": 2031
+   "ends": 2030
   },
   {
    "name": "Trevor Story",
@@ -132,12 +132,12 @@
    "y2030": null,
    "y2031": null,
    "y2032": null,
-   "options": "Buyout $5,000,000 listed",
+   "options": "Buyout $5,000,000 listed; 2028 $25M listed with $5M buyout - likely club option; verify",
    "notes": "",
    "source": "MLB Trade Rumors payroll tracker (as of 9/30/26)",
    "source_url": "https://www.mlbtraderumors.com/payrolltracker/red-sox",
    "accessed": "2026-10-10",
-   "ends": 2028
+   "ends": 2027
   },
   {
    "name": "Willson Contreras",
@@ -152,12 +152,12 @@
    "y2030": null,
    "y2031": null,
    "y2032": null,
-   "options": "Buyout $7,500,000 listed",
+   "options": "Buyout $7,500,000 listed; 2028 $20M listed with $7.5M buyout - likely club option; verify",
    "notes": "",
    "source": "MLB Trade Rumors payroll tracker (as of 9/30/26)",
    "source_url": "https://www.mlbtraderumors.com/payrolltracker/red-sox",
    "accessed": "2026-10-10",
-   "ends": 2028
+   "ends": 2027
   },
   {
    "name": "Masataka Yoshida",
