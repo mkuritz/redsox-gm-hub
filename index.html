@@ -54,7 +54,7 @@ const NAV=[["Front Office",[["hub","&#127968;","Franchise Hub"],["roster","&#128
 ["Player Development",[["farm","&#127793;","Farm System"],["pipeline","&#128679;","Pipeline Needs"],["draft","&#127919;","Draft Room"]]],
 ["Info Desk",[["rumors","&#128483;","Rumor Mill"],["news","&#128240;","News Feed"],["calendar","&#128197;","Offseason Calendar"],["tx","&#128203;","Transactions"],["league","&#127942;","League & AL East"]]],
 ["Just for Fun",[["history","&#127942;","Sox History"],["uniforms","&#128085;","Uniforms"],["fenway","&#127967;","Fenway Park"]]]];
-const D={};const FILES=['meta','roster','standings','team_stats','schedule','farm','draft','news','rumors','transactions','injuries','contracts_manual','calendar_manual','franchise_manual'];
+const D={};const FILES=['meta','roster','standings','team_stats','schedule','farm','draft','news','rumors','transactions','injuries','contracts_manual','calendar_manual','franchise_manual','prospects','free_agents','trade_market','international'];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const M=v=>v==null||v===''?'<span class="mut">&mdash;</span>':'$'+(v/1e6).toFixed(v%1e6&&v<1e8?2:1).replace(/\.0+$/,'')+'M';
 const fmtD=s=>{if(!s)return '';const d=new Date(s.length<=10?s+'T12:00:00':s);return isNaN(d)?s:d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})};
@@ -62,7 +62,7 @@ const ago=s=>{const d=new Date(s);if(isNaN(d))return '';const h=(Date.now()-d)/3
 const store={get:(k,d)=>{try{return JSON.parse(localStorage.getItem(LS+k))??d}catch(e){return d}},set:(k,v)=>localStorage.setItem(LS+k,JSON.stringify(v))};
 function toggleNav(){$('#side').classList.toggle('open');$('#scrim').classList.toggle('on')}
 function navHtml(cur){return NAV.map(([sec,items],i)=>`<div class="${i==3?'fun':''}"><div class="navsec">${sec}</div>${items.map(([id,ic,l])=>`<a class="${id==cur?'on':''}" href="#${id}">${ic} ${l}</a>`).join('')}</div>`).join('')}
-async function load(){await Promise.all(FILES.map(async f=>{try{const r=await fetch('data/'+f+'.json?v='+Date.now());const j=await r.json();D[f]=j.data!==undefined&&!f.endsWith('manual')?j.data:j;D[f+'_upd']=j.updated}catch(e){D[f]=null}}));
+async function load(){try{D.credits=await (await fetch('assets/credits.json?v='+Date.now())).json()}catch(e){D.credits=[]}await Promise.all(FILES.map(async f=>{try{const r=await fetch('data/'+f+'.json?v='+Date.now());const j=await r.json();D[f]=j.data!==undefined&&!f.endsWith('manual')?j.data:j;D[f+'_upd']=j.updated}catch(e){D[f]=null}}));
  const m=D.meta||{};$('#upd').innerHTML='Data updated <b>'+(m.lastRun?new Date(m.lastRun).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})+' ET':'?')+'</b>'+(m.lastFull?' &middot; full '+ago(m.lastFull):'');route()}
 window.addEventListener('hashchange',route);
 function route(){const id=(location.hash||'#hub').slice(1);const it=NAV.flatMap(x=>x[1]).find(x=>x[0]==id)||NAV[0][1][0];$('#nav').innerHTML=navHtml(it[0]);$('#title').textContent=it[2];
@@ -241,5 +241,5 @@ V.fenway=()=>{const f=F().fenway||{};return `<div class="grid g2"><div class="ca
  <svg viewBox="0 0 400 340" style="width:100%;max-width:520px;display:block;margin:auto"><path d="M200 320 L40 160 Q120 40 250 50 L340 90 L370 150 Z" fill="#1d5a32" stroke="#fff3"/><path d="M200 320 L140 260 L200 200 L260 260 Z" fill="#a8723f" opacity=".8"/><path d="M40 160 Q70 105 130 70" stroke="#2f7d4a" stroke-width="12" fill="none"/><text x="70" y="70" fill="#b8f0d3" font-size="13" font-weight="700">Green Monster</text><text x="70" y="86" fill="#cfe0f5" font-size="11">37' 2" tall</text>
  <text x="44" y="190" fill="#fff" font-size="13">LF 310'</text><text x="170" y="62" fill="#fff" font-size="12">True CF 390'</text><text x="280" y="70" fill="#fff" font-size="12">Triangle 420'</text><text x="318" y="178" fill="#fff" font-size="13">RF 302'</text><circle cx="370" cy="150" r="5" fill="#f2c230"/><text x="300" y="140" fill="#f2c230" font-size="11">Pesky's Pole</text><circle cx="300" cy="105" r="4" fill="#e0444e"/><text x="250" y="120" fill="#ffc9cc" font-size="10">Lone Red Seat</text></svg><p class="small mut">Diagram not to scale.</p></div>
  <div class="card"><h2>Fenway facts</h2><table>${(f.facts||[]).map(([k,v])=>`<tr><td><b>${esc(k)}</b></td><td style="white-space:normal">${esc(v)}</td></tr>`).join('')}</table><div class="src">Sources: ${(f.sources||[]).map(s=>`<a href="${esc(s)}" target="_blank">${esc(decodeURIComponent(s.split('/').pop()).replace(/_/g,' '))}</a>`).join(' &middot; ')} (Wikipedia, accessed Oct 10, 2026)</div></div></div>`};
-load();
-</script></body></html>
+</script>
+<script src="v2.js"></script></body></html>
