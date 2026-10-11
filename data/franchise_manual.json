@@ -1,0 +1,277 @@
+{
+ "_label": "Fun facts, all from cited Wikipedia articles (accessed 2026-10-10).",
+ "history": {
+  "source": "https://en.wikipedia.org/wiki/Boston_Red_Sox",
+  "timeline": [
+   [
+    "1901",
+    "Founded as one of the American League's eight charter franchises (first known as the Boston Americans)."
+   ],
+   [
+    "1903",
+    "Beat the Pittsburgh Pirates in the first World Series."
+   ],
+   [
+    "1912",
+    "Fenway Park opens; Red Sox win the World Series."
+   ],
+   [
+    "1915",
+    "101 wins; beat the Phillies 4 games to 1 in the World Series."
+   ],
+   [
+    "1916",
+    "Beat the Brooklyn Robins in the World Series."
+   ],
+   [
+    "1918",
+    "Fifth title by 1918 - then the sale of Babe Ruth to the Yankees and the 'Curse of the Bambino' drought."
+   ],
+   [
+    "1946",
+    "Reached the World Series with Ted Williams; lost to St. Louis (Enos Slaughter's 'mad dash')."
+   ],
+   [
+    "1967",
+    "The 'Impossible Dream' season."
+   ],
+   [
+    "1975",
+    "AL pennant; Carlton Fisk's World Series home run."
+   ],
+   [
+    "1986",
+    "World Series Game 6 and Bill Buckner's error."
+   ],
+   [
+    "2003-2013",
+    "Sold out 820 straight home games (May 15, 2003 to April 10, 2013), a pro sports record."
+   ],
+   [
+    "2004",
+    "86-year wait ends with the sixth World Series title; came back on the Yankees in the ALCS."
+   ],
+   [
+    "2007",
+    "World Series champions."
+   ],
+   [
+    "2013",
+    "World Series champions."
+   ],
+   [
+    "2018",
+    "World Series champions - first team with four titles in the 21st century; nine total."
+   ]
+  ],
+  "championships": [
+   1903,
+   1912,
+   1915,
+   1916,
+   1918,
+   2004,
+   2007,
+   2013,
+   2018
+  ],
+  "retired": [
+   [
+    "1",
+    "Bobby Doerr",
+    "2B / Coach",
+    "May 21, 1988"
+   ],
+   [
+    "4",
+    "Joe Cronin",
+    "SS / Mgr, GM",
+    "May 29, 1984"
+   ],
+   [
+    "6",
+    "Johnny Pesky",
+    "SS, 3B / Mgr, Coach",
+    "Sep 23, 2008"
+   ],
+   [
+    "8",
+    "Carl Yastrzemski",
+    "LF, 1B, DH",
+    "Aug 6, 1989"
+   ],
+   [
+    "9",
+    "Ted Williams",
+    "LF",
+    "May 29, 1984"
+   ],
+   [
+    "14",
+    "Jim Rice",
+    "LF, DH / Coach",
+    "Jul 28, 2009"
+   ],
+   [
+    "26",
+    "Wade Boggs",
+    "3B",
+    "May 26, 2016"
+   ],
+   [
+    "27",
+    "Carlton Fisk",
+    "C",
+    "Sep 4, 2000"
+   ],
+   [
+    "34",
+    "David Ortiz",
+    "DH, 1B",
+    "Jun 23, 2017"
+   ],
+   [
+    "45",
+    "Pedro Martinez",
+    "RHP",
+    "Jul 28, 2015"
+   ],
+   [
+    "42",
+    "Jackie Robinson",
+    "All MLB",
+    "Apr 15, 1997"
+   ]
+  ],
+  "rivalry": "Yankees rivalry 100+ years: ALCS meetings in 1999 and 2003 (NYY) and 2004 (BOS); 2018 ALDS (BOS in 4); 2021 Wild Card Game (BOS). 1978: blew a 14-game lead, lost the one-game playoff."
+ },
+ "uniforms": {
+  "source": "https://en.wikipedia.org/wiki/Logos_and_uniforms_of_the_Boston_Red_Sox",
+  "timeline": [
+   [
+    "1908",
+    "First home uniform: a red sock silhouette with 'BOSTON' in white block letters (used one season)."
+   ],
+   [
+    "1909-1935",
+    "'BOSTON' and 'RED SOX' in blocky red letters."
+   ],
+   [
+    "1936",
+    "Ornate 'RED SOX' script home lettering debuts - still in use today."
+   ],
+   [
+    "1946",
+    "Current cap and uniform set introduced; road uniforms use blue block letters."
+   ],
+   [
+    "1972-1978",
+    "Pullover era; road lettering switched to red home typeface; 1974-78 home pullovers with striped belt."
+   ],
+   [
+    "1979",
+    "Pullovers dropped; road returns to blue block letters."
+   ],
+   [
+    "1990",
+    "Red home-style lettering returns on the road; player names added on road backs (never on home whites)."
+   ],
+   [
+    "2003",
+    "Red alternate home jersey introduced."
+   ],
+   [
+    "2007",
+    "Green St. Patrick's jersey's regular-season debut (Apr 20) honoring Red Auerbach."
+   ],
+   [
+    "2009",
+    "Blue road alternate with red 'BOSTON' introduced; road lettering switched to blue; hanging-sox sleeve patch."
+   ],
+   [
+    "2013",
+    "'BOSTON' + 'B STRONG' home jersey on Apr 20 after the Marathon bombing - now worn every Patriots' Day."
+   ],
+   [
+    "2014",
+    "Road lettering back to red in the home font."
+   ],
+   [
+    "2021",
+    "First Nike City Connect (Apr 6): yellow and light blue Marathon-inspired, '617' bib patch."
+   ],
+   [
+    "2025",
+    "Blue alternates retired; yellow City Connect joins the core set; red alternates worn on the road for the first time (Mar 29 at Texas)."
+   ],
+   [
+    "2025",
+    "Second City Connect (May 16) inspired by the Green Monster: scoreboard font, '1912' in the collar, ball/strike dot colors."
+   ]
+  ]
+ },
+ "fenway": {
+  "sources": [
+   "https://en.wikipedia.org/wiki/Fenway_Park",
+   "https://en.wikipedia.org/wiki/Green_Monster",
+   "https://en.wikipedia.org/wiki/Pesky%27s_Pole"
+  ],
+  "facts": [
+   [
+    "Opened",
+    "April 20, 1912 - Boston beat the New York Highlanders 7-6 in 11 innings."
+   ],
+   [
+    "Status",
+    "Oldest active ballpark in MLB; substantially rebuilt in 1934; on the National Register of Historic Places since March 7, 2012."
+   ],
+   [
+    "Green Monster",
+    "37 ft 2 in high left-field wall, 310 ft down the left-field line. The wall rose on the site of the leveled 'Duffy's Cliff'."
+   ],
+   [
+    "Pesky's Pole",
+    "Right-field foul pole, 302 ft. Named for Johnny Pesky (credit for the name goes to Mel Parnell), who hit some of his six Fenway homers near it."
+   ],
+   [
+    "The Triangle",
+    "Center-field corner 420 ft from home; true center (unmarked) is 390 ft."
+   ],
+   [
+    "Lone Red Seat",
+    "Section 42, Row 37, Seat 21 - Ted Williams' 502-ft homer on June 9, 1946."
+   ],
+   [
+    "Scoreboard",
+    "Hand-operated scoreboard in the Monster; NL scores removed in 1976 and restored in 2003."
+   ],
+   [
+    "Size",
+    "Fifth-smallest MLB park by seating capacity; one of nine that can't hold 40,000."
+   ],
+   [
+    "World Series",
+    "Hosted 11 World Series: Red Sox won six there, the Boston Braves one."
+   ],
+   [
+    "Other events",
+    "Football (Redskins, Yanks, Patriots), concerts, soccer, and the NHL Winter Classic in 2010 and 2023."
+   ],
+   [
+    "Address",
+    "Jersey Street (renamed Yawkey Way 1977-2018, then reverted)."
+   ],
+   [
+    "Spring home",
+    "JetBlue Park at Fenway South, Fort Myers (since 2012) - identical dimensions and its own 37-ft Monster."
+   ]
+  ],
+  "dims": {
+   "LF": 310,
+   "LF wall height (ft)": 37.17,
+   "Deep CF (Triangle)": 420,
+   "True CF": 390,
+   "RF (Pesky's Pole)": 302
+  }
+ }
+}

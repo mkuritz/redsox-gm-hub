@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Red Sox GM Hub</title>
+<style>
+:root{--navy:#0c2340;--navy2:#13294b;--bg:#08131f;--card:#0f1e33;--card2:#142a47;--line:#22395c;--red:#bd3039;--red2:#e0444e;--txt:#e8eef6;--mut:#8ea3bf;--good:#3fb37f;--warn:#e6a23c;--bad:#e0444e}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.45 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+a{color:#7fb2ff}#app{display:flex;min-height:100vh}
+#side{width:250px;background:linear-gradient(180deg,var(--navy),#060e19);border-right:1px solid var(--line);position:sticky;top:0;height:100vh;overflow:auto;flex-shrink:0;z-index:20}
+.brand{padding:18px 16px;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center}
+.logo{width:38px;height:38px;border-radius:50%;background:var(--red);display:grid;place-items:center;font:900 20px Georgia,serif;color:#fff;border:2px solid #fff}
+.brand b{display:block;font-size:16px}.brand small{color:var(--mut)}
+.navsec{padding:10px 10px 2px;color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+.nav a{display:flex;gap:9px;align-items:center;padding:8px 12px;margin:1px 8px;border-radius:8px;color:var(--txt);text-decoration:none;cursor:pointer}
+.nav a:hover{background:#1a3255}.nav a.on{background:var(--red);font-weight:600}
+.fun{border-top:1px dashed var(--line);margin-top:10px}
+main{flex:1;min-width:0;padding:18px 24px 60px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+h1{margin:0;font-size:22px}h2{font-size:16px;margin:0 0 10px}h3{font-size:14px;margin:12px 0 6px;color:#cfe0f5}
+.badge{background:var(--card2);border:1px solid var(--line);padding:5px 10px;border-radius:20px;font-size:12px;color:var(--mut)}
+.badge b{color:var(--txt)}
+.grid{display:grid;gap:14px}.g2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}.g4{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;min-width:0}
+.kpi .v{font-size:24px;font-weight:700}.kpi .l{color:var(--mut);font-size:12px}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:6px 7px;border-bottom:1px solid #1b3051;text-align:left;white-space:nowrap}
+th{color:var(--mut);font-weight:600;position:sticky;top:0;background:var(--card);cursor:pointer}tr:hover td{background:#132643}
+.tw{overflow:auto;max-height:620px}
+.pill{display:inline-block;padding:1px 8px;border-radius:10px;font-size:11px;background:#1e3a62;color:#cfe0f5;margin:1px}
+.pill.r{background:#5a1a20;color:#ffc9cc}.pill.g{background:#173f2e;color:#b8f0d3}.pill.y{background:#4a3a12;color:#ffe2a6}
+.mut{color:var(--mut)}.small{font-size:12px}.note{background:#13243d;border-left:3px solid var(--warn);padding:8px 10px;border-radius:6px;color:#d9e3f0;font-size:12px;margin:8px 0}
+.src{font-size:11px;color:var(--mut)}
+input,select,button{background:#0b1830;color:var(--txt);border:1px solid var(--line);border-radius:8px;padding:7px 9px;font:inherit}
+button{cursor:pointer;background:var(--red);border-color:var(--red);font-weight:600}button.sec{background:#1b3256;border-color:var(--line)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}.tabs button{background:#1b3256;border-color:var(--line);font-weight:500}.tabs button.on{background:var(--red)}
+.bar{height:10px;background:#1b3051;border-radius:6px;overflow:hidden;position:relative}.bar i{display:block;height:100%;background:var(--red)}
+.feed .it{padding:10px 0;border-bottom:1px solid #1b3051}.feed .it a{font-weight:600;text-decoration:none;color:var(--txt)}.feed .it a:hover{color:#7fb2ff}
+.tl{border-left:2px solid var(--red);margin-left:8px;padding-left:14px}.tl div{margin:0 0 12px;position:relative}.tl div:before{content:"";position:absolute;left:-21px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--red);border:2px solid var(--bg)}
+.heat td.c{text-align:center;font-weight:600}
+.num{font-family:Georgia,serif;font-size:30px;font-weight:900;color:var(--red2)}
+.ret{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}.ret .card{text-align:center}
+#hamb{display:none}
+@media(max-width:860px){#side{position:fixed;left:-260px;transition:left .2s}#side.open{left:0}#hamb{display:inline-block}main{padding:12px}#scrim{display:none;position:fixed;inset:0;background:#0008;z-index:10}#scrim.on{display:block}}
+.field{position:relative;width:100%;max-width:520px;margin:auto;aspect-ratio:1/0.85}
+</style></head>
+<body><div id="app">
+<aside id="side"><div class="brand"><div class="logo">B</div><div><b>Red Sox GM Hub</b><small>Front office &middot; fan edition</small></div></div>
+<div id="nav" class="nav"></div></aside><div id="scrim" onclick="toggleNav()"></div>
+<main><div class="top"><div class="row" style="margin:0"><button id="hamb" class="sec" onclick="toggleNav()">&#9776;</button><h1 id="title">Franchise Hub</h1></div><span class="badge" id="upd">Loading data...</span></div>
+<div id="view"></div></main></div>
+<script>
+const LS='rsgm_';const $=s=>document.querySelector(s);
+const NAV=[["Front Office",[["hub","&#127968;","Franchise Hub"],["roster","&#128101;","Roster"],["payroll","&#128176;","Payroll & CBT"],["decisions","&#128221;","Offseason Decisions"],["trade","&#128260;","Trade Machine"],["scen","&#129514;","Scenarios"]]],
+["Player Development",[["farm","&#127793;","Farm System"],["pipeline","&#128679;","Pipeline Needs"],["draft","&#127919;","Draft Room"]]],
+["Info Desk",[["rumors","&#128483;","Rumor Mill"],["news","&#128240;","News Feed"],["calendar","&#128197;","Offseason Calendar"],["tx","&#128203;","Transactions"],["league","&#127942;","League & AL East"]]],
+["Just for Fun",[["history","&#127942;","Sox History"],["uniforms","&#128085;","Uniforms"],["fenway","&#127967;","Fenway Park"]]]];
+const D={};const FILES=['meta','roster','standings','team_stats','schedule','farm','draft','news','rumors','transactions','injuries','contracts_manual','calendar_manual','franchise_manual'];
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const M=v=>v==null||v===''?'<span class="mut">&mdash;</span>':'$'+(v/1e6).toFixed(v%1e6&&v<1e8?2:1).replace(/\.0+$/,'')+'M';
+const fmtD=s=>{if(!s)return '';const d=new Date(s.length<=10?s+'T12:00:00':s);return isNaN(d)?s:d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})};
+const ago=s=>{const d=new Date(s);if(isNaN(d))return '';const h=(Date.now()-d)/36e5;return h<1?Math.round(h*60)+'m ago':h<48?Math.round(h)+'h ago':Math.round(h/24)+'d ago'};
+const store={get:(k,d)=>{try{return JSON.parse(localStorage.getItem(LS+k))??d}catch(e){return d}},set:(k,v)=>localStorage.setItem(LS+k,JSON.stringify(v))};
+function toggleNav(){$('#side').classList.toggle('open');$('#scrim').classList.toggle('on')}
+function navHtml(cur){return NAV.map(([sec,items],i)=>`<div class="${i==3?'fun':''}"><div class="navsec">${sec}</div>${items.map(([id,ic,l])=>`<a class="${id==cur?'on':''}" href="#${id}">${ic} ${l}</a>`).join('')}</div>`).join('')}
+async function load(){await Promise.all(FILES.map(async f=>{try{const r=await fetch('data/'+f+'.json?v='+Date.now());const j=await r.json();D[f]=j.data!==undefined&&!f.endsWith('manual')?j.data:j;D[f+'_upd']=j.updated}catch(e){D[f]=null}}));
+ const m=D.meta||{};$('#upd').innerHTML='Data updated <b>'+(m.lastRun?new Date(m.lastRun).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})+' ET':'?')+'</b>'+(m.lastFull?' &middot; full '+ago(m.lastFull):'');route()}
+window.addEventListener('hashchange',route);
+function route(){const id=(location.hash||'#hub').slice(1);const it=NAV.flatMap(x=>x[1]).find(x=>x[0]==id)||NAV[0][1][0];$('#nav').innerHTML=navHtml(it[0]);$('#title').textContent=it[2];
+ $('#side').classList.remove('open');$('#scrim').classList.remove('on');try{$('#view').innerHTML=(V[it[0]]||V.hub)();(A[it[0]]||(()=>{}))()}catch(e){console.error(e);$('#view').innerHTML='<div class="card">Error rendering: '+esc(e.message)+'</div>'}window.scrollTo(0,0)}
+// ---------- helpers ----------
+const R=()=>D.roster||[];const C=()=>(D.contracts_manual||{}).contracts||[];
+const norm=s=>(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+const contractOf=n=>C().find(c=>norm(c.name)==norm(n));
+const yrsSince=d=>d?((Date.now()-new Date(d))/31557600000):null;
+function statusOf(p){const c=contractOf(p.name);if(c){const last=[2032,2031,2030,2029,2028,2027].find(y=>c['y'+y]);if(c.y2026&&!c.y2027&&!last)return{k:'FA',t:'Contract ends after 2026',c};return{k:'Signed',t:'Under contract'+(last?' thru '+last:''),c}}
+ const y=yrsSince(p.debut);if(y==null)return{k:'Pre-arb',t:'No MLB debut yet (pre-arb/minimum)'};if(y>=6)return{k:'Check',t:'~'+y.toFixed(1)+' yrs since debut - FA/arb status unverified'};if(y>=2.5)return{k:'Arb?',t:'~'+y.toFixed(1)+' yrs since debut - likely arbitration-eligible (verify service time)'};return{k:'Pre-arb',t:'~'+y.toFixed(1)+' yrs since debut - likely pre-arb'}}
+function hitLine(h){return h?`${h.avg}/${h.obp}/${h.slg} &middot; ${h.homeRuns} HR &middot; ${h.plateAppearances} PA`:''}
+function pitLine(p){return p?`${p.era} ERA &middot; ${p.inningsPitched} IP &middot; ${p.strikeOuts} K &middot; ${p.whip} WHIP`:''}
+function sortable(){document.querySelectorAll('table.s').forEach(t=>t.querySelectorAll('th').forEach((th,i)=>th.onclick=()=>{const tb=t.tBodies[0];const rows=[...tb.rows];const dir=th.dataset.d=th.dataset.d=='a'?'d':'a';rows.sort((a,b)=>{let x=a.cells[i].dataset.v??a.cells[i].innerText,y=b.cells[i].dataset.v??b.cells[i].innerText;const nx=parseFloat(String(x).replace(/[$,M%]/g,'')),ny=parseFloat(String(y).replace(/[$,M%]/g,''));if(!isNaN(nx)&&!isNaN(ny)){x=nx;y=ny}return (x>y?1:x<y?-1:0)*(dir=='a'?1:-1)});rows.forEach(r=>tb.appendChild(r))}))}
+function soxRec(){for(const d of D.standings||[])for(const t of d.teams)if(t.id==111)return{...t,div:d.division};return null}
+function payroll(){const tp=(D.contracts_manual||{}).team_payroll||{};const cbt=(D.contracts_manual||{}).cbt||{};return{tp,cbt}}
+function taxCalc(pay,rates){const th=payroll().cbt.thresholds||[244e6,264e6,284e6,304e6];rates=rates||payroll().cbt.rates_second||[30,42,75,90];if(pay<=th[0])return 0;let t=(pay-th[0])*rates[0]/100;for(let i=1;i<th.length;i++)if(pay>th[i])t+=(pay-th[i])*(rates[i]-rates[i-1])/100;return t}
+function committed(y){return C().reduce((s,c)=>s+(c['y'+y]||0),0)}
+const V={},A={};
+// ---------- HUB ----------
+V.hub=()=>{const s=soxRec()||{};const sch=(D.schedule||{});const g=(sch.games||[]).filter(x=>x.type=='R'&&x.rs!=null);const last10=g.slice(-10);const post=(sch.games||[]).filter(x=>x.type!='R');
+ const {tp,cbt}=payroll();const inj=(D.injuries||[]);const nx=(D.calendar_manual||{}).events||[];const today=new Date().toISOString().slice(0,10);const upcoming=nx.filter(e=>/^\d{4}-\d{2}-\d{2}/.test(e.date)&&(e.end||e.date)>=today).slice(0,5);
+ const ts=D.team_stats||{};const rk=(g,k,asc)=>{const a=(ts[g]||[]).slice().sort((x,y)=>asc?x[k]-y[k]:y[k]-x[k]);const i=a.findIndex(x=>x.id==111);return i<0?'':(i+1)};
+ const hot=R().filter(p=>p.hit&&p.hit.plateAppearances>=250).sort((a,b)=>b.hit.ops-a.hit.ops).slice(0,5);const arms=R().filter(p=>p.pit&&parseFloat(p.pit.inningsPitched)>=60).sort((a,b)=>a.pit.era-b.pit.era).slice(0,5);
+ return `<div class="grid g4">
+ <div class="card kpi"><div class="l">2026 record</div><div class="v">${s.w??'-'}-${s.l??'-'}</div><div class="small mut">${esc(s.div||'')} &middot; ${s.gb=='-'?'1st':s.gb+' GB'} &middot; run diff ${s.diff>0?'+':''}${s.diff??''}</div></div>
+ <div class="card kpi"><div class="l">Postseason</div><div class="v">${post.length?post.filter(x=>x.win).length+'-'+post.filter(x=>x.win===false).length:'-'}</div><div class="small mut">${post.length?'Wild Card Series vs '+esc(post[0].opp):'No postseason games'}</div></div>
+ <div class="card kpi"><div class="l">CBT payroll (est.)</div><div class="v">${M(tp.cbt_payroll)}</div><div class="small mut">vs ${M((cbt.thresholds||[])[0])} threshold &middot; est. tax ${M(tp.est_tax)} <span class="pill y">manual</span></div></div>
+ <div class="card kpi"><div class="l">Injured list / out</div><div class="v">${R().filter(p=>/Injured/.test(p.status)).length} / ${inj.length}</div><div class="small mut">40-man on IL / ESPN injury report</div></div></div>
+ <div class="grid g2" style="margin-top:14px">
+ <div class="card"><h2>GM briefing</h2><ul class="small">
+  <li>Season over: ${s.w}-${s.l}, ${esc(s.div)} ${s.gb=='-'?'winner':'('+s.gb+' GB)'}${post.length?', eliminated in the Wild Card Series by the '+esc(post[0].opp)+' ('+post.map(x=>x.rs+'-'+x.ra).join(', ')+')':''}.</li>
+  <li>Team OPS rank: <b>${rk('hitting','ops')}</b>/30 &middot; Runs rank <b>${rk('hitting','runs')}</b> &middot; Team ERA rank: <b>${rk('pitching','era',1)}</b>/30.</li>
+  <li>Payroll is over the 2nd CBT tier (${M(tp.cbt_payroll)} vs ${M((cbt.thresholds||[])[1])}); 2027 thresholds unknown until a new CBA.</li>
+  <li>2027 money already committed (verified rows only): <b>${M(committed(2027))}</b> across ${C().filter(c=>c.y2027).length} contracts.</li>
+  <li>Labor: CBA expires Dec 1 - plan for a lockout freezing MLB moves.</li></ul>
+  <h3>Last 10 games</h3><div>${last10.map(x=>`<span class="pill ${x.win?'g':'r'}" title="${esc(x.date)} ${x.home?'vs':'@'} ${esc(x.opp)}">${x.win?'W':'L'} ${x.rs}-${x.ra}</span>`).join('')}</div></div>
+ <div class="card"><h2>Next on the calendar</h2>${upcoming.map(e=>`<div style="margin-bottom:7px"><b>${fmtD(e.date)}</b> ${esc(e.title)} <span class="pill ${e.status=='verified'?'g':'y'}">${e.status}</span></div>`).join('')}<a href="#calendar" class="small">Full calendar &rarr;</a></div>
+ <div class="card"><h2>Top bats (OPS, 250+ PA)</h2><table>${hot.map(p=>`<tr><td>${esc(p.name)}</td><td>${p.pos}</td><td><b>${p.hit.ops}</b></td><td class="mut">${p.hit.homeRuns} HR</td></tr>`).join('')}</table></div>
+ <div class="card"><h2>Top arms (ERA, 60+ IP)</h2><table>${arms.map(p=>`<tr><td>${esc(p.name)}</td><td><b>${p.pit.era}</b></td><td class="mut">${p.pit.inningsPitched} IP, ${p.pit.strikeOuts} K</td></tr>`).join('')}</table></div>
+ <div class="card"><h2>Latest rumors</h2><div class="feed">${((D.rumors||{}).items||[]).slice(0,4).map(feedItem).join('')}</div><a href="#rumors" class="small">Rumor mill &rarr;</a></div>
+ <div class="card"><h2>Latest news</h2><div class="feed">${((D.news||{}).items||[]).slice(0,4).map(feedItem).join('')}</div><a href="#news" class="small">All news &rarr;</a></div></div>`};
+function feedItem(x){return `<div class="it"><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a><div class="small mut">${esc(x.source)} &middot; ${x.date?fmtD(x.date)+' ('+ago(x.date)+')':''} ${x.kind=='rumor'?'<span class="pill y">RUMOR</span>':''} ${(x.tags||[]).map(t=>`<span class="pill">${esc(t)}</span>`).join('')} ${(x.players||[]).map(p=>`<span class="pill r">${esc(p)}</span>`).join('')}</div>${x.summary?`<div class="small" style="margin-top:3px">${esc(x.summary.slice(0,220))}${x.summary.length>220?'...':''}</div>`:''}</div>`}
+// ---------- ROSTER ----------
+V.roster=()=>{const t=store.get('rtab','40');return `<div class="tabs">${[['26','Active 26-man'],['40','40-man'],['il','Injured list'],['hit','Hitters'],['pit','Pitchers']].map(([k,l])=>`<button class="${t==k?'on':''}" onclick="store.set('rtab','${k}');route()">${l}</button>`).join('')}<input id="rq" placeholder="Search player..." oninput="rosterFilter()"></div>
+ <div class="note">Service time and option years are not published by any free official feed, so they're not shown as fact. "Yrs since debut" is a rough proxy from MLB debut date. Contract column comes from <a href="#payroll">the hand-maintained contracts file</a>.</div>
+ <div class="card"><div class="tw"><table class="s" id="rt"><thead><tr><th>#</th><th>Player</th><th>Pos</th><th>Age</th><th>B/T</th><th>Status</th><th>Yrs since debut</th><th>Contract / control</th><th>2026 line</th></tr></thead><tbody>${rosterRows(t)}</tbody></table></div></div>
+ ${t=='il'?`<div class="card" style="margin-top:14px"><h2>ESPN injury report</h2><table>${(D.injuries||[]).map(i=>`<tr><td>${esc(i.name)}</td><td><span class="pill r">${esc(i.status)}</span></td><td>${esc(i.type||'')}</td><td class="small" style="white-space:normal">${esc(i.detail||'')}</td></tr>`).join('')}</table></div>`:''}`};
+function rosterRows(t){let r=R();if(t=='26')r=r.filter(p=>p.active26);if(t=='il')r=r.filter(p=>/Injured/.test(p.status));if(t=='hit')r=r.filter(p=>p.posType!='Pitcher');if(t=='pit')r=r.filter(p=>p.posType=='Pitcher');
+ return r.map(p=>{const st=statusOf(p);const y=yrsSince(p.debut);return `<tr data-n="${esc(norm(p.name))}"><td>${esc(p.num||'')}</td><td><b>${esc(p.name)}</b></td><td>${p.pos}</td><td>${p.age??''}</td><td>${p.bats||''}/${p.throws||''}</td><td><span class="pill ${/Injured/.test(p.status)?'r':p.active26?'g':''}">${esc(p.status)}${p.active26?' &middot; 26':''}</span></td><td data-v="${y??-1}">${y==null?'&mdash;':y.toFixed(1)}</td><td title="${esc(st.t)}"><span class="pill ${st.k=='FA'?'r':st.k=='Signed'?'g':'y'}">${st.k}</span> ${st.c?M(st.c.total)+' / '+(st.c.years||'?')+'y':''}</td><td class="small">${p.posType=='Pitcher'?pitLine(p.pit):hitLine(p.hit)}</td></tr>`}).join('')}
+function rosterFilter(){const q=norm($('#rq').value);document.querySelectorAll('#rt tbody tr').forEach(r=>r.style.display=r.dataset.n.includes(q)?'':'none')}
+A.roster=sortable;
+// ---------- PAYROLL ----------
+V.payroll=()=>{const {tp,cbt}=payroll();const th=cbt.thresholds||[];const pay=tp.cbt_payroll||0;const max=(th[3]||304e6)*1.08,lo=200e6,X=v=>Math.max(0,(v-lo)/(max-lo)*100);
+ return `<div class="note"><b>Hand-maintained data.</b> No free licensed payroll API exists. Every figure below cites its public source and access date; blanks mean not verified. Edit <code>data/contracts_manual.json</code> to update.</div>
+ <div class="grid g4"><div class="card kpi"><div class="l">2026 CBT payroll</div><div class="v">${M(pay)}</div><div class="src">${esc(tp.source)} as of ${esc(tp.as_of)}</div></div>
+ <div class="card kpi"><div class="l">Est. 2026 tax bill</div><div class="v">${M(tp.est_tax)}</div><div class="src">Spotrac alt: ${M((tp.alt_estimate||{}).est_tax)}</div></div>
+ <div class="card kpi"><div class="l">Actual (LRD) payroll</div><div class="v">${M(tp.lrd_payroll)}</div><div class="src">2025 CBT: ${M(tp.prev_cbt_2025)}</div></div>
+ <div class="card kpi"><div class="l">Payor status</div><div class="v" style="font-size:16px">${esc(cbt.payor_status||'')}</div><div class="src">League min ${M(cbt.min_salary)}</div></div></div>
+ <div class="card" style="margin-top:14px"><h2>CBT ladder (${cbt.season})</h2><div class="small mut">Bar starts at $200M. Red = Red Sox CBT payroll ${M(pay)}.</div><div style="position:relative;height:56px;margin:26px 0 8px">
+ <div class="bar" style="height:16px"><i style="width:${X(pay)}%"></i></div>${th.map((x,i)=>`<div style="position:absolute;left:${X(x)}%;top:-22px;font-size:11px;color:var(--mut);transform:translateX(-50%)">${['Base','Tier 2','Tier 3','Tier 4'][i]}<br>${M(x)}</div><div style="position:absolute;left:${X(x)}%;top:0;height:16px;border-left:2px dashed #fff8"></div>`).join('')}</div>
+ <table><tr><th>Status</th>${th.map(x=>`<th>&gt; ${M(x)}</th>`).join('')}</tr><tr><td>1st-time payor</td>${(cbt.rates_first||[]).map(x=>`<td>${x}%</td>`).join('')}</tr><tr><td>2nd consecutive</td>${(cbt.rates_second||[]).map(x=>`<td>${x}%</td>`).join('')}</tr><tr><td>3rd+ consecutive</td>${(cbt.rates_third_plus||[]).map(x=>`<td>${x}%</td>`).join('')}</tr></table>
+ <div class="note">${esc(cbt.note)} Exceeding the base by $40M+ also drops the club's top draft pick 10 spots (per CBA).</div><div class="src">Sources: ${(cbt.sources||[]).map(s=>`<a href="${s.url}" target="_blank">${esc(s.name)}</a>`).join(' &middot; ')}</div></div>
+ <div class="card" style="margin-top:14px"><h2>Verified contracts</h2><div class="tw"><table class="s"><thead><tr><th>Player</th><th>Type</th><th>Yrs</th><th>Total</th><th>CBT AAV</th>${[2026,2027,2028,2029,2030,2031,2032].map(y=>`<th>${y}</th>`).join('')}<th>Options / notes</th><th>Source</th></tr></thead><tbody>
+ ${C().map(c=>`<tr><td><b>${esc(c.name)}</b></td><td class="small">${esc(c.type)}</td><td>${c.years??''}</td><td data-v="${c.total||0}">${M(c.total)}</td><td data-v="${c.aav_cbt||0}">${M(c.aav_cbt)}</td>${[2026,2027,2028,2029,2030,2031,2032].map(y=>`<td data-v="${c['y'+y]||0}">${c['y'+y]?M(c['y'+y]):'<span class="mut">&middot;</span>'}</td>`).join('')}<td class="small" style="white-space:normal;min-width:180px">${esc([c.options,c.notes].filter(Boolean).join('; '))}</td><td class="src"><a href="${esc(c.source_url)}" target="_blank">${esc(c.source)}</a><br>accessed ${esc(c.accessed)}</td></tr>`).join('')}
+ <tr><td><b>Verified total</b></td><td></td><td></td><td></td><td></td>${[2026,2027,2028,2029,2030,2031,2032].map(y=>`<td><b>${M(committed(y))}</b></td>`).join('')}<td colspan=2 class="small mut">Sum of rows with a year-by-year figure only; excludes unverified arb/pre-arb salaries, benefits (~$18M per Spotrac), and buyouts.</td></tr></tbody></table></div></div>`};
+A.payroll=sortable;
+// ---------- DECISIONS ----------
+V.decisions=()=>{const r=R();const groups={FA:[],Option:[],Arb:[],Pre:[],Signed:[]};
+ r.forEach(p=>{const st=statusOf(p);const c=st.c;if(c&&/option/i.test(c.options||'')&&!c.y2027&&c.y2026)groups.Option.push([p,st]);else if(st.k=='FA')groups.FA.push([p,st]);else if(st.k=='Arb?'||st.k=='Check')groups.Arb.push([p,st]);else if(st.k=='Pre-arb')groups.Pre.push([p,st]);else groups.Signed.push([p,st])});
+ const dec=store.get('dec',{});const opts=['Undecided','Keep / tender','Extend','Re-sign','Let walk / non-tender','Trade','DFA / outright'];
+ const tbl=(arr,title,help)=>`<div class="card" style="margin-top:14px"><h2>${title} <span class="mut small">(${arr.length})</span></h2><div class="small mut">${help}</div><div class="tw"><table class="s"><thead><tr><th>Player</th><th>Pos</th><th>Age</th><th>Status note</th><th>2026</th><th>Your call</th></tr></thead><tbody>${arr.map(([p,st])=>`<tr><td><b>${esc(p.name)}</b></td><td>${p.pos}</td><td>${p.age??''}</td><td class="small" style="white-space:normal">${esc(st.t)}${st.c&&st.c.options?' &middot; '+esc(st.c.options):''}</td><td class="small">${p.posType=='Pitcher'?pitLine(p.pit):hitLine(p.hit)}</td><td><select onchange="setDec(${p.id},this.value)">${opts.map(o=>`<option ${dec[p.id]==o?'selected':''}>${o}</option>`).join('')}</select></td></tr>`).join('')}</tbody></table></div></div>`;
+ const n=Object.values(dec).filter(v=>v&&v!='Undecided').length;
+ return `<div class="note">Free agents and option decisions come from the verified contracts file. Arbitration eligibility is <b>estimated</b> from MLB debut date (official service time isn't public via free APIs). Verify against MLB Trade Rumors' arbitration projections before acting. Your decisions save in this browser.</div>
+ <div class="card"><b>${n}</b> decisions made. <button class="sec" onclick="store.set('dec',{});route()">Reset</button> <span class="small mut">Key deadlines: QO/Rule 5 protection ~Nov 17-18 &middot; Non-tender ~Nov 20-21 &middot; CBA expires Dec 1.</span></div>
+ ${tbl(groups.FA,'Contracts ending after 2026','Verified deals with no 2027 salary listed.')}${tbl(groups.Option,'Options to decide','Club/vesting options found in the public record.')}${tbl(groups.Arb,'Likely arbitration-eligible (estimate)','~2.5+ years since MLB debut and no long-term deal on file. Tender or non-tender by the deadline.')}${tbl(groups.Pre,'Pre-arb / minimum','Controllable at or near the league minimum.')}`};
+function setDec(id,v){const d=store.get('dec',{});d[id]=v;store.set('dec',d)}
+A.decisions=sortable;
+// ---------- TRADE MACHINE ----------
+V.trade=()=>{const t=store.get('trade',{out:[],in:[]});const r=R();const base=(payroll().tp.cbt_payroll)||0;
+ const outAav=t.out.reduce((s,id)=>{const p=r.find(x=>x.id==id);const c=p&&contractOf(p.name);return s+((c&&(c.aav_cbt||(c.total&&c.years?c.total/c.years:0)))||(payroll().cbt.min_salary||780000))},0);
+ const inAav=t.in.reduce((s,x)=>s+(+x.aav||0)*1e6,0);const newPay=base-outAav+inAav;const rates=payroll().cbt.rates_second;
+ return `<div class="note">Trade machine uses CBT AAV from the verified contracts file (or the league minimum for pre-arb players without a verified deal). Incoming salary is whatever you type. Since 2027 thresholds aren't set yet, it's measured against the 2026 lines to show direction.</div>
+ <div class="grid g2"><div class="card"><h2>Sending out (Red Sox)</h2><select id="tout"><option value="">+ Add a Red Sox player...</option>${r.map(p=>`<option value="${p.id}">${esc(p.name)} (${p.pos})${contractOf(p.name)?' - '+M(contractOf(p.name).aav_cbt||contractOf(p.name).total/contractOf(p.name).years)+' AAV':''}</option>`).join('')}</select> <button onclick="tAdd()">Add</button>
+ <table style="margin-top:8px">${t.out.map(id=>{const p=r.find(x=>x.id==id)||{};const c=contractOf(p.name);return `<tr><td>${esc(p.name)}</td><td>${p.pos||''}</td><td>${c?M(c.aav_cbt||c.total/c.years):'min (est.)'}</td><td><button class="sec" onclick="tRm('out',${id})">&times;</button></td></tr>`}).join('')}</table></div>
+ <div class="card"><h2>Receiving</h2><div class="row"><input id="tin" placeholder="Player name"><input id="taav" type="number" step="0.1" placeholder="AAV $M" style="width:100px"><input id="tyrs" type="number" placeholder="Yrs" style="width:70px"><button onclick="tIn()">Add</button></div>
+ <table>${t.in.map((x,i)=>`<tr><td>${esc(x.name)}</td><td>${M(x.aav*1e6)}</td><td>${esc(x.yrs||'')} yrs</td><td><button class="sec" onclick="tRm('in',${i})">&times;</button></td></tr>`).join('')}</table></div></div>
+ <div class="grid g4" style="margin-top:14px"><div class="card kpi"><div class="l">CBT payroll before</div><div class="v">${M(base)}</div></div><div class="card kpi"><div class="l">Net change</div><div class="v" style="color:${inAav-outAav>0?'var(--bad)':'var(--good)'}">${inAav-outAav>=0?'+':'-'}${M(Math.abs(inAav-outAav))}</div></div><div class="card kpi"><div class="l">CBT payroll after</div><div class="v">${M(newPay)}</div></div><div class="card kpi"><div class="l">Est. tax (repeat rates)</div><div class="v">${M(taxCalc(newPay,rates))}</div><div class="small mut">was ${M(taxCalc(base,rates))}</div></div></div>
+ <div class="card" style="margin-top:14px"><h2>Needs check</h2><div class="small">${t.out.map(id=>{const p=r.find(x=>x.id==id);return p?`Losing <b>${esc(p.name)}</b> opens ${p.pos}: next up on the 40-man is ${esc(r.filter(q=>q.pos==p.pos&&q.id!=p.id).map(q=>q.name).slice(0,3).join(', ')||'nobody - fill from FA/farm')}.`:''}).join('<br>')||'Add players to see the depth impact.'}</div></div>
+ <button class="sec" style="margin-top:12px" onclick="store.set('trade',{out:[],in:[]});route()">Clear trade</button>`};
+function tAdd(){const v=$('#tout').value;if(!v)return;const t=store.get('trade',{out:[],in:[]});if(!t.out.includes(+v))t.out.push(+v);store.set('trade',t);route()}
+function tIn(){const n=$('#tin').value.trim();const a=parseFloat($('#taav').value);if(!n||isNaN(a))return;const t=store.get('trade',{out:[],in:[]});t.in.push({name:n,aav:a,yrs:$('#tyrs').value});store.set('trade',t);route()}
+function tRm(k,v){const t=store.get('trade',{out:[],in:[]});t[k]=k=='out'?t.out.filter(x=>x!=v):t.in.filter((x,i)=>i!=v);store.set('trade',t);route()}
+// ---------- SCENARIOS ----------
+const SCN=[{id:'ace',l:'Sign a top free-agent starter',d:'Add a frontline SP at ~$30M AAV',aav:30},{id:'bat',l:'Add a middle-of-order bat',d:'~$25M AAV corner bat',aav:25},{id:'pen',l:'Rebuild the bullpen',d:'Two high-leverage relievers, ~$9M AAV each',aav:18},{id:'c',l:'Add a catcher',d:'~$10M AAV starting catcher',aav:10},{id:'dump',l:'Shed a big contract',d:'Move a ~$20M AAV veteran, eat $5M',aav:-15},{id:'reset',l:'Get under the base threshold',d:'Model the cut needed to reset payor status',aav:0}];
+V.scen=()=>{const on=store.get('scn',{});const base2027=committed(2027);const base26=(payroll().tp.cbt_payroll)||0;const add=SCN.filter(s=>on[s.id]).reduce((s,x)=>s+x.aav*1e6,0);const pay=base26+add;const th=payroll().cbt.thresholds||[244e6];
+ return `<div class="note">Scenario planner. Starts from 2026 CBT payroll (${M(base26)}, MLBTR) because 2027 arb/pre-arb salaries aren't public yet. Verified 2027 commitments alone already total ${M(base2027)}. AAVs below are placeholders you can edit.</div>
+ <div class="grid g2"><div class="card"><h2>Moves</h2>${SCN.map(s=>`<label style="display:flex;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid #1b3051"><input type="checkbox" ${on[s.id]?'checked':''} onchange="scnT('${s.id}',this.checked)"><div style="flex:1"><b>${s.l}</b><div class="small mut">${s.d}</div></div><input type="number" value="${(store.get('scnv',{})[s.id]??s.aav)}" style="width:80px" onchange="scnV('${s.id}',this.value)"> $M</label>`).join('')}</div>
+ <div class="card"><h2>Result</h2><div class="kpi"><div class="l">Projected CBT payroll</div><div class="v">${M(pay)}</div></div><div class="bar" style="margin:10px 0"><i style="width:${Math.min(100,pay/320e6*100)}%"></i></div>
+ <table>${th.map((x,i)=>`<tr><td>${['Base','Tier 2','Tier 3','Tier 4'][i]} ${M(x)}</td><td>${pay>x?'<span class="pill r">over by '+M(pay-x)+'</span>':'<span class="pill g">under by '+M(x-pay)+'</span>'}</td></tr>`).join('')}</table>
+ <p class="small">Est. tax at repeat-payor rates: <b>${M(taxCalc(pay))}</b>. ${on.reset?`To reset to first-time status you'd need to cut <b>${M(Math.max(0,pay-th[0]))}</b> of CBT payroll.`:''}</p></div></div>`};
+function scnT(id,v){const o=store.get('scn',{});o[id]=v;store.set('scn',o);route()}
+function scnV(id,v){const o=store.get('scnv',{});o[id]=+v;store.set('scnv',o);const s=SCN.find(x=>x.id==id);s.aav=+v;route()}
+(()=>{const o=store.get('scnv',{});SCN.forEach(s=>{if(o[s.id]!=null)s.aav=o[s.id]})})();
+// ---------- FARM ----------
+function pscore(p,lv){const age=p.age||lv.typicalAge;const ad=(lv.typicalAge||22)-age;let s=45+ad*4;if(p.hit&&p.hit.plateAppearances>=100&&p.posType!='Pitcher'){s+=(parseFloat(p.hit.ops)-.72)*90+Math.min(5,(p.hit.plateAppearances-100)/60)}else if(p.pit&&parseFloat(p.pit.inningsPitched)>=20){s+=(4.3-parseFloat(p.pit.era))*4+(parseFloat(p.pit.strikeoutsPer9Inn)-8.5)*2.5-(parseFloat(p.pit.walksPer9Inn)-3.5)*2}else s-=15;return Math.round(Math.max(0,Math.min(99,s)))}
+function farmAll(){const out=[];(D.farm||[]).forEach(lv=>lv.players.forEach(p=>{if(R().some(r=>r.id==p.id))return;out.push({...p,level:lv.level,team:lv.team,typ:lv.typicalAge,score:pscore(p,lv)})}));const best={};out.forEach(p=>{if(!best[p.id]||best[p.id].score<p.score)best[p.id]=p});return Object.values(best)}
+V.farm=()=>{const lvls=D.farm||[];const sel=store.get('flv','ALL');const all=farmAll().sort((a,b)=>b.score-a.score);const list=sel=='ALL'?all.slice(0,80):all.filter(p=>p.level==sel);
+ return `<div class="note">Rankings here are <b>this hub's own "Prospect Pulse" score</b> (age relative to level + 2026 production), not MLB Pipeline or Baseball America rankings, which aren't available from a free feed. 40-man players are excluded.</div>
+ <div class="grid g4">${lvls.map(l=>`<div class="card kpi"><div class="l">${esc(l.level)}</div><div class="v" style="font-size:17px">${esc(l.team)}</div><div class="small mut">${l.players.length} players &middot; typical age ${l.typicalAge}</div></div>`).join('')}</div>
+ <div class="tabs" style="margin-top:14px"><button class="${sel=='ALL'?'on':''}" onclick="store.set('flv','ALL');route()">Top 80 overall</button>${[...new Set(lvls.map(l=>l.level))].map(l=>`<button class="${sel==l?'on':''}" onclick="store.set('flv','${l}');route()">${l}</button>`).join('')}</div>
+ <div class="card"><div class="tw"><table class="s"><thead><tr><th>Pulse</th><th>Player</th><th>Pos</th><th>Age</th><th>Level</th><th>Age vs lvl</th><th>G/PA or IP</th><th>Slash / ERA</th><th>HR or K/9</th><th>SB or BB/9</th></tr></thead><tbody>
+ ${list.map(p=>{const h=p.hit&&p.hit.plateAppearances>0&&p.posType!='Pitcher';const ad=(p.typ-(p.age||p.typ));return `<tr><td data-v="${p.score}"><span class="pill ${p.score>=70?'g':p.score>=55?'':'y'}">${p.score}</span></td><td><b>${esc(p.name)}</b>${p.draftYear?` <span class="mut small">'${String(p.draftYear).slice(2)} draft</span>`:''}</td><td>${p.pos}</td><td>${p.age??''}</td><td>${esc(p.level)}</td><td data-v="${ad}">${ad>0?'<span class="pill g">-'+ad.toFixed(1)+' yrs</span>':ad<-1.5?'<span class="pill y">+'+(-ad).toFixed(1)+'</span>':'~'}</td>
+ ${h?`<td>${p.hit.plateAppearances} PA</td><td>${p.hit.avg}/${p.hit.obp}/${p.hit.slg}</td><td>${p.hit.homeRuns}</td><td>${p.hit.stolenBases}</td>`:p.pit?`<td>${p.pit.inningsPitched} IP</td><td>${p.pit.era} ERA</td><td>${p.pit.strikeoutsPer9Inn}</td><td>${p.pit.walksPer9Inn}</td>`:'<td colspan=4 class="mut">no 2026 stats</td>'}</tr>`}).join('')}</tbody></table></div></div>`};
+A.farm=sortable;
+// ---------- PIPELINE ----------
+const POSG=[['C',['C']],['1B',['1B']],['2B',['2B']],['SS',['SS']],['3B',['3B']],['CF',['CF']],['Corner OF',['LF','RF','OF']],['DH',['DH']],['SP',['SP']],['RP',['RP']]];
+function pipeline(){const r=R();const farm=farmAll();const sp=p=>p.pit&&(+p.pit.gamesStarted>=Math.max(5,(+p.pit.gamesPlayed)*.5));
+ return POSG.map(([g,ps])=>{let mlb,far;if(g=='SP'){mlb=r.filter(p=>p.posType=='Pitcher'&&sp(p));far=farm.filter(p=>p.posType=='Pitcher'&&sp(p))}else if(g=='RP'){mlb=r.filter(p=>p.posType=='Pitcher'&&p.pit&&!sp(p));far=farm.filter(p=>p.posType=='Pitcher'&&p.pit&&!sp(p))}else{mlb=r.filter(p=>ps.includes(p.pos));far=farm.filter(p=>(g=='DH'?['DH','1B']:ps).includes(p.pos))}
+  const isP=g=='SP'||g=='RP';const q=p=>isP?(p.pit&&parseFloat(p.pit.inningsPitched)>=(g=='SP'?50:20)?(4.6-parseFloat(p.pit.era)):null):(p.hit&&p.hit.plateAppearances>=150?(parseFloat(p.hit.ops)-.7)*10:null);
+  const ms=mlb.map(q).filter(x=>x!=null).sort((a,b)=>b-a);const mlbScore=ms.length?Math.max(0,Math.min(100,50+ms[0]*(isP?18:22))):20;
+  const ctrl=mlb.filter(p=>{const c=contractOf(p.name);return c?!!c.y2027:statusOf(p).k!='Check'}).length;
+  const near=far.filter(p=>['AAA','AA'].includes(p.level)&&p.score>=55);const low=far.filter(p=>!['AAA','AA'].includes(p.level)&&p.score>=60);
+  const farmScore=Math.min(100,near.length*22+low.length*9);const need=Math.round(Math.max(0,Math.min(100,100-(mlbScore*.55+farmScore*.45))));
+  return {g,mlb,far,mlbScore:Math.round(mlbScore),farmScore,need,near,low,ctrl,best:mlb.filter(p=>q(p)!=null).sort((a,b)=>q(b)-q(a))[0]}}).sort((a,b)=>b.need-a.need)}
+V.pipeline=()=>{const P=pipeline();const col=v=>v>=65?'#5a1a20':v>=45?'#4a3a12':'#173f2e';
+ return `<div class="note">"Stock the pipeline" model: MLB strength = best 2026 regular at the spot (OPS for hitters, ERA for pitchers); farm depth = AA/AAA players with Pulse 55+ (near-ready) and lower-level 60+ (future). Need = high when both are thin. This is a transparent heuristic, not a scouting grade.</div>
+ <div class="card"><h2>Needs map</h2><div class="tw"><table class="heat"><thead><tr><th>Spot</th><th>MLB strength</th><th>Best MLB option</th><th>Near-ready (AA/AAA)</th><th>Lower-level</th><th>Need</th><th>Draft / acquire priority</th></tr></thead><tbody>
+ ${P.map((x,i)=>`<tr><td><b>${x.g}</b></td><td class="c">${x.mlbScore}</td><td class="small">${x.best?esc(x.best.name):'<span class="mut">none qualified</span>'}</td><td class="small" style="white-space:normal;max-width:260px">${x.near.slice(0,4).map(p=>esc(p.name)+' ('+p.level+')').join(', ')||'<span class="mut">none</span>'}</td><td class="c">${x.low.length}</td><td class="c" style="background:${col(x.need)}">${x.need}</td><td>${i<3?'<span class="pill r">HIGH</span>':i<6?'<span class="pill y">MED</span>':'<span class="pill g">LOW</span>'}</td></tr>`).join('')}</tbody></table></div></div>
+ <div class="card" style="margin-top:14px"><h2>Draft priorities this feeds</h2><ol>${P.slice(0,4).map(x=>`<li><b>${x.g}</b>: MLB strength ${x.mlbScore}/100 with ${x.near.length} near-ready player${x.near.length==1?'':'s'} in AA/AAA. ${x.near.length?'':'Prioritize college players who can move fast, or trade for upper-minors depth.'}</li>`).join('')}</ol><a href="#draft">Open the draft room &rarr;</a></div>`};
+// ---------- DRAFT ----------
+V.draft=()=>{const d=D.draft||[];const yrs=[...new Set(d.map(x=>x.year))];const y=store.get('dy',yrs[0]);const P=pipeline().slice(0,4).map(x=>x.g);const farm=farmAll();
+ const board=store.get('board',[]);
+ return `<div class="grid g2"><div class="card"><h2>Pipeline-driven priorities</h2><p>Top needs from the <a href="#pipeline">needs map</a>: ${P.map(p=>`<span class="pill r">${p}</span>`).join(' ')}</p><p class="small mut">The 2027 draft order and lottery depend on the new CBA (lottery is set for Dec 9 but may slip in a lockout). Use the board to rank targets as names emerge.</p>
+ <h3>My draft board</h3><div class="row"><input id="bn" placeholder="Prospect name"><select id="bp">${['C','1B','2B','SS','3B','CF','OF','RHP','LHP'].map(x=>`<option>${x}</option>`).join('')}</select><input id="bs" placeholder="School/notes"><button onclick="bAdd()">Add</button></div>
+ <table>${board.map((b,i)=>`<tr><td>${i+1}</td><td><b>${esc(b.n)}</b></td><td>${esc(b.p)}</td><td class="small">${esc(b.s)}</td><td><button class="sec" onclick="bMv(${i},-1)">&uarr;</button><button class="sec" onclick="bMv(${i},1)">&darr;</button><button class="sec" onclick="bMv(${i},0)">&times;</button></td></tr>`).join('')||'<tr><td class="mut">Empty - add targets above.</td></tr>'}</table></div>
+ <div class="card"><h2>Recent drafts: where are they now?</h2><table>${yrs.map(yy=>{const picks=d.filter(x=>x.year==yy);const inFarm=picks.filter(x=>farm.some(f=>f.id==x.id)).length;return `<tr><td><b>${yy}</b></td><td>${picks.length} picks</td><td>${inFarm} active in system</td><td>${M(picks.reduce((s,x)=>s+(+x.bonus||0),0))} bonuses</td></tr>`}).join('')}</table></div></div>
+ <div class="tabs" style="margin-top:14px">${yrs.map(yy=>`<button class="${y==yy?'on':''}" onclick="store.set('dy',${yy});route()">${yy} class</button>`).join('')}</div>
+ <div class="card"><div class="tw"><table class="s"><thead><tr><th>Rd</th><th>Pick</th><th>Player</th><th>Pos</th><th>School</th><th>Bonus</th><th>Slot</th><th>Pre-draft rank</th><th>2026 now</th></tr></thead><tbody>
+ ${d.filter(x=>x.year==y).map(x=>{const f=farm.find(p=>p.id==x.id);return `<tr title="${esc(x.blurb)}"><td>${esc(x.round)}</td><td>${x.pick}</td><td><b>${esc(x.name)}</b></td><td>${esc(x.pos||'')}</td><td class="small">${esc(x.school||'')} ${x.class?'<span class="mut">'+esc(x.class)+'</span>':''}</td><td data-v="${x.bonus||0}">${x.bonus?M(+x.bonus):''}</td><td data-v="${x.slot||0}">${x.slot&&+x.slot?M(+x.slot):''}</td><td>${x.rank||''}</td><td class="small">${f?esc(f.level)+' &middot; Pulse '+f.score:'<span class="mut">-</span>'}</td></tr>`}).join('')}</tbody></table></div><div class="src">Source: MLB Stats API draft endpoint. Hover a row for the scouting blurb.</div></div>`};
+function bAdd(){const n=$('#bn').value.trim();if(!n)return;const b=store.get('board',[]);b.push({n,p:$('#bp').value,s:$('#bs').value});store.set('board',b);route()}
+function bMv(i,d){const b=store.get('board',[]);if(d==0)b.splice(i,1);else{const j=i+d;if(j<0||j>=b.length)return;[b[i],b[j]]=[b[j],b[i]]}store.set('board',b);route()}
+A.draft=sortable;
+// ---------- RUMORS / NEWS ----------
+function feedView(items,kind){const q=store.get(kind+'q','');const players=[...new Set(items.flatMap(x=>x.players||[]))].sort();const tags=[...new Set(items.flatMap(x=>x.tags||[]))].sort();
+ return `<div class="row"><select onchange="store.set('${kind}q',this.value);route()"><option value="">All players & topics</option>${players.map(p=>`<option ${q==p?'selected':''}>${esc(p)}</option>`).join('')}${tags.map(t=>`<option value="#${esc(t)}" ${q=='#'+t?'selected':''}>#${esc(t)}</option>`).join('')}</select><span class="small mut">${items.length} items</span></div>
+ <div class="card feed">${items.filter(x=>!q||(q[0]=='#'?(x.tags||[]).includes(q.slice(1)):(x.players||[]).includes(q))).map(feedItem).join('')||'<div class="mut">Nothing yet.</div>'}</div>`}
+V.rumors=()=>{const r=D.rumors||{};const items=r.items||[];const pc={};items.forEach(x=>(x.players||[]).forEach(p=>pc[p]=(pc[p]||0)+1));
+ return `<div class="note"><b>Rumors are rumors.</b> Items are aggregated from the MLB Trade Rumors Red Sox feed and auto-tagged by player and topic. Nothing here is confirmed unless the club announces it. Always check the source link.</div>
+ <div class="card" style="margin-bottom:14px"><h2>Most-mentioned</h2>${Object.entries(pc).sort((a,b)=>b[1]-a[1]).slice(0,12).map(([p,n])=>`<span class="pill r" style="cursor:pointer" onclick="store.set('rumorsq','${esc(p)}');route()">${esc(p)} &times;${n}</span>`).join(' ')||'<span class="mut">No player mentions yet</span>'}</div>
+ ${feedView(items,'rumors')}<div class="src">Sources: ${(r.sources||[]).map(s=>esc(s.name)+(s.ok?' ('+s.n+')':' (failed)')).join(' &middot; ')}</div>`};
+V.news=()=>{const n=D.news||{};return `${feedView(n.items||[],'news')}<div class="src">Sources: ${(n.sources||[]).filter(s=>!/Rumors/.test(s.name)).map(s=>esc(s.name)+(s.ok?' ('+s.n+')':' (failed)')).join(' &middot; ')}. ESPN items filtered to Red Sox mentions. Refreshes every morning and evening.</div>`};
+// ---------- CALENDAR ----------
+V.calendar=()=>{const c=D.calendar_manual||{};const nx=(D.schedule||{}).next||{};const today=new Date().toISOString().slice(0,10);
+ return `<div class="note">${esc(c._label||'')}</div><div class="card"><div class="tl">${(c.events||[]).map(e=>{const past=/^\d{4}-\d{2}-\d{2}/.test(e.date)&&(e.end||e.date)<today;return `<div style="${past?'opacity:.5':''}"><b>${/^\d{4}-\d{2}-\d{2}/.test(e.date)?fmtD(e.date)+(e.end?' - '+fmtD(e.end):''):esc(e.date)}</b> <span class="pill ${e.status=='verified'?'g':'y'}">${e.status}</span><br>${esc(e.title)}<div class="src"><a href="${esc(e.url)}" target="_blank">${esc(e.source)}</a></div></div>`}).join('')}</div>
+ <p class="small">Live from MLB's ${esc(nx.season)} Red Sox schedule: first spring game <b>${fmtD(nx.firstSpring)}</b>, Opening Day <b>${fmtD(nx.openingDay)}</b> (${nx.games} dates posted).</p></div>`};
+// ---------- TX ----------
+V.tx=()=>`<div class="card"><div class="tw"><table class="s"><thead><tr><th>Date</th><th>Type</th><th>Move</th></tr></thead><tbody>${(D.transactions||[]).map(t=>`<tr><td>${esc(t.date)}</td><td><span class="pill">${esc(t.type||'')}</span></td><td style="white-space:normal">${esc(t.desc)}</td></tr>`).join('')}</tbody></table></div><div class="src">MLB Stats API transactions, last 120 days.</div></div>`;
+A.tx=sortable;
+// ---------- LEAGUE ----------
+V.league=()=>{const st=D.standings||[];const post=(D.schedule||{}).postseason||[];const ts=D.team_stats||{};
+ const series={};post.forEach(g=>{const k=g.series+': '+[g.away,g.home].sort().join(' vs ');(series[k]=series[k]||[]).push(g)});
+ return `<div class="grid g2">${st.map(d=>`<div class="card"><h2>${esc(d.division)}</h2><table class="s"><thead><tr><th>Team</th><th>W</th><th>L</th><th>GB</th><th>WCGB</th><th>Diff</th><th>Home</th><th>Away</th><th>L10</th></tr></thead><tbody>${d.teams.map(t=>`<tr style="${t.id==111?'background:#3a1419':''}"><td><b>${esc(t.name)}</b> ${t.clinch?'<span class="pill g">'+t.clinch+'</span>':''}</td><td>${t.w}</td><td>${t.l}</td><td>${t.gb}</td><td>${t.wcgb??''}</td><td>${t.diff>0?'+':''}${t.diff}</td><td>${t.home||''}</td><td>${t.away||''}</td><td>${t.l10||''}</td></tr>`).join('')}</tbody></table></div>`).join('')}</div>
+ <div class="grid g2" style="margin-top:14px"><div class="card"><h2>2026 postseason</h2>${Object.entries(series).map(([k,g])=>`<div style="margin-bottom:8px"><b>${esc(k)}</b><div class="small mut">${g.map(x=>`${fmtD(x.date)}: ${esc(x.away)} ${x.as??''} @ ${esc(x.home)} ${x.hs??''} (${esc(x.status)})`).join('<br>')}</div></div>`).join('')}</div>
+ <div class="card"><h2>MLB team leaderboard</h2><div class="tw" style="max-height:420px"><table class="s"><thead><tr><th>Team</th><th>R</th><th>HR</th><th>OPS</th><th>ERA</th><th>WHIP</th></tr></thead><tbody>${(ts.hitting||[]).map(h=>{const p=(ts.pitching||[]).find(x=>x.id==h.id)||{};return `<tr style="${h.id==111?'background:#3a1419':''}"><td>${esc(h.name)}</td><td>${h.runs}</td><td>${h.homeRuns}</td><td>${h.ops}</td><td>${p.era}</td><td>${p.whip}</td></tr>`}).join('')}</tbody></table></div></div></div>`};
+A.league=sortable;
+// ---------- FUN ----------
+const F=()=>D.franchise_manual||{};
+V.history=()=>{const h=F().history||{};return `<div class="grid g4">${(h.championships||[]).map(y=>`<div class="card kpi" style="text-align:center"><div class="v">&#127942; ${y}</div><div class="l">World Series champions</div></div>`).join('')}</div>
+ <div class="grid g2" style="margin-top:14px"><div class="card"><h2>Timeline</h2><div class="tl">${(h.timeline||[]).map(([y,t])=>`<div><b>${esc(y)}</b><br>${esc(t)}</div>`).join('')}</div></div>
+ <div class="card"><h2>Retired numbers</h2><div class="ret">${(h.retired||[]).map(([n,nm,pos,dt])=>`<div class="card"><div class="num">${n}</div><b>${esc(nm)}</b><div class="small mut">${esc(pos)}<br>${esc(dt)}</div></div>`).join('')}</div><h3>The rivalry</h3><p class="small">${esc(h.rivalry||'')}</p></div></div><div class="src">Source: <a href="${esc(h.source)}" target="_blank">Wikipedia - Boston Red Sox</a> (accessed Oct 10, 2026)</div>`};
+V.uniforms=()=>{const u=F().uniforms||{};const sw=[['Home whites','#f4f1ea','#bd3039','RED SOX'],['Road grays','#9aa3ad','#bd3039','BOSTON'],['Red alternate','#bd3039','#0c2340','RED SOX'],['City Connect I (2021)','#f2c230','#6ca0dc','BOSTON'],['City Connect II (2025)','#2f5d3a','#f4f1ea','B'],['Patriots Day','#f4f1ea','#0c2340','BOSTON']];
+ return `<div class="grid g3">${sw.map(([n,bg,fg,t])=>`<div class="card" style="text-align:center"><div style="margin:auto;width:120px;height:110px;background:${bg};border-radius:18px 18px 8px 8px;display:grid;place-items:center;font:900 ${t.length>3?18:40}px Georgia,serif;color:${fg};box-shadow:inset 0 0 0 3px #0003">${t}</div><b style="display:block;margin-top:8px">${n}</b></div>`).join('')}</div><p class="small mut">Swatches are simple illustrations, not official artwork.</p>
+ <div class="card" style="margin-top:14px"><h2>Evolution</h2><div class="tl">${(u.timeline||[]).map(([y,t])=>`<div><b>${esc(y)}</b><br>${esc(t)}</div>`).join('')}</div><div class="src">Source: <a href="${esc(u.source)}" target="_blank">Wikipedia - Logos and uniforms of the Boston Red Sox</a> (accessed Oct 10, 2026)</div></div>`};
+V.fenway=()=>{const f=F().fenway||{};return `<div class="grid g2"><div class="card"><h2>Field dimensions</h2>
+ <svg viewBox="0 0 400 340" style="width:100%;max-width:520px;display:block;margin:auto"><path d="M200 320 L40 160 Q120 40 250 50 L340 90 L370 150 Z" fill="#1d5a32" stroke="#fff3"/><path d="M200 320 L140 260 L200 200 L260 260 Z" fill="#a8723f" opacity=".8"/><path d="M40 160 Q70 105 130 70" stroke="#2f7d4a" stroke-width="12" fill="none"/><text x="70" y="70" fill="#b8f0d3" font-size="13" font-weight="700">Green Monster</text><text x="70" y="86" fill="#cfe0f5" font-size="11">37' 2" tall</text>
+ <text x="44" y="190" fill="#fff" font-size="13">LF 310'</text><text x="170" y="62" fill="#fff" font-size="12">True CF 390'</text><text x="280" y="70" fill="#fff" font-size="12">Triangle 420'</text><text x="318" y="178" fill="#fff" font-size="13">RF 302'</text><circle cx="370" cy="150" r="5" fill="#f2c230"/><text x="300" y="140" fill="#f2c230" font-size="11">Pesky's Pole</text><circle cx="300" cy="105" r="4" fill="#e0444e"/><text x="250" y="120" fill="#ffc9cc" font-size="10">Lone Red Seat</text></svg><p class="small mut">Diagram not to scale.</p></div>
+ <div class="card"><h2>Fenway facts</h2><table>${(f.facts||[]).map(([k,v])=>`<tr><td><b>${esc(k)}</b></td><td style="white-space:normal">${esc(v)}</td></tr>`).join('')}</table><div class="src">Sources: ${(f.sources||[]).map(s=>`<a href="${esc(s)}" target="_blank">${esc(decodeURIComponent(s.split('/').pop()).replace(/_/g,' '))}</a>`).join(' &middot; ')} (Wikipedia, accessed Oct 10, 2026)</div></div></div>`};
+load();
+</script></body></html>

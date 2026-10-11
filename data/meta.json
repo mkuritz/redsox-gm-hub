@@ -1,0 +1,14 @@
+{
+ "updated": "2026-10-10T21:02:16-04:00",
+ "data": {
+  "lastRun": "2026-10-10T21:02:16-04:00",
+  "mode": "news",
+  "status": {
+   "transactions.json": "unchanged",
+   "injuries.json": "unchanged",
+   "news.json": "updated",
+   "rumors.json": "updated"
+  },
+  "lastFull": "2026-10-10T21:01:59-04:00"
+ }
+}

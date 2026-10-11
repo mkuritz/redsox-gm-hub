@@ -1,0 +1,107 @@
+{
+ "_label": "Offseason calendar. 'verified' = taken from an official MLB data feed (statsapi). 'reported' = from news reports, may change (esp. with CBA expiring Dec 1).",
+ "updated": "2026-10-10",
+ "events": [
+  {
+   "date": "2026-10-23",
+   "end": "2026-10-31",
+   "title": "World Series begins (AL champ vs NL champ)",
+   "status": "verified",
+   "source": "MLB Stats API schedule",
+   "url": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&gameType=W&season=2026"
+  },
+  {
+   "date": "2026-11-01",
+   "title": "MLB offseason officially begins",
+   "status": "verified",
+   "source": "MLB Stats API season dates",
+   "url": "https://statsapi.mlb.com/api/v1/seasons/2026?sportId=1"
+  },
+  {
+   "date": "~1 day after WS",
+   "title": "Eligible players become free agents; 5-day exclusive window with own FAs; options & opt-outs",
+   "status": "reported",
+   "source": "Sportsnet / Nyrdcast offseason calendars",
+   "url": "https://www.sportsnet.ca/mlb/article/how-potential-lockout-will-impact-mlb-off-season-calendar/"
+  },
+  {
+   "date": "~5 days after WS",
+   "title": "Free agency opens league-wide; qualifying offers due",
+   "status": "reported",
+   "source": "Nyrdcast 2026-27 offseason calendar",
+   "url": "https://www.nyrdcast.com/mlb-off-season-calendar-2026-27/"
+  },
+  {
+   "date": "2026-11-10",
+   "end": "2026-11-13",
+   "title": "GM Meetings (Las Vegas)",
+   "status": "reported",
+   "source": "Nyrdcast 2026-27 offseason calendar",
+   "url": "https://www.nyrdcast.com/mlb-off-season-calendar-2026-27/"
+  },
+  {
+   "date": "2026-11-18",
+   "title": "QO accept/reject deadline; add Rule 5-eligible prospects to 40-man (sources differ: Nov 17-18)",
+   "status": "reported",
+   "source": "Nyrdcast / Sportsnet",
+   "url": "https://www.nyrdcast.com/mlb-off-season-calendar-2026-27/"
+  },
+  {
+   "date": "2026-11-21",
+   "title": "Non-tender deadline (sources differ: Nov 20-21)",
+   "status": "reported",
+   "source": "Nyrdcast / Sportsnet",
+   "url": "https://www.nyrdcast.com/mlb-off-season-calendar-2026-27/"
+  },
+  {
+   "date": "2026-12-01",
+   "title": "CBA expires 11:59 PM ET; lockout widely expected (freezes MLB transactions)",
+   "status": "reported",
+   "source": "MLB Trade Rumors",
+   "url": "https://www.mlbtraderumors.com/2026/10/mlb-sends-memo-to-teams-outlining-lockout-procedures.html"
+  },
+  {
+   "date": "2026-12-07",
+   "end": "2026-12-10",
+   "title": "Winter Meetings (Orlando per Nyrdcast; Sportsnet lists San Diego) - may be cancelled in a lockout",
+   "status": "reported",
+   "source": "Nyrdcast / Sportsnet",
+   "url": "https://www.nyrdcast.com/mlb-off-season-calendar-2026-27/"
+  },
+  {
+   "date": "2026-12-09",
+   "title": "Draft Lottery (2027 draft) - TBD if lockout",
+   "status": "reported",
+   "source": "Nyrdcast",
+   "url": "https://www.nyrdcast.com/mlb-off-season-calendar-2026-27/"
+  },
+  {
+   "date": "2026-12-10",
+   "title": "Rule 5 Draft (MLB phase in doubt during lockout; MLBPA proposed moving it to Nov 24)",
+   "status": "reported",
+   "source": "MLB Trade Rumors",
+   "url": "https://www.mlbtraderumors.com/2026-27-collective-bargaining"
+  },
+  {
+   "date": "2027-01",
+   "title": "Salary arbitration figure exchange (date TBD, depends on CBA)",
+   "status": "reported",
+   "source": "Nyrdcast",
+   "url": "https://www.nyrdcast.com/mlb-off-season-calendar-2026-27/"
+  },
+  {
+   "date": "2027-02-19",
+   "title": "Spring training season starts (MLB season calendar)",
+   "status": "verified",
+   "source": "MLB Stats API season dates",
+   "url": "https://statsapi.mlb.com/api/v1/seasons/2027?sportId=1"
+  },
+  {
+   "date": "2027-03-25",
+   "title": "2027 Opening Day (regular season start)",
+   "status": "verified",
+   "source": "MLB Stats API season dates",
+   "url": "https://statsapi.mlb.com/api/v1/seasons/2027?sportId=1"
+  }
+ ]
+}
