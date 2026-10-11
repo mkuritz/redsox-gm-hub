@@ -1924,7 +1924,7 @@
     "away": "Chicago White Sox",
     "date": "2026-10-10",
     "home": "Cleveland Guardians",
-    "hs": 0,
+    "hs": 2,
     "series": "AL Division Series",
     "status": "In Progress",
     "type": "D"
@@ -2141,5 +2141,5 @@
    }
   ]
  },
- "updated": "2026-10-10T21:01:27-04:00"
+ "updated": "2026-10-10T21:08:59-04:00"
 }
