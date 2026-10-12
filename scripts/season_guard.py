@@ -29,6 +29,21 @@ def get(url):
     except Exception as e:
         print("::warning::season_guard fetch failed %s (%s)" % (url, e)); return None
 
+NICK = {"nate": "nathan", "nick": "nicholas", "greg": "gregory", "tom": "thomas", "hollywood": "marquise", "mike": "michael",
+        "matt": "matthew", "chris": "christopher", "josh": "joshua", "jon": "jonathan", "dan": "daniel", "ben": "benjamin",
+        "zach": "zachary", "alex": "alexander", "tony": "anthony", "joe": "joseph", "will": "william", "rob": "robert",
+        "bob": "robert", "jake": "jacob", "sam": "samuel", "cam": "cameron", "tj": "tj", "dj": "dj"}
+
+def keys(n):
+    """All name variants: normalized + first-name nickname/formal swaps."""
+    b = norm(n); out = {b}
+    w = b.split(" ", 1)
+    if len(w) == 2:
+        for k, v in NICK.items():
+            if w[0] == k: out.add(v + " " + w[1])
+            if w[0] == v: out.add(k + " " + w[1])
+    return out
+
 def norm(n):
     n = unicodedata.normalize("NFKD", n or "").encode("ascii", "ignore").decode().lower()
     n = re.sub(r"[^a-z ]", "", n.replace("-", " "))
@@ -57,14 +72,19 @@ def roster(sport, team):
                 out = {"season": yr, "ids": set(), "names": set()}
                 for g in d.get("athletes", []):
                     for a in g.get("items", []):
-                        out["ids"].add(str(a["id"])); out["names"].add(norm(a["displayName"]))
+                        out["ids"].add(str(a["id"])); out["names"] |= keys(a["displayName"])
+                # core team list also carries practice-squad / IR / reserve players the site roster omits
+                c = get("https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/%d/teams/%s/athletes?limit=300" % (SEASON["nfl"], teams[team])) or {}
+                for it in c.get("items", []):
+                    m = re.search(r"athletes/(\d+)", it.get("$ref", ""))
+                    if m: out["ids"].add(m.group(1))
     elif sport == "nhl":
         d = get("https://api-web.nhle.com/v1/roster/%s/%s" % (team, SEASON["nhl"]))
         if d:
             out = {"season": SEASON["nhl"], "ids": set(), "names": set()}
             for grp in ("forwards", "defensemen", "goalies"):
                 for a in d.get(grp, []):
-                    out["ids"].add(str(a["id"])); out["names"].add(norm(a["firstName"]["default"] + " " + a["lastName"]["default"]))
+                    out["ids"].add(str(a["id"])); out["names"] |= keys(a["firstName"]["default"] + " " + a["lastName"]["default"])
     elif sport == "mlb":
         teams = _R.get("mlbteams")
         if teams is None:
@@ -76,9 +96,46 @@ def roster(sport, team):
             for rt in ("active", "40Man"):
                 d = get("https://statsapi.mlb.com/api/v1/teams/%s/roster?rosterType=%s&date=%s" % (teams[team], rt, TODAY)) or {}
                 for a in d.get("roster", []):
-                    out["ids"].add(str(a["person"]["id"])); out["names"].add(norm(a["person"]["fullName"]))
+                    out["ids"].add(str(a["person"]["id"])); out["names"] |= keys(a["person"]["fullName"])
     _R[key] = out
     return out
+
+_SL = None
+def sleeper_team(name):
+    """Live Sleeper player DB (includes practice squad/reserve): set of current teams for this name."""
+    global _SL
+    if _SL is None:
+        _SL = {}
+        for p in (get("https://api.sleeper.app/v1/players/nfl") or {}).values():
+            if p.get("team") and p.get("active"):
+                for k in keys(p.get("full_name") or ""): _SL.setdefault(k, set()).add(p["team"])
+    return set().union(*[_SL.get(k, set()) for k in keys(name)])
+
+def fallback(sport, name, team, pid, native):
+    team = ALIAS[sport].get(team, team)
+    if sport == "nfl":
+        if pid and native:
+            d = get("https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/%d/athletes/%s" % (SEASON["nfl"], pid)) or {}
+            m = re.search(r"teams/(\d+)", (d.get("team") or {}).get("$ref", ""))
+            st = (d.get("status") or {}).get("name") or ""
+            if m and st not in ("Free Agent", "Inactive", "Retired") and _R.get("nflteams", {}).get(team) == m.group(1): return "espn athlete (%s)" % ((d.get("status") or {}).get("name") or "listed")
+        t = {ALIAS["nfl"].get(x, x) for x in sleeper_team(name)}
+        if not (pid and native) and team in t:  # name-only rows (no ESPN id): Sleeper is the live tiebreak
+            return "sleeper live (practice squad/reserve)"
+    if sport == "nhl":
+        import urllib.parse
+        for p in get("https://search.d3.nhle.com/api/v1/search/player?culture=en-us&limit=5&q=" + urllib.parse.quote(name)) or []:
+            if p.get("teamAbbrev") == team and (not pid or str(p.get("playerId")) == str(pid) or norm(p.get("name")) == norm(name)):
+                return "nhl org (reserve/AHL list)"
+    return None
+
+def on_team(sport, name, team, pid=None, native=False):
+    """(ok, via) — is this player on this team's live current-season roster (incl. IR/PS/reserve)?"""
+    r = roster(sport, team)
+    if r is None: return None, "roster unavailable"
+    if (native and pid is not None and str(pid) in r["ids"]) or bool(keys(name) & r["names"]): return True, "roster"
+    via = fallback(sport, name, team, pid, native)
+    return (True, via) if via else (False, None)
 
 # ---------------- checks ----------------
 REPORT = {"generated": NOW.isoformat(timespec="seconds"), "seasons": SEASON, "checked": 0,
@@ -94,8 +151,11 @@ def check_players(sport, src, rows):
         REPORT["checked"] += 1
         if r is None:
             REPORT["unverified"].append({"src": src, "player": name, "team": team}); continue
-        ok = (native and pid is not None and str(pid) in r["ids"]) or norm(name) in r["names"]
+        ok = (native and pid is not None and str(pid) in r["ids"]) or bool(keys(name) & r["names"])
         if not ok:
+            via = fallback(sport, name, team, pid, native)
+            if via:
+                REPORT.setdefault("resolved", []).append({"src": src, "player": name, "team": team, "via": via}); continue
             REPORT["conflicts"].append({"src": src, "sport": sport, "player": name, "team": team,
                                         "why": "not on %s live %s roster for %s" % (team, SEASON[sport], TODAY)})
 
@@ -173,7 +233,7 @@ def mlb_lab():
 def ffo():
     p = ld("data/players.json", {})
     check_fresh("players.json", p.get("updated", ""))
-    rows = [(v["n"], v["t"], None, False) for v in (p.get("data") or {}).values() if v.get("t") and v.get("p") in ("QB", "RB", "WR", "TE", "K")]
+    rows = [(v["n"], v["t"], v.get("e"), bool(v.get("e"))) for v in (p.get("data") or {}).values() if v.get("t") and v.get("p") in ("QB", "RB", "WR", "TE", "K")]
     check_players("nfl", "players.json", rows)
 
 def eagles():
