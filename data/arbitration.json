@@ -1,0 +1,1846 @@
+{
+ "data": {
+  "source": "MLB Trade Rumors / Matt Swartz arbitration projections",
+  "teams": {
+   "Arizona Diamondbacks": [
+    {
+     "name": "Lars Nootbaar",
+     "note": null,
+     "proj": 6300000,
+     "service": "5.076"
+    },
+    {
+     "name": "Pavin Smith",
+     "note": null,
+     "proj": 2500000,
+     "service": "4.144"
+    },
+    {
+     "name": "Gabriel Moreno",
+     "note": null,
+     "proj": 6100000,
+     "service": "4.061"
+    },
+    {
+     "name": "Ryne Nelson",
+     "note": null,
+     "proj": 3400000,
+     "service": "4.020"
+    }
+   ],
+   "Athletics": [
+    {
+     "name": "Shea Langeliers",
+     "note": null,
+     "proj": 8700000,
+     "service": "4.051"
+    },
+    {
+     "name": "Luis Medina",
+     "note": null,
+     "proj": 1400000,
+     "service": "3.146"
+    },
+    {
+     "name": "Zack Gelof",
+     "note": null,
+     "proj": 2900000,
+     "service": "3.050"
+    },
+    {
+     "name": "Hogan Harris",
+     "note": null,
+     "proj": 2300000,
+     "service": "2.146"
+    }
+   ],
+   "Atlanta Braves": [
+    {
+     "name": "Dylan Lee",
+     "note": null,
+     "proj": 4200000,
+     "service": "4.150"
+    },
+    {
+     "name": "James Karinchak",
+     "note": null,
+     "proj": 1100000,
+     "service": "4.130"
+    },
+    {
+     "name": "Joey Wentz",
+     "note": null,
+     "proj": 900000,
+     "service": "3.166"
+    },
+    {
+     "name": "Michael Grove",
+     "note": null,
+     "proj": 1000000,
+     "service": "3.122"
+    },
+    {
+     "name": "Luke Williams",
+     "note": null,
+     "proj": 900000,
+     "service": "3.070"
+    },
+    {
+     "name": "Bryce Elder",
+     "note": null,
+     "proj": 4000000,
+     "service": "3.069"
+    }
+   ],
+   "Baltimore Orioles": [
+    {
+     "name": "Leody Taveras",
+     "note": null,
+     "proj": 3700000,
+     "service": "5.031"
+    },
+    {
+     "name": "F\u00e9lix Bautista",
+     "note": null,
+     "proj": 2400000,
+     "service": "5.000"
+    },
+    {
+     "name": "Codi Heuer",
+     "note": null,
+     "proj": 1100000,
+     "service": "4.059"
+    },
+    {
+     "name": "Gunnar Henderson",
+     "note": null,
+     "proj": 14100000,
+     "service": "4.036"
+    },
+    {
+     "name": "Albert Su\u00e1rez",
+     "note": null,
+     "proj": 1100000,
+     "service": "3.159"
+    },
+    {
+     "name": "Jordan Westburg",
+     "note": null,
+     "proj": 1500000,
+     "service": "3.098"
+    },
+    {
+     "name": "Colton Cowser",
+     "note": null,
+     "proj": 2200000,
+     "service": "3.043"
+    }
+   ],
+   "Boston Red Sox": [
+    {
+     "name": "Tanner Houck",
+     "note": null,
+     "proj": 4100000,
+     "service": "5.100"
+    },
+    {
+     "name": "Johan Oviedo",
+     "note": null,
+     "proj": 1800000,
+     "service": "5.079"
+    },
+    {
+     "name": "Adley Rutschman",
+     "note": null,
+     "proj": 9100000,
+     "service": "5.000"
+    },
+    {
+     "name": "Jarren Duran",
+     "note": null,
+     "proj": 11100000,
+     "service": "4.155"
+    },
+    {
+     "name": "Eli White",
+     "note": null,
+     "proj": 1400000,
+     "service": "4.140"
+    },
+    {
+     "name": "Kutter Crawford",
+     "note": null,
+     "proj": 2800000,
+     "service": "4.136"
+    },
+    {
+     "name": "Connor Wong",
+     "note": null,
+     "proj": 2000000,
+     "service": "4.079"
+    },
+    {
+     "name": "Romy Gonz\u00e1lez",
+     "note": null,
+     "proj": 1800000,
+     "service": "4.044"
+    },
+    {
+     "name": "Triston Casas",
+     "note": null,
+     "proj": 1700000,
+     "service": "4.032"
+    },
+    {
+     "name": "Andruw Monasterio",
+     "note": null,
+     "proj": 1600000,
+     "service": "3.099"
+    },
+    {
+     "name": "Zack Kelly",
+     "note": null,
+     "proj": 800000,
+     "service": "3.080"
+    },
+    {
+     "name": "Greg Weissert",
+     "note": null,
+     "proj": 1200000,
+     "service": "3.079"
+    },
+    {
+     "name": "Wilyer Abreu",
+     "note": null,
+     "proj": 4600000,
+     "service": "3.041"
+    },
+    {
+     "name": "Erik Miller",
+     "note": null,
+     "proj": 1500000,
+     "service": "3.000"
+    },
+    {
+     "name": "Justin Slaten",
+     "note": null,
+     "proj": 1200000,
+     "service": "3.000"
+    },
+    {
+     "name": "Jahmai Jones",
+     "note": null,
+     "proj": 900000,
+     "service": "2.148"
+    },
+    {
+     "name": "Tyron Guerrero",
+     "note": null,
+     "proj": 1100000,
+     "service": "2.133"
+    }
+   ],
+   "Chicago Cubs": [
+    {
+     "name": "Justin Steele",
+     "note": null,
+     "proj": 6800000,
+     "service": "5.143"
+    },
+    {
+     "name": "Edward Cabrera",
+     "note": null,
+     "proj": 4800000,
+     "service": "4.147"
+    },
+    {
+     "name": "Braxton Garrett",
+     "note": null,
+     "proj": 1600000,
+     "service": "4.006"
+    },
+    {
+     "name": "Javier Assad",
+     "note": "Cubs hold a $3.3MM option",
+     "proj": 2300000,
+     "service": "3.167"
+    },
+    {
+     "name": "Tyler Austin",
+     "note": null,
+     "proj": 1300000,
+     "service": "3.151"
+    },
+    {
+     "name": "Miguel Amaya",
+     "note": null,
+     "proj": 1700000,
+     "service": "3.130"
+    },
+    {
+     "name": "Gabriel Arias",
+     "note": null,
+     "proj": 1300000,
+     "service": "3.124"
+    },
+    {
+     "name": "Ryan Rolison",
+     "note": null,
+     "proj": 1100000,
+     "service": "3.109"
+    },
+    {
+     "name": "Ethan Roberts",
+     "note": null,
+     "proj": 800000,
+     "service": "3.080"
+    },
+    {
+     "name": "Michael Busch",
+     "note": null,
+     "proj": 5400000,
+     "service": "3.045"
+    },
+    {
+     "name": "Ben Brown",
+     "note": null,
+     "proj": 1300000,
+     "service": "2.169"
+    },
+    {
+     "name": "Daniel Palencia",
+     "note": null,
+     "proj": 1200000,
+     "service": "2.154"
+    }
+   ],
+   "Chicago White Sox": [
+    {
+     "name": "Joey Bart",
+     "note": null,
+     "proj": 2900000,
+     "service": "5.020"
+    },
+    {
+     "name": "Huascar Brazob\u00e1n",
+     "note": null,
+     "proj": 1600000,
+     "service": "3.170"
+    },
+    {
+     "name": "Brenton Doyle",
+     "note": null,
+     "proj": 3600000,
+     "service": "3.161"
+    },
+    {
+     "name": "Miguel Vargas",
+     "note": null,
+     "proj": 5400000,
+     "service": "3.101"
+    },
+    {
+     "name": "Chris Murphy",
+     "note": null,
+     "proj": 900000,
+     "service": "3.055"
+    },
+    {
+     "name": "Jordan Leasure",
+     "note": null,
+     "proj": 1000000,
+     "service": "2.161"
+    }
+   ],
+   "Cincinnati Reds": [
+    {
+     "name": "Tejay Antone",
+     "note": null,
+     "proj": 1500000,
+     "service": "5.145"
+    },
+    {
+     "name": "Nick Lodolo",
+     "note": null,
+     "proj": 5700000,
+     "service": "5.000"
+    },
+    {
+     "name": "Graham Ashcraft",
+     "note": null,
+     "proj": 2200000,
+     "service": "4.130"
+    },
+    {
+     "name": "Tony Santillan",
+     "note": null,
+     "proj": 2500000,
+     "service": "4.099"
+    },
+    {
+     "name": "Spencer Steer",
+     "note": null,
+     "proj": 5700000,
+     "service": "4.035"
+    },
+    {
+     "name": "JJ Bleday",
+     "note": null,
+     "proj": 4800000,
+     "service": "4.013"
+    },
+    {
+     "name": "Matt McLain",
+     "note": null,
+     "proj": 4000000,
+     "service": "3.140"
+    },
+    {
+     "name": "Brandon Williamson",
+     "note": null,
+     "proj": 1300000,
+     "service": "3.139"
+    },
+    {
+     "name": "Andrew Abbott",
+     "note": null,
+     "proj": 4500000,
+     "service": "3.119"
+    },
+    {
+     "name": "Elly De La Cruz",
+     "note": null,
+     "proj": 7900000,
+     "service": "3.118"
+    },
+    {
+     "name": "Oswaldo Cabrera",
+     "note": null,
+     "proj": 1100000,
+     "service": "3.069"
+    },
+    {
+     "name": "Dane Myers",
+     "note": null,
+     "proj": 1500000,
+     "service": "3.037"
+    }
+   ],
+   "Cleveland Guardians": [
+    {
+     "name": "Jo Adell",
+     "note": null,
+     "proj": 9600000,
+     "service": "5.085"
+    },
+    {
+     "name": "Steven Kwan",
+     "note": null,
+     "proj": 11300000,
+     "service": "5.000"
+    },
+    {
+     "name": "Colin Holderman",
+     "note": null,
+     "proj": 2300000,
+     "service": "4.108"
+    },
+    {
+     "name": "David Fry",
+     "note": null,
+     "proj": 1900000,
+     "service": "3.154"
+    },
+    {
+     "name": "Matt Festa",
+     "note": null,
+     "proj": 1500000,
+     "service": "3.153"
+    },
+    {
+     "name": "Patrick Bailey",
+     "note": null,
+     "proj": 2300000,
+     "service": "3.136"
+    },
+    {
+     "name": "Gavin Williams",
+     "note": null,
+     "proj": 4800000,
+     "service": "3.103"
+    },
+    {
+     "name": "Blake Perkins",
+     "note": null,
+     "proj": 900000,
+     "service": "3.075"
+    },
+    {
+     "name": "Hunter Gaddis",
+     "note": null,
+     "proj": 2200000,
+     "service": "3.073"
+    },
+    {
+     "name": "Tim Herrin",
+     "note": null,
+     "proj": 1300000,
+     "service": "3.058"
+    },
+    {
+     "name": "Brayan Rocchio",
+     "note": null,
+     "proj": 3100000,
+     "service": "3.001"
+    },
+    {
+     "name": "Cade Smith",
+     "note": null,
+     "proj": 5500000,
+     "service": "3.000"
+    },
+    {
+     "name": "Slade Cecconi",
+     "note": null,
+     "proj": 2000000,
+     "service": "2.155"
+    }
+   ],
+   "Colorado Rockies": [
+    {
+     "name": "Jimmy Herget",
+     "note": null,
+     "proj": 2400000,
+     "service": "5.069"
+    },
+    {
+     "name": "Jake McCarthy",
+     "note": null,
+     "proj": 4600000,
+     "service": "4.074"
+    },
+    {
+     "name": "Ryan Feltner",
+     "note": null,
+     "proj": 3800000,
+     "service": "4.071"
+    },
+    {
+     "name": "Brennan Bernardino",
+     "note": null,
+     "proj": 1600000,
+     "service": "3.153"
+    },
+    {
+     "name": "Hunter Goodman",
+     "note": null,
+     "proj": 6200000,
+     "service": "3.010"
+    },
+    {
+     "name": "Jordan Beck",
+     "note": null,
+     "proj": 1200000,
+     "service": "2.133"
+    }
+   ],
+   "Detroit Tigers": [
+    {
+     "name": "Will Vest",
+     "note": null,
+     "proj": 4400000,
+     "service": "5.100"
+    },
+    {
+     "name": "Zach McKinstry",
+     "note": null,
+     "proj": 5000000,
+     "service": "5.099"
+    },
+    {
+     "name": "Matt Vierling",
+     "note": null,
+     "proj": 3700000,
+     "service": "5.026"
+    },
+    {
+     "name": "Riley Greene",
+     "note": null,
+     "proj": 9300000,
+     "service": "4.110"
+    },
+    {
+     "name": "Spencer Torkelson",
+     "note": null,
+     "proj": 7700000,
+     "service": "4.076"
+    },
+    {
+     "name": "Kerry Carpenter",
+     "note": null,
+     "proj": 4100000,
+     "service": "4.057"
+    },
+    {
+     "name": "Tyler Holton",
+     "note": null,
+     "proj": 2400000,
+     "service": "4.047"
+    },
+    {
+     "name": "Beau Brieske",
+     "note": null,
+     "proj": 1500000,
+     "service": "4.007"
+    },
+    {
+     "name": "Reese Olson",
+     "note": null,
+     "proj": 1500000,
+     "service": "3.123"
+    },
+    {
+     "name": "Wenceel P\u00e9rez",
+     "note": null,
+     "proj": 1400000,
+     "service": "3.000"
+    },
+    {
+     "name": "Parker Meadows",
+     "note": null,
+     "proj": 1000000,
+     "service": "2.169"
+    }
+   ],
+   "Houston Astros": [
+    {
+     "name": "Isaac Paredes",
+     "note": "Astros hold a $13.35MM club option",
+     "proj": 15000000,
+     "service": "5.160"
+    },
+    {
+     "name": "Peter Lambert",
+     "note": null,
+     "proj": 4600000,
+     "service": "5.069"
+    },
+    {
+     "name": "Jeremy Pe\u00f1a",
+     "note": null,
+     "proj": 13100000,
+     "service": "5.000"
+    },
+    {
+     "name": "Jake Meyers",
+     "note": null,
+     "proj": 3600000,
+     "service": "4.161"
+    },
+    {
+     "name": "Hunter Brown",
+     "note": null,
+     "proj": 6800000,
+     "service": "4.035"
+    },
+    {
+     "name": "Yainer Diaz",
+     "note": null,
+     "proj": 6300000,
+     "service": "4.035"
+    },
+    {
+     "name": "Hayden Wesneski",
+     "note": null,
+     "proj": 1800000,
+     "service": "3.170"
+    },
+    {
+     "name": "Nick Allen",
+     "note": null,
+     "proj": 1800000,
+     "service": "3.164"
+    },
+    {
+     "name": "Bennett Sousa",
+     "note": null,
+     "proj": 1300000,
+     "service": "3.156"
+    },
+    {
+     "name": "Taylor Trammell",
+     "note": null,
+     "proj": 1500000,
+     "service": "3.143"
+    },
+    {
+     "name": "Ronel Blanco",
+     "note": null,
+     "proj": 1400000,
+     "service": "3.100"
+    }
+   ],
+   "Kansas City Royals": [
+    {
+     "name": "Kyle Isbel",
+     "note": null,
+     "proj": 3500000,
+     "service": "5.043"
+    },
+    {
+     "name": "Nate Pearson",
+     "note": null,
+     "proj": 2000000,
+     "service": "5.042"
+    },
+    {
+     "name": "Nick Mears",
+     "note": null,
+     "proj": 2200000,
+     "service": "5.022"
+    },
+    {
+     "name": "Alex Lange",
+     "note": null,
+     "proj": 1700000,
+     "service": "4.145"
+    },
+    {
+     "name": "Daniel Lynch IV",
+     "note": null,
+     "proj": 1800000,
+     "service": "4.136"
+    },
+    {
+     "name": "Michael Massey",
+     "note": null,
+     "proj": 3200000,
+     "service": "4.068"
+    },
+    {
+     "name": "Anthony Gose",
+     "note": null,
+     "proj": 1100000,
+     "service": "4.019"
+    },
+    {
+     "name": "James McArthur",
+     "note": null,
+     "proj": 800000,
+     "service": "3.150"
+    },
+    {
+     "name": "Randy Dobnak",
+     "note": null,
+     "proj": 2300000,
+     "service": "3.148"
+    },
+    {
+     "name": "Lucas Erceg",
+     "note": null,
+     "proj": 2300000,
+     "service": "3.125"
+    },
+    {
+     "name": "Alec Marsh",
+     "note": null,
+     "proj": 1100000,
+     "service": "3.078"
+    }
+   ],
+   "Los Angeles Angels": [
+    {
+     "name": "Reid Detmers",
+     "note": null,
+     "proj": 7500000,
+     "service": "4.159"
+    },
+    {
+     "name": "Jose Siri",
+     "note": null,
+     "proj": 2300000,
+     "service": "4.150"
+    },
+    {
+     "name": "Josh Lowe",
+     "note": null,
+     "proj": 3600000,
+     "service": "4.075"
+    },
+    {
+     "name": "Tyler Heineman",
+     "note": null,
+     "proj": 1500000,
+     "service": "4.066"
+    },
+    {
+     "name": "Tayler Saucedo",
+     "note": null,
+     "proj": 1500000,
+     "service": "4.043"
+    },
+    {
+     "name": "Zach Neto",
+     "note": null,
+     "proj": 9800000,
+     "service": "3.170"
+    },
+    {
+     "name": "Grayson Rodriguez",
+     "note": null,
+     "proj": 2100000,
+     "service": "3.129"
+    },
+    {
+     "name": "Ben Joyce",
+     "note": null,
+     "proj": 1100000,
+     "service": "3.075"
+    },
+    {
+     "name": "Nolan Schanuel",
+     "note": null,
+     "proj": 3000000,
+     "service": "3.045"
+    },
+    {
+     "name": "Oswald Peraza",
+     "note": null,
+     "proj": 1400000,
+     "service": "3.014"
+    },
+    {
+     "name": "Sam Bachman",
+     "note": null,
+     "proj": 1100000,
+     "service": "2.149"
+    }
+   ],
+   "Los Angeles Dodgers": [
+    {
+     "name": "Brock Stewart",
+     "note": null,
+     "proj": 1800000,
+     "service": "5.093"
+    },
+    {
+     "name": "Jake Cousins",
+     "note": null,
+     "proj": 1000000,
+     "service": "4.091"
+    },
+    {
+     "name": "Alex Call",
+     "note": null,
+     "proj": 1900000,
+     "service": "3.161"
+    },
+    {
+     "name": "Emmet Sheehan",
+     "note": null,
+     "proj": 2100000,
+     "service": "3.063"
+    },
+    {
+     "name": "Gavin Stone",
+     "note": null,
+     "proj": 1200000,
+     "service": "3.034"
+    },
+    {
+     "name": "Andy Pages",
+     "note": null,
+     "proj": 4900000,
+     "service": "2.155"
+    }
+   ],
+   "Miami Marlins": [
+    {
+     "name": "Anthony Bender",
+     "note": null,
+     "proj": 3400000,
+     "service": "5.153"
+    },
+    {
+     "name": "Andrew Nardi",
+     "note": null,
+     "proj": 1100000,
+     "service": "4.053"
+    },
+    {
+     "name": "Max Meyer",
+     "note": null,
+     "proj": 2700000,
+     "service": "3.166"
+    },
+    {
+     "name": "Calvin Faucher",
+     "note": null,
+     "proj": 2900000,
+     "service": "3.156"
+    },
+    {
+     "name": "Eury P\u00e9rez",
+     "note": null,
+     "proj": 3200000,
+     "service": "3.113"
+    },
+    {
+     "name": "Otto Lopez",
+     "note": null,
+     "proj": 5400000,
+     "service": "3.109"
+    },
+    {
+     "name": "Tyler Zuber",
+     "note": null,
+     "proj": 900000,
+     "service": "3.104"
+    },
+    {
+     "name": "Esteury Ruiz",
+     "note": null,
+     "proj": 1300000,
+     "service": "3.064"
+    },
+    {
+     "name": "Xavier Edwards",
+     "note": null,
+     "proj": 3500000,
+     "service": "3.034"
+    },
+    {
+     "name": "Victor Vodnik",
+     "note": null,
+     "proj": 1400000,
+     "service": "3.024"
+    },
+    {
+     "name": "Kyle Stowers",
+     "note": null,
+     "proj": 3200000,
+     "service": "3.012"
+    }
+   ],
+   "Milwaukee Brewers": [
+    {
+     "name": "Andrew Vaughn",
+     "note": null,
+     "proj": 8500000,
+     "service": "5.142"
+    },
+    {
+     "name": "William Contreras",
+     "note": "Brewers hold $14.5MM club option",
+     "proj": 14600000,
+     "service": "5.112"
+    },
+    {
+     "name": "Bryse Wilson",
+     "note": null,
+     "proj": 1100000,
+     "service": "5.049"
+    },
+    {
+     "name": "Trevor Megill",
+     "note": null,
+     "proj": 8000000,
+     "service": "5.002"
+    },
+    {
+     "name": "Angel Zerpa",
+     "note": null,
+     "proj": 1300000,
+     "service": "4.082"
+    },
+    {
+     "name": "Garrett Mitchell",
+     "note": null,
+     "proj": 2700000,
+     "service": "4.040"
+    },
+    {
+     "name": "Brice Turang",
+     "note": null,
+     "proj": 9500000,
+     "service": "3.165"
+    },
+    {
+     "name": "Akil Baddoo",
+     "note": null,
+     "proj": 1300000,
+     "service": "3.082"
+    },
+    {
+     "name": "DL Hall",
+     "note": null,
+     "proj": 1000000,
+     "service": "3.074"
+    },
+    {
+     "name": "Sal Frelick",
+     "note": null,
+     "proj": 2400000,
+     "service": "3.072"
+    },
+    {
+     "name": "Joey Ortiz",
+     "note": null,
+     "proj": 2400000,
+     "service": "3.030"
+    },
+    {
+     "name": "Bo Naylor",
+     "note": null,
+     "proj": 1500000,
+     "service": "3.014"
+    },
+    {
+     "name": "David Hamilton",
+     "note": null,
+     "proj": 1600000,
+     "service": "3.011"
+    },
+    {
+     "name": "Grant Anderson",
+     "note": null,
+     "proj": 1000000,
+     "service": "3.007"
+    },
+    {
+     "name": "Jared Koenig",
+     "note": null,
+     "proj": 900000,
+     "service": "2.158"
+    },
+    {
+     "name": "Quinn Priester",
+     "note": null,
+     "proj": 1300000,
+     "service": "2.134"
+    }
+   ],
+   "Minnesota Twins": [
+    {
+     "name": "Anthony Banda",
+     "note": null,
+     "proj": 2300000,
+     "service": "5.135"
+    },
+    {
+     "name": "Dean Kremer",
+     "note": null,
+     "proj": 6500000,
+     "service": "5.107"
+    },
+    {
+     "name": "Bailey Ober",
+     "note": null,
+     "proj": 6900000,
+     "service": "5.093"
+    },
+    {
+     "name": "Joe Ryan",
+     "note": "current deal has $13MM mutual option for 2027 with $100K buyout",
+     "proj": 9600000,
+     "service": "5.033"
+    },
+    {
+     "name": "Trevor Larnach",
+     "note": null,
+     "proj": 6300000,
+     "service": "5.014"
+    },
+    {
+     "name": "Royce Lewis",
+     "note": null,
+     "proj": 5100000,
+     "service": "4.139"
+    },
+    {
+     "name": "Cole Sands",
+     "note": null,
+     "proj": 1300000,
+     "service": "4.017"
+    },
+    {
+     "name": "Tommy Nance",
+     "note": null,
+     "proj": 1200000,
+     "service": "3.165"
+    },
+    {
+     "name": "Kody Clemens",
+     "note": null,
+     "proj": 3600000,
+     "service": "3.134"
+    },
+    {
+     "name": "Taj Bradley",
+     "note": null,
+     "proj": 4500000,
+     "service": "3.097"
+    }
+   ],
+   "New York Mets": [
+    {
+     "name": "Cionel P\u00e9rez",
+     "note": null,
+     "proj": 1200000,
+     "service": "5.139"
+    },
+    {
+     "name": "Tylor Megill",
+     "note": null,
+     "proj": 2500000,
+     "service": "5.031"
+    },
+    {
+     "name": "Christopher Morel",
+     "note": null,
+     "proj": 2100000,
+     "service": "4.080"
+    },
+    {
+     "name": "Francisco Alvarez",
+     "note": null,
+     "proj": 4100000,
+     "service": "3.164"
+    },
+    {
+     "name": "Reed Garrett",
+     "note": null,
+     "proj": 1300000,
+     "service": "3.143"
+    },
+    {
+     "name": "Austin Warren",
+     "note": null,
+     "proj": 1200000,
+     "service": "3.137"
+    },
+    {
+     "name": "Mark Vientos",
+     "note": null,
+     "proj": 2400000,
+     "service": "3.102"
+    },
+    {
+     "name": "Brett Baty",
+     "note": null,
+     "proj": 2500000,
+     "service": "3.088"
+    },
+    {
+     "name": "Cristian Pache",
+     "note": null,
+     "proj": 800000,
+     "service": "3.086"
+    },
+    {
+     "name": "Dedniel N\u00fa\u00f1ez",
+     "note": null,
+     "proj": 900000,
+     "service": "3.074"
+    }
+   ],
+   "New York Yankees": [
+    {
+     "name": "Clarke Schmidt",
+     "note": null,
+     "proj": 4500000,
+     "service": "5.148"
+    },
+    {
+     "name": "Luis Garc\u00eda Jr.",
+     "note": null,
+     "proj": 11000000,
+     "service": "5.142"
+    },
+    {
+     "name": "Ryan Weathers",
+     "note": null,
+     "proj": 3100000,
+     "service": "4.066"
+    },
+    {
+     "name": "Fernando Cruz",
+     "note": null,
+     "proj": 2300000,
+     "service": "4.035"
+    },
+    {
+     "name": "Jos\u00e9 Caballero",
+     "note": null,
+     "proj": 3700000,
+     "service": "3.170"
+    },
+    {
+     "name": "Anthony Volpe",
+     "note": null,
+     "proj": 4000000,
+     "service": "3.142"
+    },
+    {
+     "name": "Luis Gil",
+     "note": null,
+     "proj": 2300000,
+     "service": "3.119"
+    },
+    {
+     "name": "Heliot Ramos",
+     "note": null,
+     "proj": 3200000,
+     "service": "3.103"
+    },
+    {
+     "name": "Austin Wells",
+     "note": null,
+     "proj": 2600000,
+     "service": "3.031"
+    }
+   ],
+   "Philadelphia Phillies": [
+    {
+     "name": "Garrett Stubbs",
+     "note": null,
+     "proj": 1000000,
+     "service": "5.139"
+    },
+    {
+     "name": "Brandon Marsh",
+     "note": null,
+     "proj": 8300000,
+     "service": "5.078"
+    },
+    {
+     "name": "Jhoan Duran",
+     "note": null,
+     "proj": 10900000,
+     "service": "5.000"
+    },
+    {
+     "name": "Bryson Stott",
+     "note": null,
+     "proj": 9200000,
+     "service": "5.000"
+    },
+    {
+     "name": "Tanner Banks",
+     "note": null,
+     "proj": 1400000,
+     "service": "4.092"
+    },
+    {
+     "name": "Derek Hill",
+     "note": null,
+     "proj": 1500000,
+     "service": "4.040"
+    },
+    {
+     "name": "Rafael March\u00e1n",
+     "note": null,
+     "proj": 1000000,
+     "service": "4.006"
+    },
+    {
+     "name": "Bryan De La Cruz",
+     "note": null,
+     "proj": 1200000,
+     "service": "3.148"
+    },
+    {
+     "name": "Orion Kerkering",
+     "note": null,
+     "proj": 1500000,
+     "service": "3.010"
+    }
+   ],
+   "Pittsburgh Pirates": [
+    {
+     "name": "Yohan Ram\u00edrez",
+     "note": null,
+     "proj": 1500000,
+     "service": "4.135"
+    },
+    {
+     "name": "Oneil Cruz",
+     "note": null,
+     "proj": 6300000,
+     "service": "4.110"
+    },
+    {
+     "name": "Carmen Mlodzinski",
+     "note": null,
+     "proj": 1600000,
+     "service": "3.081"
+    },
+    {
+     "name": "Jared Triolo",
+     "note": null,
+     "proj": 1800000,
+     "service": "3.071"
+    },
+    {
+     "name": "Endy Rodr\u00edguez",
+     "note": null,
+     "proj": 1200000,
+     "service": "3.044"
+    },
+    {
+     "name": "Henry Davis",
+     "note": null,
+     "proj": 1400000,
+     "service": "3.039"
+    },
+    {
+     "name": "Nick Gonzales",
+     "note": null,
+     "proj": 3100000,
+     "service": "3.018"
+    },
+    {
+     "name": "Jared Jones",
+     "note": null,
+     "proj": 2100000,
+     "service": "3.000"
+    },
+    {
+     "name": "Paul Skenes",
+     "note": null,
+     "proj": 7200000,
+     "service": "3.000"
+    },
+    {
+     "name": "Spencer Horwitz",
+     "note": null,
+     "proj": 2500000,
+     "service": "2.152"
+    }
+   ],
+   "San Diego Padres": [
+    {
+     "name": "Gavin Sheets",
+     "note": null,
+     "proj": 6500000,
+     "service": "5.076"
+    },
+    {
+     "name": "Luis Campusano",
+     "note": null,
+     "proj": 1700000,
+     "service": "4.003"
+    },
+    {
+     "name": "Mason Miller",
+     "note": null,
+     "proj": 8100000,
+     "service": "3.166"
+    },
+    {
+     "name": "Freddy Fermin",
+     "note": null,
+     "proj": 2600000,
+     "service": "3.165"
+    },
+    {
+     "name": "Bryan Hoeing",
+     "note": null,
+     "proj": 800000,
+     "service": "3.133"
+    },
+    {
+     "name": "JP Sears",
+     "note": null,
+     "proj": 2800000,
+     "service": "3.108"
+    },
+    {
+     "name": "Jeremiah Estrada",
+     "note": null,
+     "proj": 1300000,
+     "service": "3.069"
+    },
+    {
+     "name": "Jhony Brito",
+     "note": null,
+     "proj": 800000,
+     "service": "2.138"
+    }
+   ],
+   "San Francisco Giants": [
+    {
+     "name": "Sam Hentges",
+     "note": null,
+     "proj": 2000000,
+     "service": "5.157"
+    },
+    {
+     "name": "Andrew Knizner",
+     "note": null,
+     "proj": 1000000,
+     "service": "5.139"
+    },
+    {
+     "name": "Camilo Doval",
+     "note": null,
+     "proj": 6600000,
+     "service": "5.071"
+    },
+    {
+     "name": "Jason Foley",
+     "note": null,
+     "proj": 2300000,
+     "service": "4.150"
+    },
+    {
+     "name": "Rowan Wick",
+     "note": null,
+     "proj": 800000,
+     "service": "4.114"
+    },
+    {
+     "name": "Ryan Walker",
+     "note": null,
+     "proj": 1600000,
+     "service": "3.050"
+    },
+    {
+     "name": "Casey Schmitt",
+     "note": null,
+     "proj": 2500000,
+     "service": "3.035"
+    },
+    {
+     "name": "Jos\u00e9 Butt\u00f3",
+     "note": null,
+     "proj": 800000,
+     "service": "2.168"
+    },
+    {
+     "name": "Randy Rodr\u00edguez",
+     "note": null,
+     "proj": 800000,
+     "service": "2.148"
+    }
+   ],
+   "Seattle Mariners": [
+    {
+     "name": "Logan Gilbert",
+     "note": null,
+     "proj": 15400000,
+     "service": "5.144"
+    },
+    {
+     "name": "Brendan Donovan",
+     "note": null,
+     "proj": 6100000,
+     "service": "5.000"
+    },
+    {
+     "name": "Gabe Speier",
+     "note": null,
+     "proj": 3300000,
+     "service": "5.000"
+    },
+    {
+     "name": "George Kirby",
+     "note": null,
+     "proj": 9800000,
+     "service": "4.151"
+    },
+    {
+     "name": "Patrick Wisdom",
+     "note": null,
+     "proj": 1100000,
+     "service": "4.135"
+    },
+    {
+     "name": "Matt Brash",
+     "note": null,
+     "proj": 1800000,
+     "service": "4.121"
+    },
+    {
+     "name": "Luke Raley",
+     "note": null,
+     "proj": 3100000,
+     "service": "4.106"
+    },
+    {
+     "name": "Bryce Miller",
+     "note": "Mariners hold a $6.075MM option with $15K buyout",
+     "proj": 3900000,
+     "service": "3.153"
+    },
+    {
+     "name": "Bryan Woo",
+     "note": null,
+     "proj": 5200000,
+     "service": "3.121"
+    },
+    {
+     "name": "Eduard Bazardo",
+     "note": null,
+     "proj": 1500000,
+     "service": "3.118"
+    },
+    {
+     "name": "Jose A. Ferrer",
+     "note": null,
+     "proj": 1600000,
+     "service": "3.094"
+    },
+    {
+     "name": "Michael Rucker",
+     "note": null,
+     "proj": 800000,
+     "service": "3.069"
+    },
+    {
+     "name": "Dominic Canzone",
+     "note": null,
+     "proj": 3000000,
+     "service": "3.014"
+    },
+    {
+     "name": "Cooper Criswell",
+     "note": null,
+     "proj": 900000,
+     "service": "2.143"
+    },
+    {
+     "name": "Carlos Vargas",
+     "note": null,
+     "proj": 800000,
+     "service": "2.140"
+    }
+   ],
+   "St. Louis Cardinals": [
+    {
+     "name": "Andre Pallante",
+     "note": null,
+     "proj": 7500000,
+     "service": "4.145"
+    },
+    {
+     "name": "Nolan Gorman",
+     "note": null,
+     "proj": 3400000,
+     "service": "4.055"
+    },
+    {
+     "name": "Alec Burleson",
+     "note": null,
+     "proj": 8300000,
+     "service": "4.029"
+    },
+    {
+     "name": "Matthew Liberatore",
+     "note": null,
+     "proj": 3600000,
+     "service": "3.144"
+    },
+    {
+     "name": "Masyn Winn",
+     "note": null,
+     "proj": 3300000,
+     "service": "3.045"
+    },
+    {
+     "name": "Jordan Walker",
+     "note": null,
+     "proj": 5100000,
+     "service": "3.044"
+    },
+    {
+     "name": "Iv\u00e1n Herrera",
+     "note": null,
+     "proj": 5500000,
+     "service": "3.034"
+    },
+    {
+     "name": "Pedro Pag\u00e9s",
+     "note": null,
+     "proj": 1300000,
+     "service": "2.166"
+    },
+    {
+     "name": "Kyle Leahy",
+     "note": null,
+     "proj": 2800000,
+     "service": "2.140"
+    }
+   ],
+   "Tampa Bay Rays": [
+    {
+     "name": "Shane McClanahan",
+     "note": null,
+     "proj": 6600000,
+     "service": "5.158"
+    },
+    {
+     "name": "Nick Madrigal",
+     "note": null,
+     "proj": 1100000,
+     "service": "5.137"
+    },
+    {
+     "name": "Tyler Wells",
+     "note": null,
+     "proj": 4000000,
+     "service": "5.132"
+    },
+    {
+     "name": "Cole Sulser",
+     "note": null,
+     "proj": 1900000,
+     "service": "5.096"
+    },
+    {
+     "name": "Taylor Walls",
+     "note": "Rays hold a $3.1MM club option",
+     "proj": 3500000,
+     "service": "5.092"
+    },
+    {
+     "name": "Griffin Jax",
+     "note": null,
+     "proj": 5700000,
+     "service": "5.091"
+    },
+    {
+     "name": "Garrett Cleavinger",
+     "note": null,
+     "proj": 3700000,
+     "service": "5.060"
+    },
+    {
+     "name": "Nick Fortes",
+     "note": null,
+     "proj": 3400000,
+     "service": "4.149"
+    },
+    {
+     "name": "Bryan Baker",
+     "note": null,
+     "proj": 4100000,
+     "service": "4.049"
+    },
+    {
+     "name": "Ryan Pepiot",
+     "note": null,
+     "proj": 3100000,
+     "service": "4.005"
+    },
+    {
+     "name": "Kevin Kelly",
+     "note": null,
+     "proj": 2600000,
+     "service": "3.156"
+    },
+    {
+     "name": "Richie Palacios",
+     "note": null,
+     "proj": 2000000,
+     "service": "3.156"
+    },
+    {
+     "name": "Edwin Uceta",
+     "note": null,
+     "proj": 1500000,
+     "service": "3.150"
+    },
+    {
+     "name": "Manuel Rodr\u00edguez",
+     "note": null,
+     "proj": 900000,
+     "service": "3.139"
+    },
+    {
+     "name": "Jonny DeLuca",
+     "note": null,
+     "proj": 1700000,
+     "service": "3.085"
+    },
+    {
+     "name": "Jesse Scholtens",
+     "note": null,
+     "proj": 900000,
+     "service": "3.032"
+    },
+    {
+     "name": "Jonathan Aranda",
+     "note": null,
+     "proj": 4100000,
+     "service": "3.030"
+    }
+   ],
+   "Texas Rangers": [
+    {
+     "name": "MacKenzie Gore",
+     "note": null,
+     "proj": 8700000,
+     "service": "5.000"
+    },
+    {
+     "name": "Jake Burger",
+     "note": null,
+     "proj": 6900000,
+     "service": "4.127"
+    },
+    {
+     "name": "Ezequiel Dur\u00e1n",
+     "note": null,
+     "proj": 4000000,
+     "service": "4.053"
+    },
+    {
+     "name": "Josh Jung",
+     "note": null,
+     "proj": 5200000,
+     "service": "4.027"
+    },
+    {
+     "name": "Logan O\u2019Hoppe",
+     "note": null,
+     "proj": 3100000,
+     "service": "3.171"
+    },
+    {
+     "name": "Cody Bradford",
+     "note": null,
+     "proj": 1300000,
+     "service": "3.086"
+    },
+    {
+     "name": "Robert Garcia",
+     "note": null,
+     "proj": 1100000,
+     "service": "3.086"
+    },
+    {
+     "name": "Wyatt Langford",
+     "note": null,
+     "proj": 3300000,
+     "service": "3.000"
+    },
+    {
+     "name": "Evan Carter",
+     "note": null,
+     "proj": 1700000,
+     "service": "2.170"
+    },
+    {
+     "name": "Jacob Latz",
+     "note": null,
+     "proj": 3000000,
+     "service": "2.170"
+    }
+   ],
+   "Toronto Blue Jays": [
+    {
+     "name": "Ernie Clement",
+     "note": null,
+     "proj": 7600000,
+     "service": "4.168"
+    },
+    {
+     "name": "Jos\u00e9 Soriano",
+     "note": null,
+     "proj": 5600000,
+     "service": "4.121"
+    },
+    {
+     "name": "Josh Smith",
+     "note": null,
+     "proj": 3700000,
+     "service": "4.116"
+    },
+    {
+     "name": "Bowden Francis",
+     "note": null,
+     "proj": 1300000,
+     "service": "3.098"
+    },
+    {
+     "name": "Spencer Arrighetti",
+     "note": null,
+     "proj": 1900000,
+     "service": "2.166"
+    },
+    {
+     "name": "Louis Varland",
+     "note": null,
+     "proj": 3800000,
+     "service": "2.163"
+    },
+    {
+     "name": "Nathan Lukes",
+     "note": null,
+     "proj": 2100000,
+     "service": "2.145"
+    },
+    {
+     "name": "Davis Schneider",
+     "note": null,
+     "proj": 1300000,
+     "service": "2.142"
+    }
+   ],
+   "View Comments": [],
+   "Washington Nationals": [
+    {
+     "name": "Josiah Gray",
+     "note": null,
+     "proj": 1600000,
+     "service": "5.075"
+    },
+    {
+     "name": "CJ Abrams",
+     "note": null,
+     "proj": 10200000,
+     "service": "4.130"
+    },
+    {
+     "name": "Richard Lovelady",
+     "note": null,
+     "proj": 1700000,
+     "service": "4.052"
+    },
+    {
+     "name": "Jake Bird",
+     "note": null,
+     "proj": 1300000,
+     "service": "3.169"
+    },
+    {
+     "name": "Jake Irvin",
+     "note": null,
+     "proj": 3400000,
+     "service": "3.152"
+    },
+    {
+     "name": "Ken Waldichuk",
+     "note": null,
+     "proj": 1000000,
+     "service": "3.150"
+    },
+    {
+     "name": "Jacob Young",
+     "note": null,
+     "proj": 2300000,
+     "service": "3.037"
+    },
+    {
+     "name": "Mitchell Parker",
+     "note": null,
+     "proj": 1100000,
+     "service": "2.167"
+    }
+   ]
+  },
+  "url": "https://www.mlbtraderumors.com/2026/10/projected-arbitration-salaries-for-2027.html"
+ },
+ "updated": "2026-10-11T19:43:51-04:00"
+}

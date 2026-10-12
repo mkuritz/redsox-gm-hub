@@ -1,0 +1,117 @@
+{
+ "updated": "2026-10-12",
+ "source": "MLB Stats API /teams/111/coaches (2026 season)",
+ "url": "https://statsapi.mlb.com/api/v1/teams/111/coaches?season=2026",
+ "staff": [
+  {
+   "name": "Alex Cora",
+   "role": "Manager",
+   "num": "13"
+  },
+  {
+   "name": "Chad Tracy",
+   "role": "Manager",
+   "num": "17"
+  },
+  {
+   "name": "Chad Tracy",
+   "role": "Interim Manager",
+   "num": "17"
+  },
+  {
+   "name": "Ram\u00f3n V\u00e1zquez",
+   "role": "Bench Coach",
+   "num": "60"
+  },
+  {
+   "name": "Jos\u00e9 David Flores",
+   "role": "Interim Bench Coach",
+   "num": "58"
+  },
+  {
+   "name": "Peter Fatse",
+   "role": "Hitting Coach",
+   "num": "62"
+  },
+  {
+   "name": "John Soteropulos",
+   "role": "Hitting Coach",
+   "num": "85"
+  },
+  {
+   "name": "Collin Hetzler",
+   "role": "Interim Hitting Coach",
+   "num": "84"
+  },
+  {
+   "name": "Nelson Paulino",
+   "role": "Interim Hitting Coach",
+   "num": "88"
+  },
+  {
+   "name": "Dillon Lawson",
+   "role": "Assistant Hitting Coach",
+   "num": "88"
+  },
+  {
+   "name": "Jack Simonetty",
+   "role": "Interim Hitting Assistant",
+   "num": "92"
+  },
+  {
+   "name": "John Soteropulos",
+   "role": "Assistant Hitting Coach",
+   "num": "85"
+  },
+  {
+   "name": "Andrew Bailey",
+   "role": "Pitching Coach",
+   "num": "53"
+  },
+  {
+   "name": "Pablo Cabrera",
+   "role": "Interim First Base Coach/Outfield Instructor",
+   "num": "83"
+  },
+  {
+   "name": "Jos\u00e9 David Flores",
+   "role": "First Base Coach/Infield Instructor",
+   "num": "58"
+  },
+  {
+   "name": "Chad Epperson",
+   "role": "Interim Third Base Coach",
+   "num": "81"
+  },
+  {
+   "name": "Kyle Hudson",
+   "role": "Third Base Coach/Outfield Instructor",
+   "num": "84"
+  },
+  {
+   "name": "Chris Holt",
+   "role": "Bullpen Coach",
+   "num": "59"
+  },
+  {
+   "name": "Joe Cronin",
+   "role": "Major League Hitting Strategist",
+   "num": "81"
+  },
+  {
+   "name": "Devin Rose",
+   "role": "Major League Pitching Strategist",
+   "num": "82"
+  },
+  {
+   "name": "Jason Varitek",
+   "role": "Game Planning and Run Prevention Coach",
+   "num": "33"
+  },
+  {
+   "name": "Parker Guinn",
+   "role": "Catching Instructor/Bullpen Catcher",
+   "num": "86"
+  }
+ ]
+}
