@@ -2099,6 +2099,11 @@
     "pos": "P",
     "rumors": [
      {
+      "date": "2026-10-12T15:06-04:00",
+      "title": "How The Rays Turned Bryan Baker Into An All-Star Closer",
+      "url": "https://www.mlbtraderumors.com/2026/10/how-the-rays-turned-bryan-baker-into-an-all-star-closer.html"
+     },
+     {
       "date": "2026-10-10T11:03-04:00",
       "title": "AL East Notes: Rays, Feduccia, Red Sox, Kittredge, Akin",
       "url": "https://www.mlbtraderumors.com/2026/10/al-east-notes-rays-feduccia-red-sox-kittredge-akin.html"
@@ -3315,13 +3320,7 @@
      "whip": "1.06"
     },
     "pos": "P",
-    "rumors": [
-     {
-      "date": "2026-10-08T09:44-04:00",
-      "title": "The Opener: Mitchell\u2019s Catch, Volpe\u2019s Non-Homer, Pages",
-      "url": "https://www.mlbtraderumors.com/2026/10/the-opener-mitchells-catch-volpes-non-homer-pages.html"
-     }
-    ],
+    "rumors": [],
     "team": "Cleveland Guardians",
     "teamL": 77,
     "teamPct": ".525",
@@ -4824,6 +4823,71 @@
   ],
   "feed": [
    {
+    "date": "2026-10-12T15:58-04:00",
+    "kind": "rumor",
+    "players": [
+     "Roman Anthony"
+    ],
+    "source": "MLB Trade Rumors",
+    "summary": "MLBTR\u2019s Steve Adams is hosting a live chat today at 3pm CT, exclusively for Trade Rumors Front Office subscribers. Unlock Subscriber-Exclusive Articles Like This One With a Trade Rumors Front Office Subscription BENEFITS Access weekly subscriber-only articles by Tim Dierkes, Steve Adams, and Anthony Franco. Join exclus",
+    "tags": [
+     "trade",
+     "front office"
+    ],
+    "title": "Trade Rumors Front Office Subscriber Chat, Today 3pm CT",
+    "url": "https://www.mlbtraderumors.com/2026/10/trade-rumors-front-office-subscriber-chat-today-3pm-ct-30.html"
+   },
+   {
+    "date": "2026-10-12T15:06-04:00",
+    "kind": "rumor",
+    "players": [
+     "Bryan Baker",
+     "Pete Fairbanks"
+    ],
+    "source": "MLB Trade Rumors",
+    "summary": "The Rays entered the 2026 season with an unsettled closer situation for the first time in years. Manager Kevin Cash\u2019s fickle ninth-inning usage ended when Pete Fairbanks emerged. From 2017 through 2022, a different reliever led Tampa Bay in saves each season. Fairbanks became the permanent closer in 2023 and paced the ",
+    "tags": [
+     "front office"
+    ],
+    "title": "How The Rays Turned Bryan Baker Into An All-Star Closer",
+    "url": "https://www.mlbtraderumors.com/2026/10/how-the-rays-turned-bryan-baker-into-an-all-star-closer.html"
+   },
+   {
+    "date": "2026-10-12T13:02-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "The Marlins have settled on former Yankees hitting coach and former Red Sox assistant hitting coach Dillon Lawson as their next hitting coach, reports Barry Jackson of the Miami Herald. Lawson joined the Marlins organization as a roving hitting coach this past summer, following his April dismissal in Boston. Miami move",
+    "tags": [
+     "injury",
+     "front office"
+    ],
+    "title": "Marlins To Name Dillon Lawson Hitting Coach",
+    "url": "https://www.mlbtraderumors.com/2026/10/marlins-to-name-dillon-lawson-hitting-coach.html"
+   },
+   {
+    "date": "2026-10-12T11:10-04:00",
+    "kind": "rumor",
+    "players": [
+     "Drew Rasmussen"
+    ],
+    "source": "MLB Trade Rumors",
+    "summary": "The Rays and Guardians on Monday announced their rosters for the forthcoming American League Championship Series, which begins tonight when the 98-win Rays host the 85-win Guardians at St. Petersburg\u2019s Tropicana Field. Tampa Bay will hand the ball to Cy Young candidate Drew Rasmussen, who pitched 172 innings of 2.67 ER",
+    "tags": [],
+    "title": "Rays, Guardians Announce ALCS Rosters",
+    "url": "https://www.mlbtraderumors.com/2026/10/rays-guardians-announce-alcs-rosters.html"
+   },
+   {
+    "date": "2026-10-12T09:45-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "The Brewers aren\u2019t getting swept this time around. Milwaukee took Game 1 of the NLCS with a tight 2-1 win over the Dodgers. While they didn\u2019t light up the scoreboard, the Brewers did score more runs than they did in any game during last year\u2019s NLCS. 1. Turang takes Skubal deep The biggest swing of [\u2026]",
+    "tags": [],
+    "title": "The Opener: Turang, Misiorowski, Griffin",
+    "url": "https://www.mlbtraderumors.com/2026/10/the-opener-turang-misiorowski-griffin.html"
+   },
+   {
     "date": "2026-10-11T23:15-04:00",
     "kind": "rumor",
     "players": [],
@@ -5364,66 +5428,6 @@
     ],
     "title": "Tyler Mahle Interested In Return To Braves",
     "url": "https://www.mlbtraderumors.com/2026/10/tyler-mahle-interested-in-return-to-braves.html"
-   },
-   {
-    "date": "2026-10-08T09:44-04:00",
-    "kind": "rumor",
-    "players": [
-     "Parker Messick"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "The White Sox weren\u2019t able to clinch a playoff series at home for the first time since 1906. They\u2019ll get another chance today. The Guardians will send ace Parker Messick to the mound for Game 4. Chicago is expected to counter with a bullpen game. 1. Mitchell saves the day The Padres came up just [\u2026]",
-    "tags": [],
-    "title": "The Opener: Mitchell\u2019s Catch, Volpe\u2019s Non-Homer, Pages",
-    "url": "https://www.mlbtraderumors.com/2026/10/the-opener-mitchells-catch-volpes-non-homer-pages.html"
-   },
-   {
-    "date": "2026-10-08T00:56-04:00",
-    "kind": "rumor",
-    "players": [
-     "Roman Anthony"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "The latest episode of the MLB Trade Rumors Podcast is now live on Spotify, Apple Podcasts, and wherever you get your podcasts! Make sure you subscribe as well! You can also use the player at this link to listen, if you don\u2019t use Spotify or Apple for podcasts. This week, host Darragh McDonald is joined by Anthony Franco",
-    "tags": [
-     "trade"
-    ],
-    "title": "MLBTR Podcast: Diamondbacks Stories, Offseason Previews For Eliminated Playoff Teams, And Creative Pitching Usage",
-    "url": "https://www.mlbtraderumors.com/2026/10/mlbtr-podcast-diamondbacks-stories-offseason-previews-for-eliminated-playoff-teams-and-creative-pitching-usage.html"
-   },
-   {
-    "date": "2026-10-08T00:47-04:00",
-    "kind": "rumor",
-    "players": [],
-    "source": "MLB Trade Rumors",
-    "summary": "Major League Baseball sent a memo to teams last week outlining procedures and guidelines for team personnel during the expected offseason lockout, reports Evan Drellich of The Athletic. \u201cOur commitment has been and remains to exhaust every realistic option to achieve our goal of reaching an agreement with the Players A",
-    "tags": [
-     "cba"
-    ],
-    "title": "MLB Sends Memo To Teams Outlining Lockout Procedures",
-    "url": "https://www.mlbtraderumors.com/2026/10/mlb-sends-memo-to-teams-outlining-lockout-procedures.html"
-   },
-   {
-    "date": "2026-10-07T23:43-04:00",
-    "kind": "rumor",
-    "players": [],
-    "source": "MLB Trade Rumors",
-    "summary": "With the regular season in the books, MLBTR is taking a position-by-position look at the 2026-27 free agent market. All that remains: a look at the bullpen market. We\u2019ll begin with the lefties, a smaller group that nonetheless includes the best reliever who\u2019ll be available. Player ages are for the 2027 season, and name",
-    "tags": [
-     "free agency"
-    ],
-    "title": "Previewing The Lefty Relief Class",
-    "url": "https://www.mlbtraderumors.com/2026/10/previewing-the-lefty-relief-class.html"
-   },
-   {
-    "date": "2026-10-07T19:52-04:00",
-    "kind": "rumor",
-    "players": [],
-    "source": "MLB Trade Rumors",
-    "summary": "By some measures, the Twins\u2019 season was a pleasant surprise. Minnesota was in contention for much of the first half and even operated as buyers at the deadline. On the other hand, their dalliance with contention stemmed more from an almost unfathomably mediocre American League, where most of the league was at least nom",
-    "tags": [],
-    "title": "Offseason Outlook: Minnesota Twins",
-    "url": "https://www.mlbtraderumors.com/2026/10/offseason-outlook-minnesota-twins-16.html"
    }
   ],
   "teams": [
@@ -5639,5 +5643,5 @@
    }
   ]
  },
- "updated": "2026-10-12T08:33:53-04:00"
+ "updated": "2026-10-12T16:14:18-04:00"
 }

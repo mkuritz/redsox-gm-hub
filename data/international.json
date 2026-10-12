@@ -3,75 +3,9 @@
   "mlb_tx": [
    {
     "date": "2026-01-15",
-    "desc": "Boston Red Sox signed free agent OF Eber Miranda to a minor league contract.",
-    "id": 837763,
-    "name": "Eber Miranda"
-   },
-   {
-    "date": "2026-01-15",
-    "desc": "Boston Red Sox signed free agent C Edgardo Gutierrez to a minor league contract.",
-    "id": 837865,
-    "name": "Edgardo Gutierrez"
-   },
-   {
-    "date": "2026-01-15",
-    "desc": "Boston Red Sox signed free agent SS Anderson Gonzalez to a minor league contract.",
-    "id": 837889,
-    "name": "Anderson Gonzalez"
-   },
-   {
-    "date": "2026-01-15",
-    "desc": "Boston Red Sox signed free agent OF Freyerso Vasquez to a minor league contract.",
-    "id": 837876,
-    "name": "Freyerso Vasquez"
-   },
-   {
-    "date": "2026-01-15",
-    "desc": "Boston Red Sox signed free agent SS Anderber Urbina to a minor league contract.",
-    "id": 837872,
-    "name": "Anderber Urbina"
-   },
-   {
-    "date": "2026-01-15",
-    "desc": "Boston Red Sox signed free agent SS Isaac Velasquez to a minor league contract.",
-    "id": 837778,
-    "name": "Isaac Velasquez"
-   },
-   {
-    "date": "2026-01-15",
-    "desc": "Boston Red Sox signed free agent OF Garielvin Silverio to a minor league contract.",
-    "id": 836613,
-    "name": "Garielvin Silverio"
-   },
-   {
-    "date": "2026-01-15",
-    "desc": "Boston Red Sox signed free agent SS Esterlin Casanova to a minor league contract.",
-    "id": 837774,
-    "name": "Esterlin Casanova"
-   },
-   {
-    "date": "2026-01-15",
-    "desc": "Boston Red Sox signed free agent SS Wilneyker Bruce to a minor league contract.",
-    "id": 837826,
-    "name": "Wilneyker Bruce"
-   },
-   {
-    "date": "2026-01-15",
-    "desc": "Boston Red Sox signed free agent RHP Yeider Pineda to a minor league contract.",
-    "id": 837891,
-    "name": "Yeider Pineda"
-   },
-   {
-    "date": "2026-01-15",
-    "desc": "Boston Red Sox signed free agent RHP Angel Roa to a minor league contract.",
-    "id": 837879,
-    "name": "Angel Roa"
-   },
-   {
-    "date": "2026-01-15",
-    "desc": "Boston Red Sox signed free agent OF Joskairo Ramirez to a minor league contract.",
-    "id": 837734,
-    "name": "Joskairo Ramirez"
+    "desc": "Boston Red Sox signed free agent RHP Harry Canedo to a minor league contract.",
+    "id": 837888,
+    "name": "Harry Canedo"
    },
    {
     "date": "2026-01-15",
@@ -87,27 +21,93 @@
    },
    {
     "date": "2026-01-15",
-    "desc": "Boston Red Sox signed free agent RHP Claudio Pereira to a minor league contract.",
-    "id": 837752,
-    "name": "Claudio Pereira"
-   },
-   {
-    "date": "2026-01-15",
     "desc": "Boston Red Sox signed free agent SS Axell Herrera to a minor league contract.",
     "id": 837756,
     "name": "Axell Herrera"
    },
    {
     "date": "2026-01-15",
-    "desc": "Boston Red Sox signed free agent RHP Harry Canedo to a minor league contract.",
-    "id": 837888,
-    "name": "Harry Canedo"
+    "desc": "Boston Red Sox signed free agent OF Garielvin Silverio to a minor league contract.",
+    "id": 836613,
+    "name": "Garielvin Silverio"
+   },
+   {
+    "date": "2026-01-15",
+    "desc": "Boston Red Sox signed free agent SS Esterlin Casanova to a minor league contract.",
+    "id": 837774,
+    "name": "Esterlin Casanova"
+   },
+   {
+    "date": "2026-01-15",
+    "desc": "Boston Red Sox signed free agent SS Isaac Velasquez to a minor league contract.",
+    "id": 837778,
+    "name": "Isaac Velasquez"
+   },
+   {
+    "date": "2026-01-15",
+    "desc": "Boston Red Sox signed free agent SS Wilneyker Bruce to a minor league contract.",
+    "id": 837826,
+    "name": "Wilneyker Bruce"
+   },
+   {
+    "date": "2026-01-15",
+    "desc": "Boston Red Sox signed free agent RHP Yeider Pineda to a minor league contract.",
+    "id": 837891,
+    "name": "Yeider Pineda"
+   },
+   {
+    "date": "2026-01-15",
+    "desc": "Boston Red Sox signed free agent SS Anderber Urbina to a minor league contract.",
+    "id": 837872,
+    "name": "Anderber Urbina"
+   },
+   {
+    "date": "2026-01-15",
+    "desc": "Boston Red Sox signed free agent SS Anderson Gonzalez to a minor league contract.",
+    "id": 837889,
+    "name": "Anderson Gonzalez"
+   },
+   {
+    "date": "2026-01-15",
+    "desc": "Boston Red Sox signed free agent OF Freyerso Vasquez to a minor league contract.",
+    "id": 837876,
+    "name": "Freyerso Vasquez"
    },
    {
     "date": "2026-01-15",
     "desc": "Boston Red Sox signed free agent RHP Isaac Brujan to a minor league contract.",
     "id": 837727,
     "name": "Isaac Brujan"
+   },
+   {
+    "date": "2026-01-15",
+    "desc": "Boston Red Sox signed free agent OF Eber Miranda to a minor league contract.",
+    "id": 837763,
+    "name": "Eber Miranda"
+   },
+   {
+    "date": "2026-01-15",
+    "desc": "Boston Red Sox signed free agent RHP Claudio Pereira to a minor league contract.",
+    "id": 837752,
+    "name": "Claudio Pereira"
+   },
+   {
+    "date": "2026-01-15",
+    "desc": "Boston Red Sox signed free agent C Edgardo Gutierrez to a minor league contract.",
+    "id": 837865,
+    "name": "Edgardo Gutierrez"
+   },
+   {
+    "date": "2026-01-15",
+    "desc": "Boston Red Sox signed free agent RHP Angel Roa to a minor league contract.",
+    "id": 837879,
+    "name": "Angel Roa"
+   },
+   {
+    "date": "2026-01-15",
+    "desc": "Boston Red Sox signed free agent OF Joskairo Ramirez to a minor league contract.",
+    "id": 837734,
+    "name": "Joskairo Ramirez"
    },
    {
     "date": "2026-02-03",
@@ -165,15 +165,15 @@
    },
    {
     "date": "2026-03-18",
-    "desc": "Boston Red Sox signed free agent RHP Emanuel Jimenez to a minor league contract.",
-    "id": 839441,
-    "name": null
-   },
-   {
-    "date": "2026-03-18",
     "desc": "Boston Red Sox signed free agent RHP Enmanuel Jimenez to a minor league contract.",
     "id": 825706,
     "name": "Emanuel Jimenez"
+   },
+   {
+    "date": "2026-03-18",
+    "desc": "Boston Red Sox signed free agent RHP Emanuel Jimenez to a minor league contract.",
+    "id": 839441,
+    "name": null
    },
    {
     "date": "2026-03-19",
@@ -195,27 +195,27 @@
    },
    {
     "date": "2026-04-07",
-    "desc": "Boston Red Sox signed free agent RHP Maikel Vargas to a minor league contract.",
-    "id": 839892,
-    "name": "Maikel Vargas"
-   },
-   {
-    "date": "2026-04-07",
     "desc": "Boston Red Sox signed free agent C Dilan Mata to a minor league contract.",
     "id": 839913,
     "name": "Dilan Mata"
    },
    {
-    "date": "2026-04-18",
-    "desc": "Boston Red Sox signed free agent RHP Pedro Meza to a minor league contract.",
-    "id": 840231,
-    "name": "Pedro Meza"
+    "date": "2026-04-07",
+    "desc": "Boston Red Sox signed free agent RHP Maikel Vargas to a minor league contract.",
+    "id": 839892,
+    "name": "Maikel Vargas"
    },
    {
     "date": "2026-04-18",
     "desc": "Boston Red Sox signed free agent LHP Rinangel Mayora to a minor league contract.",
     "id": 840228,
     "name": "Rinangel Mayora"
+   },
+   {
+    "date": "2026-04-18",
+    "desc": "Boston Red Sox signed free agent RHP Pedro Meza to a minor league contract.",
+    "id": 840231,
+    "name": "Pedro Meza"
    },
    {
     "date": "2026-05-07",
@@ -225,15 +225,15 @@
    },
    {
     "date": "2026-05-09",
-    "desc": "Boston Red Sox signed free agent RHP Leonel Figuera to a minor league contract.",
-    "id": 840849,
-    "name": "Leonel Figuera"
-   },
-   {
-    "date": "2026-05-09",
     "desc": "Boston Red Sox signed free agent RHP Juan Verdus to a minor league contract.",
     "id": 840853,
     "name": "Juan Verdus"
+   },
+   {
+    "date": "2026-05-09",
+    "desc": "Boston Red Sox signed free agent RHP Leonel Figuera to a minor league contract.",
+    "id": 840849,
+    "name": "Leonel Figuera"
    },
    {
     "date": "2026-06-03",
@@ -2275,5 +2275,5 @@
   "source": "SoxProspects.com International Signings",
   "url": "https://soxprospects.com/international.htm"
  },
- "updated": "2026-10-11T19:34:52-04:00"
+ "updated": "2026-10-12T16:14:19-04:00"
 }

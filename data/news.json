@@ -152,18 +152,6 @@
     "url": "https://www.mlb.com/redsox/news/chad-tracy-discusses-pitching-decisions-in-al-wild-card-series-loss"
    },
    {
-    "date": "2026-10-05T12:14-04:00",
-    "kind": "news",
-    "players": [
-     "Willson Contreras"
-    ],
-    "source": "MLB.com",
-    "summary": "",
-    "tags": [],
-    "title": "VOTE NOW: Contreras named a finalist for 2026 Hank Aaron Award",
-    "url": "https://www.mlb.com/redsox/news/hank-aaron-award-finalists-for-2026"
-   },
-   {
     "date": "2026-10-05T10:17-04:00",
     "kind": "news",
     "players": [],
@@ -388,6 +376,16 @@
     "url": "https://www.espn.com/mlb/story/_/id/50059543/red-sox-add-garrett-crochet-wild-card-roster-vs-yankees"
    },
    {
+    "date": "2026-09-29T16:29-04:00",
+    "kind": "news",
+    "players": [],
+    "source": "MLB.com",
+    "summary": "",
+    "tags": [],
+    "title": "Here's how the 2026 postseason teams were built",
+    "url": "https://www.mlb.com/redsox/news/how-the-2026-mlb-playoff-teams-were-built"
+   },
+   {
     "date": "2026-09-29T13:08-04:00",
     "kind": "news",
     "players": [],
@@ -582,5 +580,5 @@
    }
   ]
  },
- "updated": "2026-10-12T08:33:48-04:00"
+ "updated": "2026-10-12T16:14:15-04:00"
 }

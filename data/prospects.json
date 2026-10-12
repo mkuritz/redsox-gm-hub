@@ -1,6 +1,6 @@
 {
  "data": {
-  "fetched": "2026-10-12T08:33:48-04:00",
+  "fetched": "2026-10-12T16:14:15-04:00",
   "slugs": [
    "getPlayerRankingsFromSelection({\"limit\":30,\"slug\":\"sel-pr-2026-redsox\"})",
    "getPlayerRankingsFromSelection({\"limit\":100,\"slug\":\"sel-pr-2026-top100\"})"
@@ -1703,5 +1703,5 @@
   ],
   "top100_url": "https://www.mlb.com/milb/prospects/top100"
  },
- "updated": "2026-10-12T08:33:50-04:00"
+ "updated": "2026-10-12T16:14:16-04:00"
 }
