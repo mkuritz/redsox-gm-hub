@@ -2998,13 +2998,7 @@
      "whip": "0.98"
     },
     "pos": "P",
-    "rumors": [
-     {
-      "date": "2026-10-08T11:25-04:00",
-      "title": "Tyler Mahle Interested In Return To Braves",
-      "url": "https://www.mlbtraderumors.com/2026/10/tyler-mahle-interested-in-return-to-braves.html"
-     }
-    ],
+    "rumors": [],
     "team": "Atlanta Braves",
     "teamL": 68,
     "teamPct": ".580",
@@ -4823,18 +4817,30 @@
   ],
   "feed": [
    {
-    "date": "2026-10-12T15:58-04:00",
+    "date": "2026-10-12T16:31-04:00",
     "kind": "rumor",
     "players": [
-     "Roman Anthony"
+     "Julio Rodr\u00edguez"
     ],
     "source": "MLB Trade Rumors",
-    "summary": "MLBTR\u2019s Steve Adams is hosting a live chat today at 3pm CT, exclusively for Trade Rumors Front Office subscribers. Unlock Subscriber-Exclusive Articles Like This One With a Trade Rumors Front Office Subscription BENEFITS Access weekly subscriber-only articles by Tim Dierkes, Steve Adams, and Anthony Franco. Join exclus",
+    "summary": "The Mariners fell well short of expectations in 2026. The goal will be to get back on track in 2027. They will need their core players to have bounceback campaigns but they should also be able to make moves with money to spend and pitching to trade. Guaranteed Contracts Julio Rodr\u00edguez, CF: $144MM through 2034 [\u2026]",
+    "tags": [
+     "trade"
+    ],
+    "title": "Offseason Outlook: Seattle Mariners",
+    "url": "https://www.mlbtraderumors.com/2026/10/offseason-outlook-seattle-mariners-16.html"
+   },
+   {
+    "date": "2026-10-12T15:58-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "Steve Adams Good afternoon! I\u2019ll get going at 3pm CT, but as always, feel free to ask questions ahead of time. Hello! Let\u2019s get underway Joel Do you see Skubal as an option for the Cubs this offseason, or will they be shopping in the tier(s) below him? Steve Adams I\u2019d be mildly surprised if [\u2026]",
     "tags": [
      "trade",
      "front office"
     ],
-    "title": "Trade Rumors Front Office Subscriber Chat, Today 3pm CT",
+    "title": "Trade Rumors Front Office Subscriber Chat Transcript",
     "url": "https://www.mlbtraderumors.com/2026/10/trade-rumors-front-office-subscriber-chat-today-3pm-ct-30.html"
    },
    {
@@ -5413,21 +5419,6 @@
     ],
     "title": "Jakob Marsee, Tyler Zuber To Undergo Elbow Surgery",
     "url": "https://www.mlbtraderumors.com/2026/10/jakob-marsee-tyler-zuber-to-undergo-elbow-surgery.html"
-   },
-   {
-    "date": "2026-10-08T11:25-04:00",
-    "kind": "rumor",
-    "players": [
-     "Chris Sale",
-     "Tyler Mahle"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "Pending free agent Tyler Mahle put together a strong two-month stretch with the Braves to close the regular season. He was even better in the playoffs, covering critical innings for a pitching staff lacking viable starters outside of Chris Sale. After Atlanta was knocked out of the postseason last night, Mahle expresse",
-    "tags": [
-     "free agency"
-    ],
-    "title": "Tyler Mahle Interested In Return To Braves",
-    "url": "https://www.mlbtraderumors.com/2026/10/tyler-mahle-interested-in-return-to-braves.html"
    }
   ],
   "teams": [
@@ -5643,5 +5634,5 @@
    }
   ]
  },
- "updated": "2026-10-12T16:14:18-04:00"
+ "updated": "2026-10-12T17:39:14-04:00"
 }
