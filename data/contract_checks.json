@@ -3,7 +3,7 @@
   "arbitration_source": "MLB Trade Rumors / Matt Swartz projections (data/arbitration.json)",
   "cots": {
    "bot_wall": true,
-   "checked": "2026-10-12T03:29:10-04:00",
+   "checked": "2026-10-12T08:33:55-04:00",
    "http": 200,
    "note": "Cot's (Baseball Prospectus) is behind an anti-bot challenge and its robots.txt is not served to automated clients, so the hub does not fetch or parse it. Use it manually as a cross-reference.",
    "url": "https://legacy.baseballprospectus.com/compensation/cots/",
@@ -968,5 +968,5 @@
   ],
   "window_days": 400
  },
- "updated": "2026-10-12T03:29:11-04:00"
+ "updated": "2026-10-12T08:33:56-04:00"
 }

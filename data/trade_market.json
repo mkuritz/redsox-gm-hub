@@ -2827,13 +2827,7 @@
      "whip": "0.90"
     },
     "pos": "P",
-    "rumors": [
-     {
-      "date": "2026-10-07T17:35-04:00",
-      "title": "Mason Miller Activated From Paternity List",
-      "url": "https://www.mlbtraderumors.com/2026/10/__trashed-23.html"
-     }
-    ],
+    "rumors": [],
     "team": "San Diego Padres",
     "teamL": 71,
     "teamPct": ".562",
@@ -4830,6 +4824,45 @@
   ],
   "feed": [
    {
+    "date": "2026-10-11T23:15-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "The NL East champion Braves saw their season ended on Wednesday when the Dodgers eliminated Atlanta from the NLDS in four games. The team\u2019s wrap-up press conference took place today, as Braves president of baseball operations Alex Anthopoulos met with the media (including the Athletic\u2019s Jesus Cano and MLB.com\u2019s Mark Bo",
+    "tags": [
+     "free agency"
+    ],
+    "title": "Alex Anthopoulos Discusses Braves\u2019 Free Agents, Rotation, Profar",
+    "url": "https://www.mlbtraderumors.com/2026/10/alex-anthopoulos-discusses-braves-free-agents-rotation-profar.html"
+   },
+   {
+    "date": "2026-10-11T22:01-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "Since we just looked at what teams would stand to receive in draft compensation if they lost a free agent who rejected a qualifying offer, now it\u2019s time to explore what each team would have to give up in order to sign a QO-rejecting free agent. To recap the mechanics: if a free agent has [\u2026]",
+    "tags": [
+     "free agency",
+     "prospect"
+    ],
+    "title": "Each Team\u2019s Penalty For Signing A Qualifying Offer-Rejecting Free Agent",
+    "url": "https://www.mlbtraderumors.com/2026/10/each-teams-penalty-for-signing-a-qualifying-offer-rejecting-free-agent-2.html"
+   },
+   {
+    "date": "2026-10-11T21:00-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "The qualifying offer is one of the offseason\u2019s key mechanisms, as teams have until five days after the end of the World Series to decide whether or not to issue this specialized one-year contract to eligible free agents. If a player has played with his team throughout the entire 2026 season and hasn\u2019t received a [\u2026]",
+    "tags": [
+     "free agency",
+     "injury",
+     "prospect"
+    ],
+    "title": "Each Team\u2019s Draft Compensation For Losing A Qualifying Offer-Rejecting Free Agent",
+    "url": "https://www.mlbtraderumors.com/2026/10/each-teams-draft-compensation-for-losing-a-qualifying-offer-rejecting-free-agent-2.html"
+   },
+   {
     "date": "2026-10-11T19:17-04:00",
     "kind": "rumor",
     "players": [],
@@ -5391,41 +5424,6 @@
     "tags": [],
     "title": "Offseason Outlook: Minnesota Twins",
     "url": "https://www.mlbtraderumors.com/2026/10/offseason-outlook-minnesota-twins-16.html"
-   },
-   {
-    "date": "2026-10-07T18:42-04:00",
-    "kind": "rumor",
-    "players": [],
-    "source": "MLB Trade Rumors",
-    "summary": "The Athletics are looking for a new front office leader. According to reporting from Patrick Mooney and Ken Rosenthal of The Athletic, Brewers assistant general manager Matt Kleine is on the list of candidates, though it\u2019s not specified if he has interviewed for the gig. The report mentions that Cardinals assistant gen",
-    "tags": [
-     "front office"
-    ],
-    "title": "Matt Kleine, Rob Cerfolio Candidates In Athletics\u2019 GM Search",
-    "url": "https://www.mlbtraderumors.com/2026/10/matt-kleine-rob-cerfolio-candidates-in-athletics-gm-search.html"
-   },
-   {
-    "date": "2026-10-07T17:35-04:00",
-    "kind": "rumor",
-    "players": [
-     "Mason Miller",
-     "Wandy Peralta"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "The Padres are still alive and they are getting their closer back. The club announced that Mason Miller has been activated from the paternity list for tonight\u2019s game, replacing left-hander Wandy Peralta. Kevin Acee of The San Diego Union-Tribune reported earlier that Miller\u2019s activation would happen before tonight\u2019s ga",
-    "tags": [],
-    "title": "Mason Miller Activated From Paternity List",
-    "url": "https://www.mlbtraderumors.com/2026/10/__trashed-23.html"
-   },
-   {
-    "date": "2026-10-07T16:40-04:00",
-    "kind": "rumor",
-    "players": [],
-    "source": "MLB Trade Rumors",
-    "summary": "The 2026-27 qualifying offer is going to be $23.15MM, according to Joel Sherman of The New York Post. The value of the one-year QO changes annually because it is the average of the salaries of the 125 highest-paid players in the league. Salaries usually rise over time, so the QO ticks up in kind. Here [\u2026]",
-    "tags": [],
-    "title": "Report: 2026-27 Qualifying Offer To Be $23.15MM",
-    "url": "https://www.mlbtraderumors.com/2026/10/report-2026-27-qualifying-offer-to-be-23-15mm.html"
    }
   ],
   "teams": [
@@ -5641,5 +5639,5 @@
    }
   ]
  },
- "updated": "2026-10-11T19:34:50-04:00"
+ "updated": "2026-10-12T08:33:53-04:00"
 }

@@ -2,19 +2,7 @@
  "data": {
   "items": [
    {
-    "date": "2026-10-11T21:38-04:00",
-    "kind": "news",
-    "players": [],
-    "source": "MLB.com",
-    "summary": "",
-    "tags": [
-     "prospect"
-    ],
-    "title": "Watch LIVE: Red Sox prospects in Arizona Fall League action",
-    "url": "https://www.mlb.com/redsox/news/watch-top-prospects-in-arizona-fall-league-winter-ball-2026"
-   },
-   {
-    "date": "2026-10-11T18:50-04:00",
+    "date": "2026-10-11T23:03-04:00",
     "kind": "news",
     "players": [],
     "source": "MLB.com",
@@ -24,6 +12,18 @@
     ],
     "title": "Corner infield prospect Anderson among Fall League's Week 1 top performers",
     "url": "https://www.mlb.com/redsox/news/arizona-fall-league-top-performers-week-1-2026"
+   },
+   {
+    "date": "2026-10-11T22:54-04:00",
+    "kind": "news",
+    "players": [],
+    "source": "MLB.com",
+    "summary": "",
+    "tags": [
+     "prospect"
+    ],
+    "title": "Watch LIVE: Red Sox prospects in Arizona Fall League action",
+    "url": "https://www.mlb.com/redsox/news/watch-top-prospects-in-arizona-fall-league-winter-ball-2026"
    },
    {
     "date": "2026-10-11T14:45-04:00",
@@ -582,5 +582,5 @@
    }
   ]
  },
- "updated": "2026-10-11T22:19:08-04:00"
+ "updated": "2026-10-12T08:33:48-04:00"
 }

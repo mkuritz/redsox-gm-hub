@@ -6883,7 +6883,7 @@
      "throws": "R"
     },
     {
-     "age": 19,
+     "age": 20,
      "bats": "L",
      "draftYear": null,
      "hit": {
@@ -7077,7 +7077,7 @@
      "throws": "R"
     },
     {
-     "age": 19,
+     "age": 20,
      "bats": "R",
      "draftYear": null,
      "hit": null,
@@ -9501,5 +9501,5 @@
    "typicalAge": 18.0
   }
  ],
- "updated": "2026-10-10T21:01:51-04:00"
+ "updated": "2026-10-12T08:33:46-04:00"
 }
