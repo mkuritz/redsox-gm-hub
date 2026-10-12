@@ -30,6 +30,10 @@ jobs:
         env:
           MODE: ${{ github.event.inputs.mode || (github.event.schedule == '7 23 * * *' && 'news') || 'full' }}
         run: python scripts/fetch_data.py
+      - name: Contract cross-checks
+        env:
+          MODE: ${{ github.event.inputs.mode || (github.event.schedule == '7 23 * * *' && 'news') || 'full' }}
+        run: python scripts/contract_checks.py
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"

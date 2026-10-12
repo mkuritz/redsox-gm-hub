@@ -28,13 +28,15 @@ async function load() {
     B.targets = { QB: 3, RB: 3, WR: 6, TE: 3, OT: 4, IOL: 5, DL: 6, EDGE: 4, LB: 5, CB: 6, S: 4, K: 1, P: 1, LS: 1 };
     B.coaches = null; B.asOf = 'cap snapshot 2026-10-07 · roster ' + 'ESPN';
   } else {
-    const T = window.TEAM; const cm = await J('contracts_manual.json'); const ros = (await J('roster.json')) || []; const arb = await J('arbitration.json'); const co = await J('coaches.json');
+    const T = window.TEAM; const cm = await J('contracts_manual.json'); const ros = (await J('roster.json')) || []; const arb = await J('arbitration.json'); const co = await J('coaches.json'); B.checks = await J('contract_checks.json'); B.rosRaw = ros;
+    if (window.PLANNER_EXT) cm.contracts = window.PLANNER_EXT.merge(cm);
     B.years = [2026, 2027, 2028, 2029, 2030]; const th = cm.cbt.thresholds.map((x) => x / 1e6);
     B.limit = Object.fromEntries(B.years.map((y) => [y, th[0]])); B.tiers = th; B.limitLabel = 'CBT threshold (tier 1)';
     B.limitNote = `CBT 2026 thresholds ${th.map((x) => '$' + x + 'M').join(' / ')} (sourced). 2027+ unknown until a new CBA — held flat (estimate).`;
-    B.contracts = cm.contracts.filter((c) => c.aav_cbt && c.ends).map((c) => ({ id: 'c_' + norm(c.name).replace(/ /g, '_'), name: c.name, pos: posOf(ros, c.name), hits: Object.fromEntries(B.years.map((y) => [y, y <= c.ends ? c.aav_cbt / 1e6 : 0])), src: 'sourced', note: c.options || '' }));
+    B.contracts = cm.contracts.filter((c) => c.aav_cbt && c.ends).map((c) => ({ edited: !!c._you, id: 'c_' + norm(c.name).replace(/ /g, '_'), name: c.name, pos: posOf(ros, c.name), hits: Object.fromEntries(B.years.map((y) => [y, y <= c.ends ? c.aav_cbt / 1e6 : 0])), src: c._you ? 'you' : 'sourced', note: c.options || '' }));
     const listed26 = B.contracts.reduce((a, c) => a + c.hits[2026], 0);
     B.other = Object.fromEntries(B.years.map((y) => [y, y === 2026 ? Math.max(0, cm.team_payroll.cbt_payroll / 1e6 - listed26) : 0])); B.otherLabel = '2026: rest of CBT payroll (MLBTR total − listed); 2027+: not in free sources';
+    B.arbRaw = (arb && arb.teams && arb.teams[T.name]) || [];
     B.arb = ((arb && arb.teams && arb.teams[T.name]) || []).map((a) => ({ id: 'arb_' + norm(a.name).replace(/ /g, '_'), name: a.name, pos: posOf(ros, a.name), hits: Object.fromEntries(B.years.map((y) => [y, y === 2027 ? a.proj / 1e6 : 0])), src: 'est', note: 'MLBTR 2027 arbitration projection' }));
     B.contracts = B.contracts.concat(B.arb);
     B.roster = ros.filter((p) => !/60/.test(p.status || '')).map((p) => ({ name: p.name, pos: grpMLB(p), age: p.age, src: 'sourced' }));
@@ -159,17 +161,20 @@ function moveForm() {
 }
 
 /* ---------- shell ---------- */
-const TABS = [['payroll', NFL ? 'Cap Scenarios' : 'Payroll / CBT Scenarios'], ['sim', 'Move Simulator'], ['goals', 'Goals & Roadmap'], ['people', 'People & Culture'], ['scen', 'Saved & Compare']];
+const TABS = [['payroll', NFL ? 'Cap Scenarios' : 'Payroll / CBT Scenarios'], ...(window.PLANNER_EXT ? [window.PLANNER_EXT.tab] : []), ['sim', 'Move Simulator'], ['goals', 'Goals & Roadmap'], ['people', 'People & Culture'], ['scen', 'Saved & Compare']];
 function render() {
   $('#nav').innerHTML = `<div class="nav-label">Strategy Planner</div>` + TABS.map(([k, l]) => `<button class="nav-btn" data-a="tab" data-k="${k}" ${S.ui.tab === k ? 'aria-current="page"' : ''}><span>${l}</span></button>`).join('') + `<div class="nav-label">Hub</div><a class="nav-btn" href="./" style="text-decoration:none"><span>← Back to ${esc(CFG.hubName)}</span></a>`;
   $('#pageTitle').textContent = TABS.find((t) => t[0] === S.ui.tab)[1];
   $('#main').innerHTML = `<p class="section-sub" style="margin-bottom:14px"><b>Strategy Planner</b> — your organization, all in one place. ${SRC} = from the hub's data feeds (${esc(B.asOf)}) · ${YOU} = typed by you, saved in this browser · ${EST} = estimate.</p>` + V[S.ui.tab]();
 }
+const CTX = () => ({ B, S, card, esc, fm, toast, commit, reload: async (m) => { await load(); commit(m); } });
+if (window.PLANNER_EXT) V[window.PLANNER_EXT.tab[0]] = () => window.PLANNER_EXT.view(CTX());
 function val(id) { const e = document.getElementById(id); return e ? e.value.trim() : ''; }
 function toast(t) { const d = document.createElement('div'); d.className = 'toast ok'; d.textContent = t; $('#toasts').appendChild(d); setTimeout(() => d.remove(), 2500); }
 function commit(msg) { save(); render(); if (msg) toast(msg); }
 document.addEventListener('click', (e) => {
   const el = e.target.closest('[data-a]'); if (!el) return; const a = el.dataset.a;
+  if (window.PLANNER_EXT && window.PLANNER_EXT.click(a, el, CTX())) return;
   if (a === 'tab') { S.ui.tab = el.dataset.k; document.body.classList.remove('sidebar-open'); return commit(); }
   if (a === 'mk') { S.ui.mk = el.dataset.k; return commit(); }
   if (a === 'menu') return document.body.classList.toggle('sidebar-open');
