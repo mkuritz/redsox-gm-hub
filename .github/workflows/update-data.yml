@@ -34,6 +34,9 @@ jobs:
         env:
           MODE: ${{ github.event.inputs.mode || (github.event.schedule == '7 23 * * *' && 'news') || 'full' }}
         run: python scripts/contract_checks.py
+      - name: Season guard (current season from date + same-day live roster check)
+        continue-on-error: true
+        run: python scripts/season_guard.py
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
