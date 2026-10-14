@@ -2,17 +2,7 @@
  "data": {
   "items": [
    {
-    "date": "2026-10-13T09:54-04:00",
-    "kind": "news",
-    "players": [],
-    "source": "MLB.com",
-    "summary": "",
-    "tags": [],
-    "title": "Will Arias cause a domino effect? Plus 7 more offseason questions",
-    "url": "https://www.mlb.com/redsox/news/red-sox-questions-to-answer-in-offseason"
-   },
-   {
-    "date": "2026-10-12T23:20-04:00",
+    "date": "2026-10-13T21:26-04:00",
     "kind": "news",
     "players": [],
     "source": "MLB.com",
@@ -22,6 +12,16 @@
     ],
     "title": "Watch Red Sox prospects in Arizona Fall League action",
     "url": "https://www.mlb.com/redsox/news/watch-top-prospects-in-arizona-fall-league-winter-ball-2026"
+   },
+   {
+    "date": "2026-10-13T09:54-04:00",
+    "kind": "news",
+    "players": [],
+    "source": "MLB.com",
+    "summary": "",
+    "tags": [],
+    "title": "Will Arias cause a domino effect? Plus 7 more offseason questions",
+    "url": "https://www.mlb.com/redsox/news/red-sox-questions-to-answer-in-offseason"
    },
    {
     "date": "2026-10-11T23:03-04:00",
@@ -580,5 +580,5 @@
    }
   ]
  },
- "updated": "2026-10-13T14:07:24-04:00"
+ "updated": "2026-10-13T21:51:03-04:00"
 }
