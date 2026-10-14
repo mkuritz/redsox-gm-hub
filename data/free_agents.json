@@ -1,6 +1,6 @@
 {
  "data": {
-  "list_updated": "9-30-26",
+  "list_updated": "10-14-26",
   "players": [
    {
     "age2027": 38,
@@ -758,14 +758,6 @@
     "team": "New York Mets"
    },
    {
-    "age2027": 32,
-    "name": "Cavan Biggio",
-    "option": null,
-    "sections": [
-     "Second Basemen"
-    ]
-   },
-   {
     "age2027": 29,
     "hit": {
      "age": 28,
@@ -988,14 +980,6 @@
      "Second Basemen"
     ],
     "team": "Philadelphia Phillies"
-   },
-   {
-    "age2027": 30,
-    "name": "Brendan Rodgers",
-    "option": null,
-    "sections": [
-     "Second Basemen"
-    ]
    },
    {
     "age2027": 31,
@@ -1793,14 +1777,6 @@
     "team": "Seattle Mariners"
    },
    {
-    "age2027": 31,
-    "name": "Alex Verdugo",
-    "option": null,
-    "sections": [
-     "Left Fielders"
-    ]
-   },
-   {
     "age2027": 33,
     "hit": {
      "age": 32,
@@ -2119,6 +2095,28 @@
      "Right Fielders"
     ],
     "team": "Atlanta Braves"
+   },
+   {
+    "age2027": 29,
+    "hit": {
+     "age": 28,
+     "avg": ".188",
+     "gamesPlayed": 51,
+     "homeRuns": 3,
+     "obp": ".310",
+     "ops": ".643",
+     "plateAppearances": 114,
+     "slg": ".333",
+     "stolenBases": 1
+    },
+    "id": 666181,
+    "name": "Will Benson",
+    "option": null,
+    "pit": null,
+    "sections": [
+     "Right Fielders"
+    ],
+    "team": "Cincinnati Reds"
    },
    {
     "age2027": 35,
@@ -2992,29 +2990,6 @@
     "team": "Arizona Diamondbacks"
    },
    {
-    "age2027": 30,
-    "hit": {
-     "age": 26,
-     "avg": ".277",
-     "gamesPlayed": 147,
-     "homeRuns": 30,
-     "obp": ".309",
-     "ops": ".830",
-     "plateAppearances": 543,
-     "slg": ".521",
-     "stolenBases": 5
-    },
-    "id": 671277,
-    "name": "Luis Garcia",
-    "option": null,
-    "pit": null,
-    "sections": [
-     "Starting Pitchers",
-     "Right-Handed Relievers"
-    ],
-    "team": "New York Yankees"
-   },
-   {
     "age2027": 36,
     "hit": null,
     "id": 592332,
@@ -3071,14 +3046,6 @@
      "Starting Pitchers"
     ],
     "team": "San Diego Padres"
-   },
-   {
-    "age2027": 33,
-    "name": "Austin Gomber",
-    "option": null,
-    "sections": [
-     "Starting Pitchers"
-    ]
    },
    {
     "age2027": 33,
@@ -3317,7 +3284,7 @@
     "hit": null,
     "id": 641793,
     "name": "Zack Littell",
-    "option": "mutual option",
+    "option": null,
     "pit": {
      "age": 30,
      "avg": ".278",
@@ -3404,7 +3371,7 @@
     "hit": null,
     "id": 608566,
     "name": "German Marquez",
-    "option": "mutual option",
+    "option": null,
     "pit": {
      "age": 31,
      "avg": ".264",
@@ -3515,14 +3482,6 @@
      "Starting Pitchers"
     ],
     "team": "Milwaukee Brewers"
-   },
-   {
-    "age2027": 34,
-    "name": "John Means",
-    "option": null,
-    "sections": [
-     "Starting Pitchers"
-    ]
    },
    {
     "age2027": 38,
@@ -3760,7 +3719,7 @@
     "hit": null,
     "id": 601713,
     "name": "Nick Pivetta",
-    "option": "$14MM player option for 2027; $18MM player option for \u201928 if \u201927 is exercised. Can change based on injury",
+    "option": "$14MM club option (no buyout)",
     "pit": {
      "age": 33,
      "avg": ".206",
@@ -3847,7 +3806,7 @@
     "hit": null,
     "id": 656876,
     "name": "Drew Rasmussen",
-    "option": "$8MM club option with a $500K buyout",
+    "option": "$20MM club option with a $500K buyout",
     "pit": {
      "age": 30,
      "avg": ".199",
@@ -4015,45 +3974,6 @@
      "Starting Pitchers"
     ],
     "team": "Toronto Blue Jays"
-   },
-   {
-    "age2027": 32,
-    "hit": {
-     "age": 31,
-     "avg": ".000",
-     "gamesPlayed": 34,
-     "homeRuns": 0,
-     "obp": ".000",
-     "ops": ".000",
-     "plateAppearances": 0,
-     "slg": ".000",
-     "stolenBases": 0
-    },
-    "id": 622608,
-    "name": "Antonio Senzatela",
-    "option": "$14MM club option",
-    "pit": {
-     "age": 31,
-     "avg": ".261",
-     "era": "4.05",
-     "gamesPlayed": 57,
-     "gamesStarted": 0,
-     "holds": 11,
-     "homeRuns": 6,
-     "inningsPitched": "73.1",
-     "obp": ".326",
-     "ops": ".705",
-     "saves": 4,
-     "slg": ".379",
-     "stolenBases": 2,
-     "strikeoutsPer9Inn": "7.36",
-     "walksPer9Inn": "3.19",
-     "whip": "1.35"
-    },
-    "sections": [
-     "Starting Pitchers"
-    ],
-    "team": "Milwaukee Brewers"
    },
    {
     "age2027": 33,
@@ -4259,64 +4179,6 @@
     "team": "Toronto Blue Jays"
    },
    {
-    "age2027": 32,
-    "hit": null,
-    "id": 664353,
-    "name": "Jose Urquidy",
-    "option": null,
-    "pit": {
-     "age": 31,
-     "avg": ".305",
-     "era": "4.95",
-     "gamesPlayed": 13,
-     "gamesStarted": 1,
-     "holds": 0,
-     "homeRuns": 4,
-     "inningsPitched": "36.1",
-     "obp": ".341",
-     "ops": ".796",
-     "saves": 1,
-     "slg": ".455",
-     "stolenBases": 3,
-     "strikeoutsPer9Inn": "7.43",
-     "walksPer9Inn": "1.73",
-     "whip": "1.49"
-    },
-    "sections": [
-     "Starting Pitchers"
-    ],
-    "team": "Philadelphia Phillies"
-   },
-   {
-    "age2027": 44,
-    "hit": null,
-    "id": 434378,
-    "name": "Justin Verlander",
-    "option": null,
-    "pit": {
-     "age": 43,
-     "avg": ".306",
-     "era": "7.00",
-     "gamesPlayed": 2,
-     "gamesStarted": 2,
-     "holds": 0,
-     "homeRuns": 3,
-     "inningsPitched": "9.0",
-     "obp": ".359",
-     "ops": ".998",
-     "saves": 0,
-     "slg": ".639",
-     "stolenBases": 0,
-     "strikeoutsPer9Inn": "7.00",
-     "walksPer9Inn": "3.00",
-     "whip": "1.56"
-    },
-    "sections": [
-     "Starting Pitchers"
-    ],
-    "team": "Detroit Tigers"
-   },
-   {
     "age2027": 34,
     "hit": null,
     "id": 592836,
@@ -4508,22 +4370,6 @@
     ]
    },
    {
-    "age2027": 34,
-    "name": "Dan Altavilla",
-    "option": null,
-    "sections": [
-     "Right-Handed Relievers"
-    ]
-   },
-   {
-    "age2027": 31,
-    "name": "Adbert Alzolay",
-    "option": null,
-    "sections": [
-     "Right-Handed Relievers"
-    ]
-   },
-   {
     "age2027": 33,
     "hit": null,
     "id": 623454,
@@ -4648,22 +4494,6 @@
      "Right-Handed Relievers"
     ],
     "team": "New York Yankees"
-   },
-   {
-    "age2027": 36,
-    "name": "Matt Bowman",
-    "option": null,
-    "sections": [
-     "Right-Handed Relievers"
-    ]
-   },
-   {
-    "age2027": 39,
-    "name": "Ryan Brasier",
-    "option": null,
-    "sections": [
-     "Right-Handed Relievers"
-    ]
    },
    {
     "age2027": 34,
@@ -4849,6 +4679,28 @@
     "team": "Miami Marlins"
    },
    {
+    "age2027": 40,
+    "hit": {
+     "age": 26,
+     "avg": ".277",
+     "gamesPlayed": 147,
+     "homeRuns": 30,
+     "obp": ".309",
+     "ops": ".830",
+     "plateAppearances": 543,
+     "slg": ".521",
+     "stolenBases": 5
+    },
+    "id": 671277,
+    "name": "Luis Garcia",
+    "option": null,
+    "pit": null,
+    "sections": [
+     "Right-Handed Relievers"
+    ],
+    "team": "New York Yankees"
+   },
+   {
     "age2027": 36,
     "name": "Yimi Garcia",
     "option": null,
@@ -4953,14 +4805,6 @@
    },
    {
     "age2027": 37,
-    "name": "Liam Hendriks",
-    "option": null,
-    "sections": [
-     "Right-Handed Relievers"
-    ]
-   },
-   {
-    "age2027": 37,
     "hit": {
      "age": 36,
      "avg": ".000",
@@ -4997,14 +4841,6 @@
      "Right-Handed Relievers"
     ],
     "team": "Atlanta Braves"
-   },
-   {
-    "age2027": 33,
-    "name": "Luke Jackson",
-    "option": null,
-    "sections": [
-     "Right-Handed Relievers"
-    ]
    },
    {
     "age2027": 39,
@@ -5155,7 +4991,7 @@
     },
     "id": 641755,
     "name": "Tyler Kinley",
-    "option": "$5.5MM club option with a $1.25MM buyout",
+    "option": null,
     "pit": {
      "age": 35,
      "avg": ".200",
@@ -5209,12 +5045,33 @@
     "team": "Baltimore Orioles"
    },
    {
-    "age2027": 33,
-    "name": "Jose Leclerc",
+    "age2027": 32,
+    "hit": null,
+    "id": 664875,
+    "name": "Justin Lawrence",
     "option": null,
+    "pit": {
+     "age": 31,
+     "avg": ".275",
+     "era": "7.34",
+     "gamesPlayed": 37,
+     "gamesStarted": 0,
+     "holds": 2,
+     "homeRuns": 9,
+     "inningsPitched": "34.1",
+     "obp": ".412",
+     "ops": ".961",
+     "saves": 1,
+     "slg": ".549",
+     "stolenBases": 4,
+     "strikeoutsPer9Inn": "11.27",
+     "walksPer9Inn": "7.34",
+     "whip": "1.95"
+    },
     "sections": [
      "Right-Handed Relievers"
-    ]
+    ],
+    "team": "Washington Nationals"
    },
    {
     "age2027": 36,
@@ -5314,14 +5171,6 @@
     "team": "Texas Rangers"
    },
    {
-    "age2027": 36,
-    "name": "Rafael Montero",
-    "option": null,
-    "sections": [
-     "Right-Handed Relievers"
-    ]
-   },
-   {
     "age2027": 28,
     "hit": null,
     "id": 662253,
@@ -5349,14 +5198,6 @@
      "Right-Handed Relievers"
     ],
     "team": "Seattle Mariners"
-   },
-   {
-    "age2027": 38,
-    "name": "Hector Neris",
-    "option": null,
-    "sections": [
-     "Right-Handed Relievers"
-    ]
    },
    {
     "age2027": 36,
@@ -5444,6 +5285,45 @@
      "Right-Handed Relievers"
     ],
     "team": "Detroit Tigers"
+   },
+   {
+    "age2027": 34,
+    "hit": {
+     "age": 33,
+     "avg": ".000",
+     "gamesPlayed": 52,
+     "homeRuns": 0,
+     "obp": ".000",
+     "ops": ".000",
+     "plateAppearances": 0,
+     "slg": ".000",
+     "stolenBases": 0
+    },
+    "id": 670950,
+    "name": "Trevor Richards",
+    "option": null,
+    "pit": {
+     "age": 33,
+     "avg": ".224",
+     "era": "3.69",
+     "gamesPlayed": 54,
+     "gamesStarted": 0,
+     "holds": 1,
+     "homeRuns": 12,
+     "inningsPitched": "83.0",
+     "obp": ".282",
+     "ops": ".689",
+     "saves": 2,
+     "slg": ".407",
+     "stolenBases": 5,
+     "strikeoutsPer9Inn": "7.92",
+     "walksPer9Inn": "2.82",
+     "whip": "1.16"
+    },
+    "sections": [
+     "Right-Handed Relievers"
+    ],
+    "team": "Chicago White Sox"
    },
    {
     "age2027": 34,
@@ -5562,6 +5442,45 @@
     "team": "New York Yankees"
    },
    {
+    "age2027": 32,
+    "hit": {
+     "age": 31,
+     "avg": ".000",
+     "gamesPlayed": 34,
+     "homeRuns": 0,
+     "obp": ".000",
+     "ops": ".000",
+     "plateAppearances": 0,
+     "slg": ".000",
+     "stolenBases": 0
+    },
+    "id": 622608,
+    "name": "Antonio Senzatela",
+    "option": "$14MM club option",
+    "pit": {
+     "age": 31,
+     "avg": ".261",
+     "era": "4.05",
+     "gamesPlayed": 57,
+     "gamesStarted": 0,
+     "holds": 11,
+     "homeRuns": 6,
+     "inningsPitched": "73.1",
+     "obp": ".326",
+     "ops": ".705",
+     "saves": 4,
+     "slg": ".379",
+     "stolenBases": 2,
+     "strikeoutsPer9Inn": "7.36",
+     "walksPer9Inn": "3.19",
+     "whip": "1.35"
+    },
+    "sections": [
+     "Right-Handed Relievers"
+    ],
+    "team": "Milwaukee Brewers"
+   },
+   {
     "age2027": 37,
     "hit": null,
     "id": 623149,
@@ -5589,14 +5508,6 @@
      "Right-Handed Relievers"
     ],
     "team": "Toronto Blue Jays"
-   },
-   {
-    "age2027": 33,
-    "name": "Drew Smith",
-    "option": null,
-    "sections": [
-     "Right-Handed Relievers"
-    ]
    },
    {
     "age2027": 35,
@@ -5649,14 +5560,6 @@
     "age2027": 34,
     "name": "Robert Stephenson",
     "option": "$2.5MM club option",
-    "sections": [
-     "Right-Handed Relievers"
-    ]
-   },
-   {
-    "age2027": 38,
-    "name": "Hunter Strickland",
-    "option": null,
     "sections": [
      "Right-Handed Relievers"
     ]
@@ -6143,14 +6046,6 @@
     "team": "Cincinnati Reds"
    },
    {
-    "age2027": 30,
-    "name": "Genesis Cabrera",
-    "option": null,
-    "sections": [
-     "Left-Handed Relievers"
-    ]
-   },
-   {
     "age2027": 37,
     "name": "Andrew Chafin",
     "option": null,
@@ -6370,6 +6265,35 @@
      "Left-Handed Relievers"
     ],
     "team": "San Diego Padres"
+   },
+   {
+    "age2027": 35,
+    "hit": null,
+    "id": 641835,
+    "name": "Tim Mayza",
+    "option": null,
+    "pit": {
+     "age": 34,
+     "avg": ".233",
+     "era": "3.48",
+     "gamesPlayed": 60,
+     "gamesStarted": 6,
+     "holds": 2,
+     "homeRuns": 7,
+     "inningsPitched": "67.1",
+     "obp": ".286",
+     "ops": ".664",
+     "saves": 0,
+     "slg": ".378",
+     "stolenBases": 5,
+     "strikeoutsPer9Inn": "8.55",
+     "walksPer9Inn": "2.41",
+     "whip": "1.13"
+    },
+    "sections": [
+     "Left-Handed Relievers"
+    ],
+    "team": "Philadelphia Phillies"
    },
    {
     "age2027": 36,
@@ -6943,5 +6867,5 @@
   "source": "MLB Trade Rumors 2026-27 MLB Free Agents",
   "url": "https://www.mlbtraderumors.com/2025/08/2026-27-mlb-free-agents.html"
  },
- "updated": "2026-10-10T21:23:42-04:00"
+ "updated": "2026-10-14T11:47:55-04:00"
 }

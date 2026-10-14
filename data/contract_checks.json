@@ -3,7 +3,7 @@
   "arbitration_source": "MLB Trade Rumors / Matt Swartz projections (data/arbitration.json)",
   "cots": {
    "bot_wall": true,
-   "checked": "2026-10-13T14:07:28-04:00",
+   "checked": "2026-10-14T11:47:58-04:00",
    "http": 200,
    "note": "Cot's (Baseball Prospectus) is behind an anti-bot challenge and its robots.txt is not served to automated clients, so the hub does not fetch or parse it. Use it manually as a cross-reference.",
    "url": "https://legacy.baseballprospectus.com/compensation/cots/",
@@ -61,6 +61,69 @@
     "date": "2026-08-03",
     "desc": "Baltimore Orioles traded C Adley Rutschman, C Jake Rogers and cash to Boston Red Sox for RHP Kyson Witherspoon, CF Enddy Azocar, C Carlos Narv\u00e1ez, RHP Anthony Eyanson and Player To Be Named Later.",
     "keyword": false,
+    "pid": 809254,
+    "player": "Anthony Eyanson",
+    "type": "Trade"
+   },
+   {
+    "code": "TR",
+    "date": "2026-08-03",
+    "desc": "Baltimore Orioles traded C Adley Rutschman, C Jake Rogers and cash to Boston Red Sox for RHP Kyson Witherspoon, CF Enddy Azocar, C Carlos Narv\u00e1ez, RHP Anthony Eyanson and Player To Be Named Later.",
+    "keyword": false,
+    "pid": 821150,
+    "player": "Enddy Azocar",
+    "type": "Trade"
+   },
+   {
+    "code": "TR",
+    "date": "2026-08-03",
+    "desc": "Baltimore Orioles traded C Adley Rutschman, C Jake Rogers and cash to Boston Red Sox for RHP Kyson Witherspoon, CF Enddy Azocar, C Carlos Narv\u00e1ez, RHP Anthony Eyanson and Player To Be Named Later.",
+    "keyword": false,
+    "pid": 668939,
+    "player": "Adley Rutschman",
+    "type": "Trade"
+   },
+   {
+    "code": "TR",
+    "date": "2026-08-03",
+    "desc": "Baltimore Orioles traded C Adley Rutschman, C Jake Rogers and cash to Boston Red Sox for RHP Kyson Witherspoon, CF Enddy Azocar, C Carlos Narv\u00e1ez, RHP Anthony Eyanson and Player To Be Named Later.",
+    "keyword": false,
+    "pid": 804817,
+    "player": "Kyson Witherspoon",
+    "type": "Trade"
+   },
+   {
+    "code": "TR",
+    "date": "2026-08-03",
+    "desc": "Baltimore Orioles traded C Adley Rutschman, C Jake Rogers and cash to Boston Red Sox for RHP Kyson Witherspoon, CF Enddy Azocar, C Carlos Narv\u00e1ez, RHP Anthony Eyanson and Player To Be Named Later.",
+    "keyword": false,
+    "pid": 665966,
+    "player": "Carlos Narv\u00e1ez",
+    "type": "Trade"
+   },
+   {
+    "code": "TR",
+    "date": "2026-08-03",
+    "desc": "Baltimore Orioles traded C Adley Rutschman, C Jake Rogers and cash to Boston Red Sox for RHP Kyson Witherspoon, CF Enddy Azocar, C Carlos Narv\u00e1ez, RHP Anthony Eyanson and Player To Be Named Later.",
+    "keyword": false,
+    "pid": 668670,
+    "player": "Jake Rogers",
+    "type": "Trade"
+   },
+   {
+    "code": "TR",
+    "date": "2026-08-03",
+    "desc": "Baltimore Orioles traded C Adley Rutschman, C Jake Rogers and cash to Boston Red Sox for RHP Kyson Witherspoon, CF Enddy Azocar, C Carlos Narv\u00e1ez, RHP Anthony Eyanson and Player To Be Named Later.",
+    "keyword": false,
+    "pid": null,
+    "player": null,
+    "type": "Trade"
+   },
+   {
+    "code": "TR",
+    "date": "2026-08-03",
+    "desc": "Baltimore Orioles traded C Adley Rutschman, C Jake Rogers and cash to Boston Red Sox for RHP Kyson Witherspoon, CF Enddy Azocar, C Carlos Narv\u00e1ez, RHP Anthony Eyanson and Player To Be Named Later.",
+    "keyword": false,
     "pid": null,
     "player": null,
     "type": "Trade"
@@ -112,69 +175,6 @@
    },
    {
     "code": "TR",
-    "date": "2026-08-03",
-    "desc": "Baltimore Orioles traded C Adley Rutschman, C Jake Rogers and cash to Boston Red Sox for RHP Kyson Witherspoon, CF Enddy Azocar, C Carlos Narv\u00e1ez, RHP Anthony Eyanson and Player To Be Named Later.",
-    "keyword": false,
-    "pid": null,
-    "player": null,
-    "type": "Trade"
-   },
-   {
-    "code": "TR",
-    "date": "2026-08-03",
-    "desc": "Baltimore Orioles traded C Adley Rutschman, C Jake Rogers and cash to Boston Red Sox for RHP Kyson Witherspoon, CF Enddy Azocar, C Carlos Narv\u00e1ez, RHP Anthony Eyanson and Player To Be Named Later.",
-    "keyword": false,
-    "pid": 665966,
-    "player": "Carlos Narv\u00e1ez",
-    "type": "Trade"
-   },
-   {
-    "code": "TR",
-    "date": "2026-08-03",
-    "desc": "Baltimore Orioles traded C Adley Rutschman, C Jake Rogers and cash to Boston Red Sox for RHP Kyson Witherspoon, CF Enddy Azocar, C Carlos Narv\u00e1ez, RHP Anthony Eyanson and Player To Be Named Later.",
-    "keyword": false,
-    "pid": 668670,
-    "player": "Jake Rogers",
-    "type": "Trade"
-   },
-   {
-    "code": "TR",
-    "date": "2026-08-03",
-    "desc": "Baltimore Orioles traded C Adley Rutschman, C Jake Rogers and cash to Boston Red Sox for RHP Kyson Witherspoon, CF Enddy Azocar, C Carlos Narv\u00e1ez, RHP Anthony Eyanson and Player To Be Named Later.",
-    "keyword": false,
-    "pid": 809254,
-    "player": "Anthony Eyanson",
-    "type": "Trade"
-   },
-   {
-    "code": "TR",
-    "date": "2026-08-03",
-    "desc": "Baltimore Orioles traded C Adley Rutschman, C Jake Rogers and cash to Boston Red Sox for RHP Kyson Witherspoon, CF Enddy Azocar, C Carlos Narv\u00e1ez, RHP Anthony Eyanson and Player To Be Named Later.",
-    "keyword": false,
-    "pid": 804817,
-    "player": "Kyson Witherspoon",
-    "type": "Trade"
-   },
-   {
-    "code": "TR",
-    "date": "2026-08-03",
-    "desc": "Baltimore Orioles traded C Adley Rutschman, C Jake Rogers and cash to Boston Red Sox for RHP Kyson Witherspoon, CF Enddy Azocar, C Carlos Narv\u00e1ez, RHP Anthony Eyanson and Player To Be Named Later.",
-    "keyword": false,
-    "pid": 821150,
-    "player": "Enddy Azocar",
-    "type": "Trade"
-   },
-   {
-    "code": "TR",
-    "date": "2026-08-03",
-    "desc": "Baltimore Orioles traded C Adley Rutschman, C Jake Rogers and cash to Boston Red Sox for RHP Kyson Witherspoon, CF Enddy Azocar, C Carlos Narv\u00e1ez, RHP Anthony Eyanson and Player To Be Named Later.",
-    "keyword": false,
-    "pid": 668939,
-    "player": "Adley Rutschman",
-    "type": "Trade"
-   },
-   {
-    "code": "TR",
     "date": "2026-08-01",
     "desc": "Boston Red Sox traded LHP Jojo Ingrassia to Detroit Tigers.",
     "keyword": false,
@@ -221,10 +221,64 @@
    {
     "code": "SGN",
     "date": "2026-07-17",
+    "desc": "Boston Red Sox signed LHP Kide Adetuyi.",
+    "keyword": false,
+    "pid": 824786,
+    "player": "Kide Adetuyi",
+    "type": "Signed"
+   },
+   {
+    "code": "SGN",
+    "date": "2026-07-17",
+    "desc": "Boston Red Sox signed LHP Brett Lanman.",
+    "keyword": false,
+    "pid": 822843,
+    "player": "Brett Lanman",
+    "type": "Signed"
+   },
+   {
+    "code": "SGN",
+    "date": "2026-07-17",
+    "desc": "Boston Red Sox signed RHP Luis Calderon.",
+    "keyword": false,
+    "pid": 842314,
+    "player": "Luis Calderon",
+    "type": "Signed"
+   },
+   {
+    "code": "SGN",
+    "date": "2026-07-17",
+    "desc": "Boston Red Sox signed SS Wills Maginnis.",
+    "keyword": false,
+    "pid": 815491,
+    "player": "Wills Maginnis",
+    "type": "Signed"
+   },
+   {
+    "code": "SGN",
+    "date": "2026-07-17",
+    "desc": "Boston Red Sox signed RHP Alex Kranzler.",
+    "keyword": false,
+    "pid": 702962,
+    "player": "Alex Kranzler",
+    "type": "Signed"
+   },
+   {
+    "code": "SGN",
+    "date": "2026-07-17",
     "desc": "Boston Red Sox signed SS Jace Mataczynski.",
     "keyword": false,
     "pid": 842153,
     "player": "Jace Mataczynski",
+    "type": "Signed"
+   },
+   {
+    "code": "SGN",
+    "date": "2026-07-17",
+    "desc": "Boston Red Sox signed SS Colton Coates.",
+    "keyword": false,
+    "pid": 813832,
+    "player": "Colton Coates",
     "type": "Signed"
    },
    {
@@ -248,10 +302,37 @@
    {
     "code": "SGN",
     "date": "2026-07-17",
-    "desc": "Boston Red Sox signed LHP Kide Adetuyi.",
+    "desc": "Boston Red Sox signed RHP Lucas Davenport.",
     "keyword": false,
-    "pid": 824786,
-    "player": "Kide Adetuyi",
+    "pid": 702672,
+    "player": "Lucas Davenport",
+    "type": "Signed"
+   },
+   {
+    "code": "SGN",
+    "date": "2026-07-17",
+    "desc": "Boston Red Sox signed LHP Josh Volmerding.",
+    "keyword": false,
+    "pid": 835281,
+    "player": "Josh Volmerding",
+    "type": "Signed"
+   },
+   {
+    "code": "SGN",
+    "date": "2026-07-17",
+    "desc": "Boston Red Sox signed RHP Kaleb LaFavor.",
+    "keyword": false,
+    "pid": 842190,
+    "player": "Kaleb LaFavor",
+    "type": "Signed"
+   },
+   {
+    "code": "SGN",
+    "date": "2026-07-17",
+    "desc": "Boston Red Sox signed RHP Mason Lei.",
+    "keyword": false,
+    "pid": 844041,
+    "player": "Mason Lei",
     "type": "Signed"
    },
    {
@@ -282,85 +363,13 @@
     "type": "Signed"
    },
    {
-    "code": "SGN",
-    "date": "2026-07-17",
-    "desc": "Boston Red Sox signed RHP Alex Kranzler.",
+    "code": "TR",
+    "date": "2026-07-14",
+    "desc": "Detroit Tigers traded OF Jahmai Jones to Boston Red Sox for Player To Be Named Later.",
     "keyword": false,
-    "pid": 702962,
-    "player": "Alex Kranzler",
-    "type": "Signed"
-   },
-   {
-    "code": "SGN",
-    "date": "2026-07-17",
-    "desc": "Boston Red Sox signed LHP Brett Lanman.",
-    "keyword": false,
-    "pid": 822843,
-    "player": "Brett Lanman",
-    "type": "Signed"
-   },
-   {
-    "code": "SGN",
-    "date": "2026-07-17",
-    "desc": "Boston Red Sox signed RHP Mason Lei.",
-    "keyword": false,
-    "pid": 844041,
-    "player": "Mason Lei",
-    "type": "Signed"
-   },
-   {
-    "code": "SGN",
-    "date": "2026-07-17",
-    "desc": "Boston Red Sox signed LHP Josh Volmerding.",
-    "keyword": false,
-    "pid": 835281,
-    "player": "Josh Volmerding",
-    "type": "Signed"
-   },
-   {
-    "code": "SGN",
-    "date": "2026-07-17",
-    "desc": "Boston Red Sox signed RHP Kaleb LaFavor.",
-    "keyword": false,
-    "pid": 842190,
-    "player": "Kaleb LaFavor",
-    "type": "Signed"
-   },
-   {
-    "code": "SGN",
-    "date": "2026-07-17",
-    "desc": "Boston Red Sox signed RHP Luis Calderon.",
-    "keyword": false,
-    "pid": 842314,
-    "player": "Luis Calderon",
-    "type": "Signed"
-   },
-   {
-    "code": "SGN",
-    "date": "2026-07-17",
-    "desc": "Boston Red Sox signed SS Wills Maginnis.",
-    "keyword": false,
-    "pid": 815491,
-    "player": "Wills Maginnis",
-    "type": "Signed"
-   },
-   {
-    "code": "SGN",
-    "date": "2026-07-17",
-    "desc": "Boston Red Sox signed RHP Lucas Davenport.",
-    "keyword": false,
-    "pid": 702672,
-    "player": "Lucas Davenport",
-    "type": "Signed"
-   },
-   {
-    "code": "SGN",
-    "date": "2026-07-17",
-    "desc": "Boston Red Sox signed SS Colton Coates.",
-    "keyword": false,
-    "pid": 813832,
-    "player": "Colton Coates",
-    "type": "Signed"
+    "pid": null,
+    "player": null,
+    "type": "Trade"
    },
    {
     "code": "TR",
@@ -369,15 +378,6 @@
     "keyword": false,
     "pid": 663330,
     "player": "Jahmai Jones",
-    "type": "Trade"
-   },
-   {
-    "code": "TR",
-    "date": "2026-07-14",
-    "desc": "Detroit Tigers traded OF Jahmai Jones to Boston Red Sox for Player To Be Named Later.",
-    "keyword": false,
-    "pid": null,
-    "player": null,
     "type": "Trade"
    },
    {
@@ -394,8 +394,8 @@
     "date": "2026-07-01",
     "desc": "Athletics traded 3B Brett Harris to Boston Red Sox for RHP Ben Hansen.",
     "keyword": false,
-    "pid": 810091,
-    "player": "Ben Hansen",
+    "pid": 695391,
+    "player": "Brett Harris",
     "type": "Trade"
    },
    {
@@ -403,8 +403,8 @@
     "date": "2026-07-01",
     "desc": "Athletics traded 3B Brett Harris to Boston Red Sox for RHP Ben Hansen.",
     "keyword": false,
-    "pid": 695391,
-    "player": "Brett Harris",
+    "pid": 810091,
+    "player": "Ben Hansen",
     "type": "Trade"
    },
    {
@@ -448,8 +448,8 @@
     "date": "2026-02-09",
     "desc": "Boston Red Sox traded LHP Kyle Harrison, LHP Shane Drohan and 2B David Hamilton to Milwaukee Brewers for 3B Caleb Durbin, SS Andruw Monasterio, 2B Anthony Seigler and Future Considerations.",
     "keyword": false,
-    "pid": 666152,
-    "player": "David Hamilton",
+    "pid": 702332,
+    "player": "Caleb Durbin",
     "type": "Trade"
    },
    {
@@ -457,8 +457,17 @@
     "date": "2026-02-09",
     "desc": "Boston Red Sox traded LHP Kyle Harrison, LHP Shane Drohan and 2B David Hamilton to Milwaukee Brewers for 3B Caleb Durbin, SS Andruw Monasterio, 2B Anthony Seigler and Future Considerations.",
     "keyword": false,
-    "pid": 655316,
-    "player": "Andruw Monasterio",
+    "pid": 678011,
+    "player": "Anthony Seigler",
+    "type": "Trade"
+   },
+   {
+    "code": "TR",
+    "date": "2026-02-09",
+    "desc": "Boston Red Sox traded LHP Kyle Harrison, LHP Shane Drohan and 2B David Hamilton to Milwaukee Brewers for 3B Caleb Durbin, SS Andruw Monasterio, 2B Anthony Seigler and Future Considerations.",
+    "keyword": false,
+    "pid": 675660,
+    "player": "Shane Drohan",
     "type": "Trade"
    },
    {
@@ -484,8 +493,8 @@
     "date": "2026-02-09",
     "desc": "Boston Red Sox traded LHP Kyle Harrison, LHP Shane Drohan and 2B David Hamilton to Milwaukee Brewers for 3B Caleb Durbin, SS Andruw Monasterio, 2B Anthony Seigler and Future Considerations.",
     "keyword": false,
-    "pid": 675660,
-    "player": "Shane Drohan",
+    "pid": 666152,
+    "player": "David Hamilton",
     "type": "Trade"
    },
    {
@@ -493,17 +502,8 @@
     "date": "2026-02-09",
     "desc": "Boston Red Sox traded LHP Kyle Harrison, LHP Shane Drohan and 2B David Hamilton to Milwaukee Brewers for 3B Caleb Durbin, SS Andruw Monasterio, 2B Anthony Seigler and Future Considerations.",
     "keyword": false,
-    "pid": 702332,
-    "player": "Caleb Durbin",
-    "type": "Trade"
-   },
-   {
-    "code": "TR",
-    "date": "2026-02-09",
-    "desc": "Boston Red Sox traded LHP Kyle Harrison, LHP Shane Drohan and 2B David Hamilton to Milwaukee Brewers for 3B Caleb Durbin, SS Andruw Monasterio, 2B Anthony Seigler and Future Considerations.",
-    "keyword": false,
-    "pid": 678011,
-    "player": "Anthony Seigler",
+    "pid": 655316,
+    "player": "Andruw Monasterio",
     "type": "Trade"
    },
    {
@@ -529,8 +529,8 @@
     "date": "2026-02-01",
     "desc": "Boston Red Sox traded RHP David Sandlin, RHP Jordan Hicks, Player To Be Named Later, Player To Be Named Later and cash to Chicago White Sox for RHP Gage Ziehl and Player To Be Named Later.",
     "keyword": false,
-    "pid": 689818,
-    "player": "David Sandlin",
+    "pid": null,
+    "player": null,
     "type": "Trade"
    },
    {
@@ -547,8 +547,17 @@
     "date": "2026-02-01",
     "desc": "Boston Red Sox traded RHP David Sandlin, RHP Jordan Hicks, Player To Be Named Later, Player To Be Named Later and cash to Chicago White Sox for RHP Gage Ziehl and Player To Be Named Later.",
     "keyword": false,
-    "pid": 663855,
-    "player": "Jordan Hicks",
+    "pid": null,
+    "player": null,
+    "type": "Trade"
+   },
+   {
+    "code": "TR",
+    "date": "2026-02-01",
+    "desc": "Boston Red Sox traded RHP David Sandlin, RHP Jordan Hicks, Player To Be Named Later, Player To Be Named Later and cash to Chicago White Sox for RHP Gage Ziehl and Player To Be Named Later.",
+    "keyword": false,
+    "pid": null,
+    "player": null,
     "type": "Trade"
    },
    {
@@ -565,8 +574,8 @@
     "date": "2026-02-01",
     "desc": "Boston Red Sox traded RHP David Sandlin, RHP Jordan Hicks, Player To Be Named Later, Player To Be Named Later and cash to Chicago White Sox for RHP Gage Ziehl and Player To Be Named Later.",
     "keyword": false,
-    "pid": null,
-    "player": null,
+    "pid": 689818,
+    "player": "David Sandlin",
     "type": "Trade"
    },
    {
@@ -574,17 +583,8 @@
     "date": "2026-02-01",
     "desc": "Boston Red Sox traded RHP David Sandlin, RHP Jordan Hicks, Player To Be Named Later, Player To Be Named Later and cash to Chicago White Sox for RHP Gage Ziehl and Player To Be Named Later.",
     "keyword": false,
-    "pid": null,
-    "player": null,
-    "type": "Trade"
-   },
-   {
-    "code": "TR",
-    "date": "2026-02-01",
-    "desc": "Boston Red Sox traded RHP David Sandlin, RHP Jordan Hicks, Player To Be Named Later, Player To Be Named Later and cash to Chicago White Sox for RHP Gage Ziehl and Player To Be Named Later.",
-    "keyword": false,
-    "pid": null,
-    "player": null,
+    "pid": 663855,
+    "player": "Jordan Hicks",
     "type": "Trade"
    },
    {
@@ -601,8 +601,8 @@
     "date": "2026-01-21",
     "desc": "Minnesota Twins traded C Nate Baez to Boston Red Sox for 3B Tristan Gray.",
     "keyword": false,
-    "pid": 686960,
-    "player": "Nate Baez",
+    "pid": 656484,
+    "player": "Tristan Gray",
     "type": "Trade"
    },
    {
@@ -610,17 +610,8 @@
     "date": "2026-01-21",
     "desc": "Minnesota Twins traded C Nate Baez to Boston Red Sox for 3B Tristan Gray.",
     "keyword": false,
-    "pid": 656484,
-    "player": "Tristan Gray",
-    "type": "Trade"
-   },
-   {
-    "code": "TR",
-    "date": "2025-12-22",
-    "desc": "Boston Red Sox traded RHP Hunter Dobbins, RHP Yhoiker Fajardo and RHP Blake Aita to St. Louis Cardinals for 1B Willson Contreras.",
-    "keyword": false,
-    "pid": 823369,
-    "player": "Yhoiker Fajardo",
+    "pid": 686960,
+    "player": "Nate Baez",
     "type": "Trade"
    },
    {
@@ -630,6 +621,15 @@
     "keyword": false,
     "pid": 575929,
     "player": "Willson Contreras",
+    "type": "Trade"
+   },
+   {
+    "code": "TR",
+    "date": "2025-12-22",
+    "desc": "Boston Red Sox traded RHP Hunter Dobbins, RHP Yhoiker Fajardo and RHP Blake Aita to St. Louis Cardinals for 1B Willson Contreras.",
+    "keyword": false,
+    "pid": 823369,
+    "player": "Yhoiker Fajardo",
     "type": "Trade"
    },
    {
@@ -655,8 +655,8 @@
     "date": "2025-12-15",
     "desc": "Boston Red Sox traded RHP Luis Perales to Washington Nationals for LHP Jake Bennett.",
     "keyword": false,
-    "pid": 691384,
-    "player": "Luis Perales",
+    "pid": 687562,
+    "player": "Jake Bennett",
     "type": "Trade"
    },
    {
@@ -664,8 +664,8 @@
     "date": "2025-12-15",
     "desc": "Boston Red Sox traded RHP Luis Perales to Washington Nationals for LHP Jake Bennett.",
     "keyword": false,
-    "pid": 687562,
-    "player": "Jake Bennett",
+    "pid": 691384,
+    "player": "Luis Perales",
     "type": "Trade"
    },
    {
@@ -700,8 +700,8 @@
     "date": "2025-12-09",
     "desc": "Boston Red Sox traded 2B Vaughn Grissom to Los Angeles Angels for OF Isaiah Jackson.",
     "keyword": false,
-    "pid": 687093,
-    "player": "Vaughn Grissom",
+    "pid": 805365,
+    "player": "Isaiah Jackson",
     "type": "Trade"
    },
    {
@@ -709,8 +709,8 @@
     "date": "2025-12-09",
     "desc": "Boston Red Sox traded 2B Vaughn Grissom to Los Angeles Angels for OF Isaiah Jackson.",
     "keyword": false,
-    "pid": 805365,
-    "player": "Isaiah Jackson",
+    "pid": 687093,
+    "player": "Vaughn Grissom",
     "type": "Trade"
    },
    {
@@ -721,24 +721,6 @@
     "pid": 681867,
     "player": "Cooper Criswell",
     "type": "Claimed Off Waivers"
-   },
-   {
-    "code": "TR",
-    "date": "2025-12-04",
-    "desc": "Pittsburgh Pirates traded RHP Johan Oviedo, LHP Tyler Samaniego and C Adonys Guzman to Boston Red Sox for CF Jhostynxon Garcia and RHP Jesus Travieso.",
-    "keyword": false,
-    "pid": 821174,
-    "player": "Jesus Travieso",
-    "type": "Trade"
-   },
-   {
-    "code": "TR",
-    "date": "2025-12-04",
-    "desc": "Pittsburgh Pirates traded RHP Johan Oviedo, LHP Tyler Samaniego and C Adonys Guzman to Boston Red Sox for CF Jhostynxon Garcia and RHP Jesus Travieso.",
-    "keyword": false,
-    "pid": 670912,
-    "player": "Johan Oviedo",
-    "type": "Trade"
    },
    {
     "code": "TR",
@@ -765,6 +747,33 @@
     "keyword": false,
     "pid": 691373,
     "player": "Jhostynxon Garcia",
+    "type": "Trade"
+   },
+   {
+    "code": "TR",
+    "date": "2025-12-04",
+    "desc": "Pittsburgh Pirates traded RHP Johan Oviedo, LHP Tyler Samaniego and C Adonys Guzman to Boston Red Sox for CF Jhostynxon Garcia and RHP Jesus Travieso.",
+    "keyword": false,
+    "pid": 670912,
+    "player": "Johan Oviedo",
+    "type": "Trade"
+   },
+   {
+    "code": "TR",
+    "date": "2025-12-04",
+    "desc": "Pittsburgh Pirates traded RHP Johan Oviedo, LHP Tyler Samaniego and C Adonys Guzman to Boston Red Sox for CF Jhostynxon Garcia and RHP Jesus Travieso.",
+    "keyword": false,
+    "pid": 821174,
+    "player": "Jesus Travieso",
+    "type": "Trade"
+   },
+   {
+    "code": "TR",
+    "date": "2025-11-25",
+    "desc": "St. Louis Cardinals traded RHP Sonny Gray and cash to Boston Red Sox for RHP Richard Fitts, LHP Brandon Clarke and Player To Be Named Later.",
+    "keyword": false,
+    "pid": 543243,
+    "player": "Sonny Gray",
     "type": "Trade"
    },
    {
@@ -804,15 +813,6 @@
     "type": "Trade"
    },
    {
-    "code": "TR",
-    "date": "2025-11-25",
-    "desc": "St. Louis Cardinals traded RHP Sonny Gray and cash to Boston Red Sox for RHP Richard Fitts, LHP Brandon Clarke and Player To Be Named Later.",
-    "keyword": false,
-    "pid": 543243,
-    "player": "Sonny Gray",
-    "type": "Trade"
-   },
-   {
     "code": "DFA",
     "date": "2025-11-21",
     "desc": "RHP Josh Winckowski elected free agency.",
@@ -833,6 +833,15 @@
    {
     "code": "TR",
     "date": "2025-11-18",
+    "desc": "Boston Red Sox traded RHP Alex Hoppe to Seattle Mariners for C Luke Heyman.",
+    "keyword": false,
+    "pid": 701326,
+    "player": "Luke Heyman",
+    "type": "Trade"
+   },
+   {
+    "code": "TR",
+    "date": "2025-11-18",
     "desc": "Boston Red Sox traded LHP Brennan Bernardino to Colorado Rockies for CF Braiden Ward.",
     "keyword": false,
     "pid": 657514,
@@ -842,37 +851,10 @@
    {
     "code": "TR",
     "date": "2025-11-18",
-    "desc": "Boston Red Sox traded LHP Brennan Bernardino to Colorado Rockies for CF Braiden Ward.",
-    "keyword": false,
-    "pid": 685274,
-    "player": "Braiden Ward",
-    "type": "Trade"
-   },
-   {
-    "code": "TR",
-    "date": "2025-11-18",
-    "desc": "Boston Red Sox traded RHP Alex Hoppe to Seattle Mariners for C Luke Heyman.",
-    "keyword": false,
-    "pid": 695380,
-    "player": "Alex Hoppe",
-    "type": "Trade"
-   },
-   {
-    "code": "TR",
-    "date": "2025-11-18",
     "desc": "Tampa Bay Rays traded 3B Tristan Gray to Boston Red Sox for RHP Luis Guerrero.",
     "keyword": false,
     "pid": 656484,
     "player": "Tristan Gray",
-    "type": "Trade"
-   },
-   {
-    "code": "TR",
-    "date": "2025-11-18",
-    "desc": "Tampa Bay Rays traded 3B Tristan Gray to Boston Red Sox for RHP Luis Guerrero.",
-    "keyword": false,
-    "pid": 692285,
-    "player": "Luis Guerrero",
     "type": "Trade"
    },
    {
@@ -896,19 +878,37 @@
    {
     "code": "TR",
     "date": "2025-11-18",
+    "desc": "Tampa Bay Rays traded 3B Tristan Gray to Boston Red Sox for RHP Luis Guerrero.",
+    "keyword": false,
+    "pid": 692285,
+    "player": "Luis Guerrero",
+    "type": "Trade"
+   },
+   {
+    "code": "TR",
+    "date": "2025-11-18",
+    "desc": "Boston Red Sox traded LHP Brennan Bernardino to Colorado Rockies for CF Braiden Ward.",
+    "keyword": false,
+    "pid": 685274,
+    "player": "Braiden Ward",
+    "type": "Trade"
+   },
+   {
+    "code": "TR",
+    "date": "2025-11-18",
     "desc": "Boston Red Sox traded RHP Alex Hoppe to Seattle Mariners for C Luke Heyman.",
     "keyword": false,
-    "pid": 701326,
-    "player": "Luke Heyman",
+    "pid": 695380,
+    "player": "Alex Hoppe",
     "type": "Trade"
    },
    {
     "code": "DFA",
     "date": "2025-11-04",
-    "desc": "3B Alex Bregman elected free agency.",
+    "desc": "RHP Liam Hendriks elected free agency.",
     "keyword": false,
-    "pid": 608324,
-    "player": "Alex Bregman",
+    "pid": 521230,
+    "player": "Liam Hendriks",
     "type": "Declared Free Agency"
    },
    {
@@ -923,10 +923,10 @@
    {
     "code": "DFA",
     "date": "2025-11-04",
-    "desc": "RHP Liam Hendriks elected free agency.",
+    "desc": "3B Alex Bregman elected free agency.",
     "keyword": false,
-    "pid": 521230,
-    "player": "Liam Hendriks",
+    "pid": 608324,
+    "player": "Alex Bregman",
     "type": "Declared Free Agency"
    },
    {
@@ -968,5 +968,5 @@
   ],
   "window_days": 400
  },
- "updated": "2026-10-13T14:07:28-04:00"
+ "updated": "2026-10-14T11:47:58-04:00"
 }

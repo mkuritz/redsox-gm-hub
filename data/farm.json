@@ -2824,7 +2824,7 @@
      "throws": "R"
     },
     {
-     "age": 23,
+     "age": 24,
      "bats": "R",
      "draftYear": null,
      "hit": null,
@@ -4437,7 +4437,7 @@
      "throws": "R"
     },
     {
-     "age": 23,
+     "age": 24,
      "bats": "R",
      "draftYear": null,
      "hit": null,
@@ -8277,7 +8277,7 @@
      "pit": null,
      "pos": "C",
      "posType": "Catcher",
-     "status": "Injured 60-Day",
+     "status": "Active",
      "throws": "R"
     },
     {
@@ -9501,5 +9501,5 @@
    "typicalAge": 18.0
   }
  ],
- "updated": "2026-10-13T14:07:22-04:00"
+ "updated": "2026-10-14T11:47:51-04:00"
 }

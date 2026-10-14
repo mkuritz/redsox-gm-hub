@@ -683,7 +683,13 @@
     "name": "Alec Burleson",
     "pit": null,
     "pos": "1B",
-    "rumors": [],
+    "rumors": [
+     {
+      "date": "2026-10-13T18:00-04:00",
+      "title": "Cardinals Open To Short-Term Addition At Third Base",
+      "url": "https://www.mlbtraderumors.com/2026/10/cardinals-rumors-third-base-short-term-nolan-gorman.html"
+     }
+    ],
     "team": "St. Louis Cardinals",
     "teamL": 85,
     "teamPct": ".475",
@@ -827,13 +833,7 @@
     "name": "Sam Antonacci",
     "pit": null,
     "pos": "LF",
-    "rumors": [
-     {
-      "date": "2026-10-09T09:50-04:00",
-      "title": "The Opener: Ramirez, Taylor, MLB Proposal",
-      "url": "https://www.mlbtraderumors.com/2026/10/the-opener-ramirez-taylor-mlb-proposal.html"
-     }
-    ],
+    "rumors": [],
     "team": "Chicago White Sox",
     "teamL": 78,
     "teamPct": ".519",
@@ -1066,7 +1066,13 @@
     "name": "Jordan Walker",
     "pit": null,
     "pos": "RF",
-    "rumors": [],
+    "rumors": [
+     {
+      "date": "2026-10-13T18:00-04:00",
+      "title": "Cardinals Open To Short-Term Addition At Third Base",
+      "url": "https://www.mlbtraderumors.com/2026/10/cardinals-rumors-third-base-short-term-nolan-gorman.html"
+     }
+    ],
     "team": "St. Louis Cardinals",
     "teamL": 85,
     "teamPct": ".475",
@@ -1426,13 +1432,7 @@
     "name": "Shea Langeliers",
     "pit": null,
     "pos": "C",
-    "rumors": [
-     {
-      "date": "2026-10-09T15:00-04:00",
-      "title": "Reviewing The Athletics\u2019 Young Hitters",
-      "url": "https://www.mlbtraderumors.com/2026/10/reviewing-the-athletics-young-hitters.html"
-     }
-    ],
+    "rumors": [],
     "team": "Athletics",
     "teamL": 98,
     "teamPct": ".395",
@@ -1600,13 +1600,7 @@
     "name": "Nick Kurtz",
     "pit": null,
     "pos": "1B",
-    "rumors": [
-     {
-      "date": "2026-10-09T15:00-04:00",
-      "title": "Reviewing The Athletics\u2019 Young Hitters",
-      "url": "https://www.mlbtraderumors.com/2026/10/reviewing-the-athletics-young-hitters.html"
-     }
-    ],
+    "rumors": [],
     "team": "Athletics",
     "teamL": 98,
     "teamPct": ".395",
@@ -1828,13 +1822,7 @@
     "name": "Tyler Soderstrom",
     "pit": null,
     "pos": "LF",
-    "rumors": [
-     {
-      "date": "2026-10-09T15:00-04:00",
-      "title": "Reviewing The Athletics\u2019 Young Hitters",
-      "url": "https://www.mlbtraderumors.com/2026/10/reviewing-the-athletics-young-hitters.html"
-     }
-    ],
+    "rumors": [],
     "team": "Athletics",
     "teamL": 98,
     "teamPct": ".395",
@@ -3091,7 +3079,13 @@
      "whip": "1.06"
     },
     "pos": "P",
-    "rumors": [],
+    "rumors": [
+     {
+      "date": "2026-10-13T19:38-04:00",
+      "title": "Diamondbacks Pursued Luis Garc\u00eda Jr. At Trade Deadline",
+      "url": "https://www.mlbtraderumors.com/2026/10/diamondbacks-pursued-luis-garcia-jr-at-trade-deadline.html"
+     }
+    ],
     "team": "Arizona Diamondbacks",
     "teamL": 76,
     "teamPct": ".531",
@@ -4817,6 +4811,147 @@
   ],
   "feed": [
    {
+    "date": "2026-10-14T11:13-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "The Astros announced Tuesday that they will not renew manager Joe Espada\u2019s contract, which was set to expire at the end of the month. Espada, who managed Houston from 2024-26, will become a free agent. There will be other changes on the staff. Bench coach Omar Lopez will not be back in that role but [\u2026]",
+    "tags": [
+     "free agency",
+     "front office"
+    ],
+    "title": "Joe Espada Will Not Return As Astros Manager",
+    "url": "https://www.mlbtraderumors.com/2026/10/astros-manager-joe-espada-wont-return.html"
+   },
+   {
+    "date": "2026-10-14T10:01-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "Don Mattingly is the Phillies \u201cinterim\u201d manager no more, as the team announced today that he\u2019ll shed that interim label and be named the new full-time skipper. President of baseball operations Dave Dombrowski said in a press release that Mattingly has signed a two-year deal covering the 2027-28 seasons. Mattingly relie",
+    "tags": [
+     "free agency",
+     "front office"
+    ],
+    "title": "Phillies Sign Don Mattingly To Two-Year Deal",
+    "url": "https://www.mlbtraderumors.com/2026/10/phillies-to-keep-don-mattingly-as-manager.html"
+   },
+   {
+    "date": "2026-10-14T09:57-04:00",
+    "kind": "rumor",
+    "players": [
+     "Blake Snell",
+     "Freddy Peralta"
+    ],
+    "source": "MLB Trade Rumors",
+    "summary": "The Dodgers will turn to Blake Snell in Game 3. He struggled with control in the NLDS, but did extend his streak to nine straight starts allowing one earned run or fewer. 1. Fastball Freddy is back Rays right-hander Freddy Peralta delivered an excellent performance to even the ALCS at a game apiece. He punched [\u2026]",
+    "tags": [],
+    "title": "The Opener: Peralta, Baker, Ohtani",
+    "url": "https://www.mlbtraderumors.com/2026/10/the-opener-peralta-baker-ohtani.html"
+   },
+   {
+    "date": "2026-10-13T23:27-04:00",
+    "kind": "rumor",
+    "players": [
+     "Bo Bichette"
+    ],
+    "source": "MLB Trade Rumors",
+    "summary": "There\u2019s no bigger option decision this year than Bo Bichette\u2019s. The two-time All-Star went short on his deal with the Mets, locking in a monster $42MM average annual value on a three-year term. The deal allowed him to retest free agency after either of the first two seasons. Bichette collected a $40MM signing bonus upf",
+    "tags": [
+     "free agency"
+    ],
+    "title": "Poll: Will Bo Bichette Opt Out?",
+    "url": "https://www.mlbtraderumors.com/2026/10/poll-will-bo-bichette-opt-out.html"
+   },
+   {
+    "date": "2026-10-13T21:22-04:00",
+    "kind": "rumor",
+    "players": [
+     "Iv\u00e1n Herrera",
+     "Jimmy Crooks",
+     "Leo Bernal"
+    ],
+    "source": "MLB Trade Rumors",
+    "summary": "The Cardinals\u2019 catching depth has intrigued other teams for over a calendar year. Although St. Louis has yet to trade from that area of organizational strength, that\u2019ll again surely be a point of discussion for the front office. St. Louis has four catchers on the 40-man roster: Leo Bernal, Iv\u00e1n Herrera, Jimmy Crooks an",
+    "tags": [
+     "trade",
+     "front office"
+    ],
+    "title": "Will The Cardinals Trade A Catcher This Offseason?",
+    "url": "https://www.mlbtraderumors.com/2026/10/will-the-cardinals-trade-a-catcher-this-offseason.html"
+   },
+   {
+    "date": "2026-10-13T19:38-04:00",
+    "kind": "rumor",
+    "players": [
+     "Juan Morillo",
+     "Luis Garc\u00eda"
+    ],
+    "source": "MLB Trade Rumors",
+    "summary": "The Nationals were shopping first baseman Luis Garc\u00eda Jr. at the deadline and eventually traded him to the Yankees. Joel Sherman of The New York Post reports that the Diamondbacks were the runners-up for Garc\u00eda. Sherman then speculates about the Yankees now dealing Garc\u00eda to Arizona for a reliever such as Juan Morillo.",
+    "tags": [
+     "trade"
+    ],
+    "title": "Diamondbacks Pursued Luis Garc\u00eda Jr. At Trade Deadline",
+    "url": "https://www.mlbtraderumors.com/2026/10/diamondbacks-pursued-luis-garcia-jr-at-trade-deadline.html"
+   },
+   {
+    "date": "2026-10-13T19:16-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "October 13: Roberts announced on Tuesday that Ohtani will remain in the lineup (relayed by Jack Harris of The California Post). October 12: The Dodgers head back to Los Angeles with their hopes of a three-peat in serious jeopardy. The Brewers took Game 2 by a 7-4 margin to hold serve at home, putting them [\u2026]",
+    "tags": [],
+    "title": "Dodgers To Keep Ohtani In Game 3 Lineup",
+    "url": "https://www.mlbtraderumors.com/2026/10/dodgers-to-consider-benching-ohtani-in-game-3.html"
+   },
+   {
+    "date": "2026-10-13T18:00-04:00",
+    "kind": "rumor",
+    "players": [
+     "Alec Burleson",
+     "JJ Wetherholt",
+     "Jordan Walker",
+     "Leo Bernal",
+     "Masyn Winn",
+     "Pedro Pag\u00e9s"
+    ],
+    "source": "MLB Trade Rumors",
+    "summary": "The Cardinals enter the offseason with set names at several spots around the diamond. Masyn Winn and JJ Wetherholt have the middle infield covered. Alec Burleson is locked in at first base. Jordan Walker will reprise his role in right field. They\u2019re deep in catching talent with each of Leo Bernal, Pedro Pag\u00e9s and Iv\u00e1n ",
+    "tags": [],
+    "title": "Cardinals Open To Short-Term Addition At Third Base",
+    "url": "https://www.mlbtraderumors.com/2026/10/cardinals-rumors-third-base-short-term-nolan-gorman.html"
+   },
+   {
+    "date": "2026-10-13T16:05-04:00",
+    "kind": "rumor",
+    "players": [
+     "Keibert Ruiz",
+     "Max Scherzer",
+     "Trea Turner"
+    ],
+    "source": "MLB Trade Rumors",
+    "summary": "The Nationals won the World Series in 2019 but their fortunes faded after that and they pivoted into rebuild mode. At the 2021 deadline, they sent Max Scherzer and Trea Turner to the Dodgers for four prospects. One of those four was catcher Keibert Ruiz. The Nats felt they had a long-term answer behind the [\u2026]",
+    "tags": [
+     "trade",
+     "prospect"
+    ],
+    "title": "Poll: Should The Nationals Trade Keibert Ruiz?",
+    "url": "https://www.mlbtraderumors.com/2026/10/poll-should-the-nationals-trade-keibert-ruiz.html"
+   },
+   {
+    "date": "2026-10-13T14:10-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "The D-Backs were in Wild Card contention until the final game of the season, but they ultimately fell short of a playoff berth for a third straight year. They\u2019re probably working with a tighter budget this winter and have a handful of glaring needs on the pitching staff and in the back half of the [\u2026]",
+    "tags": [
+     "injury"
+    ],
+    "title": "Offseason Outlook: Arizona Diamondbacks",
+    "url": "https://www.mlbtraderumors.com/2026/10/offseason-outlook-arizona-diamondbacks-16.html"
+   },
+   {
     "date": "2026-10-13T12:16-04:00",
     "kind": "rumor",
     "players": [],
@@ -4854,16 +4989,6 @@
     "tags": [],
     "title": "The Opener: Contreras, Bailey, Peralta",
     "url": "https://www.mlbtraderumors.com/2026/10/the-opener-contreras-bailey-peralta.html"
-   },
-   {
-    "date": "2026-10-12T23:16-04:00",
-    "kind": "rumor",
-    "players": [],
-    "source": "MLB Trade Rumors",
-    "summary": "The Dodgers head back to Los Angeles with their hopes of a three-peat in serious jeopardy. The Brewers took Game 2 by a 7-4 margin to hold serve at home, putting them two games away from their first pennant in 44 years. They\u2019ll have an opportunity to take a commanding lead when the NLCS moves [\u2026]",
-    "tags": [],
-    "title": "Dodgers To Consider Benching Ohtani In Game 3",
-    "url": "https://www.mlbtraderumors.com/2026/10/dodgers-to-consider-benching-ohtani-in-game-3.html"
    },
    {
     "date": "2026-10-12T22:18-04:00",
@@ -5284,136 +5409,6 @@
     ],
     "title": "Diamondbacks To Retain Hitting Coach Joe Mather",
     "url": "https://www.mlbtraderumors.com/2026/10/diamondbacks-to-retain-hitting-coach-joe-mather.html"
-   },
-   {
-    "date": "2026-10-09T20:55-04:00",
-    "kind": "rumor",
-    "players": [
-     "Garrett Whitlock"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "Red Sox reliever Garrett Whitlock capped off a terrific regular season with a quality September, but it turns out he worked through a serious injury over the final month of the campaign. Whitlock unknowingly pitched with a fractured right tibia, he told Gabrielle Starr of the Boston Herald. Boston\u2019s season ended in lat",
-    "tags": [
-     "injury"
-    ],
-    "title": "Garrett Whitlock Diagnosed With Fractured Tibia",
-    "url": "https://www.mlbtraderumors.com/2026/10/garrett-whitlock-diagnosed-with-fractured-tibia.html"
-   },
-   {
-    "date": "2026-10-09T19:55-04:00",
-    "kind": "rumor",
-    "players": [
-     "Ian Hamilton"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "A pair of veteran relievers have elected minor league free agency, per the MiLB.com transactions page. Here\u2019s a rundown\u2026 Ian Hamilton (Braves) A few weeks after the Yankees non-tendered Hamilton last November, the right-hander landed a non-guaranteed, major league contract with the Braves. Hamilton did not make the Bra",
-    "tags": [
-     "free agency",
-     "prospect"
-    ],
-    "title": "Two Pitchers Elect Minor League Free Agency",
-    "url": "https://www.mlbtraderumors.com/2026/10/two-pitchers-elect-minor-league-free-agency.html"
-   },
-   {
-    "date": "2026-10-09T17:00-04:00",
-    "kind": "rumor",
-    "players": [
-     "Chris Bassitt",
-     "Roman Anthony",
-     "Tyler Mahle"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "Anthony Franco Good evening, hope all is well! Sorry about the different start time, trying to get numbers down for the free agents on the Top 50 Let\u2019s get rolling Jordan Is Chris Bassitt\u2019s Toronto contract a decent comp for what Tyler Mahle might look for? Anthony Franco $63M is ambitious for two good months [\u2026]",
-    "tags": [
-     "free agency",
-     "front office"
-    ],
-    "title": "Front Office Subscriber Chat Transcript",
-    "url": "https://www.mlbtraderumors.com/2026/10/front-office-subscriber-chat-with-anthony-franco-today-at-400pm-central-3.html"
-   },
-   {
-    "date": "2026-10-09T16:29-04:00",
-    "kind": "rumor",
-    "players": [
-     "Corey Seager"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "Rangers president of baseball operations Chris Young told reporters last week that shortstop Corey Seager was dealing with a bone spur in his right elbow. Minor surgery was on the table, and it appears Seager went that route. Jeff Wilson of DLLS Sports first pointed out an Instagram post from Seager\u2019s wife, Madisyn, me",
-    "tags": [
-     "injury"
-    ],
-    "title": "Corey Seager Undergoes Elbow Surgery",
-    "url": "https://www.mlbtraderumors.com/2026/10/corey-seager-undergoes-elbow-surgery.html"
-   },
-   {
-    "date": "2026-10-09T15:00-04:00",
-    "kind": "rumor",
-    "players": [
-     "Brent Rooker",
-     "Nick Kurtz",
-     "Shea Langeliers",
-     "Tyler Soderstrom"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "The Athletics were hampered by several major injuries to an up-and-coming lineup this season. Nick Kurtz, Brent Rooker, Shea Langeliers, and Tyler Soderstrom all missed significant time. An offense that ranked 12th in scoring in 2025 slipped to 20th in 2026. The absences in the middle of the order opened up playing tim",
-    "tags": [
-     "free agency",
-     "injury"
-    ],
-    "title": "Reviewing The Athletics\u2019 Young Hitters",
-    "url": "https://www.mlbtraderumors.com/2026/10/reviewing-the-athletics-young-hitters.html"
-   },
-   {
-    "date": "2026-10-09T13:22-04:00",
-    "kind": "rumor",
-    "players": [
-     "Foster Griffin",
-     "Jo Adell",
-     "Nathaniel Lowe"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "The Guardians were abnormally active as buyers at the trade deadline this summer. The club didn\u2019t make any big swings, but added three players who\u2019ve played key roles in the postseason. Zack Meisel of The Athletic shared details on what went into bringing Jo Adell, Foster Griffin, and Nathaniel Lowe to Cleveland. Adell",
-    "tags": [
-     "trade"
-    ],
-    "title": "Details On The Guardians\u2019 Deadline Moves",
-    "url": "https://www.mlbtraderumors.com/2026/10/details-on-the-guardians-deadline-moves.html"
-   },
-   {
-    "date": "2026-10-09T11:36-04:00",
-    "kind": "rumor",
-    "players": [
-     "Michael King"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "The Padres were dispatched by the Brewers in the NLDS, despite the efforts of Michael King. The right-hander tossed five innings of one-run ball in Game 2. He came back two days later and picked up a two-inning save in Game 3. He was supposedly available in Game 4, too. King will be a key [\u2026]",
-    "tags": [],
-    "title": "Michael King Open To Returning To Padres",
-    "url": "https://www.mlbtraderumors.com/2026/10/michael-king-open-to-returning-to-padres.html"
-   },
-   {
-    "date": "2026-10-09T09:50-04:00",
-    "kind": "rumor",
-    "players": [
-     "Sam Antonacci"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "The streak continues. The White Sox whiffed on both chances to clinch a series at home for the first time since 1906. Sam Antonacci isn\u2019t worried about bouncing back in Game 5, though. \u201cI got asked that yesterday. I said we\u2019d turn the page today. We turned the page but we lost so we\u2019ll turn [\u2026]",
-    "tags": [],
-    "title": "The Opener: Ramirez, Taylor, MLB Proposal",
-    "url": "https://www.mlbtraderumors.com/2026/10/the-opener-ramirez-taylor-mlb-proposal.html"
-   },
-   {
-    "date": "2026-10-08T23:59-04:00",
-    "kind": "rumor",
-    "players": [],
-    "source": "MLB Trade Rumors",
-    "summary": "Major League Baseball proposed a 154-game regular season during a collective bargaining session with the MLBPA today, per an announcement on X. The league also proposed changes to the postseason that would include extending the Division Series to seven games and allowing higher seeds to choose their opponents. The curr",
-    "tags": [
-     "cba"
-    ],
-    "title": "MLB Proposes Shorter Regular Season, Playoff Changes",
-    "url": "https://www.mlbtraderumors.com/2026/10/mlb-proposes-shorter-regular-season-playoff-changes.html"
    }
   ],
   "teams": [
@@ -5629,5 +5624,5 @@
    }
   ]
  },
- "updated": "2026-10-13T14:07:27-04:00"
+ "updated": "2026-10-14T11:47:56-04:00"
 }
