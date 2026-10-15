@@ -2,7 +2,7 @@
  "data": {
   "items": [
    {
-    "date": "2026-10-14T00:34-04:00",
+    "date": "2026-10-14T19:48-04:00",
     "kind": "news",
     "players": [],
     "source": "MLB.com",
@@ -12,6 +12,29 @@
     ],
     "title": "Watch Red Sox prospects in Arizona Fall League action",
     "url": "https://www.mlb.com/redsox/news/watch-top-prospects-in-arizona-fall-league-winter-ball-2026"
+   },
+   {
+    "date": "2026-10-14T19:00-04:00",
+    "kind": "news",
+    "players": [],
+    "source": "MLB.com",
+    "summary": "",
+    "tags": [],
+    "title": "Here's one stat from each farm system that caught our eye in 2026",
+    "url": "https://www.mlb.com/redsox/news/best-prospect-stat-from-each-mlb-farm-system-2026"
+   },
+   {
+    "date": "2026-10-14T13:07-04:00",
+    "kind": "news",
+    "players": [
+     "Caleb Durbin",
+     "Ceddanne Rafaela"
+    ],
+    "source": "MLB.com",
+    "summary": "",
+    "tags": [],
+    "title": "Durbin, Rafaela, Abreu nominated for Gold Glove Awards",
+    "url": "https://www.mlb.com/redsox/news/2026-gold-glove-award-finalists"
    },
    {
     "date": "2026-10-13T09:54-04:00",
@@ -348,20 +371,6 @@
     "url": "https://www.mlb.com/redsox/news/red-sox-lose-to-yankees-al-wild-card-series-game-1-2026"
    },
    {
-    "date": "2026-09-29T19:28-04:00",
-    "kind": "news",
-    "players": [
-     "Garrett Crochet"
-    ],
-    "source": "MLB.com",
-    "summary": "",
-    "tags": [
-     "injury"
-    ],
-    "title": "Crochet 'will go until they take the ball from me' for Red Sox in Wild Card Series",
-    "url": "https://www.mlb.com/redsox/news/garrett-crochet-al-wild-card-series-roster"
-   },
-   {
     "date": "2026-09-29T17:57-04:00",
     "kind": "news",
     "players": [],
@@ -384,16 +393,6 @@
     ],
     "title": "Red Sox add Garrett Crochet to wild-card roster vs. Yankees",
     "url": "https://www.espn.com/mlb/story/_/id/50059543/red-sox-add-garrett-crochet-wild-card-roster-vs-yankees"
-   },
-   {
-    "date": "2026-09-29T13:08-04:00",
-    "kind": "news",
-    "players": [],
-    "source": "MLB.com",
-    "summary": "",
-    "tags": [],
-    "title": "Ranking rookies who could make an impact in '26 postseason",
-    "url": "https://www.mlb.com/redsox/news/rookies-in-2026-mlb-playoffs"
    },
    {
     "date": "2026-09-29T01:05:32Z",
@@ -580,5 +579,5 @@
    }
   ]
  },
- "updated": "2026-10-14T11:47:53-04:00"
+ "updated": "2026-10-14T21:25:39-04:00"
 }
