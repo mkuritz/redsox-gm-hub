@@ -293,7 +293,13 @@
     "name": "Jackson Chourio",
     "pit": null,
     "pos": "LF",
-    "rumors": [],
+    "rumors": [
+     {
+      "date": "2026-10-15T09:29-04:00",
+      "title": "The Opener: Brewers Up 3-0, Bauers/Mitchell, Williams",
+      "url": "https://www.mlbtraderumors.com/2026/10/the-opener-brewers-up-3-0-bauers-mitchell-williams.html"
+     }
+    ],
     "team": "Milwaukee Brewers",
     "teamL": 59,
     "teamPct": ".636",
@@ -485,13 +491,7 @@
     "name": "Liam Hicks",
     "pit": null,
     "pos": "C",
-    "rumors": [
-     {
-      "date": "2026-10-10T11:03-04:00",
-      "title": "AL East Notes: Rays, Feduccia, Red Sox, Kittredge, Akin",
-      "url": "https://www.mlbtraderumors.com/2026/10/al-east-notes-rays-feduccia-red-sox-kittredge-akin.html"
-     }
-    ],
+    "rumors": [],
     "team": "Tampa Bay Rays",
     "teamL": 64,
     "teamPct": ".605",
@@ -1504,7 +1504,13 @@
     "name": "Bryan Reynolds",
     "pit": null,
     "pos": "LF",
-    "rumors": [],
+    "rumors": [
+     {
+      "date": "2026-10-14T15:48-04:00",
+      "title": "Offseason Outlook: Pittsburgh Pirates",
+      "url": "https://www.mlbtraderumors.com/2026/10/offseason-outlook-pittsburgh-pirates-16.html"
+     }
+    ],
     "team": "Pittsburgh Pirates",
     "teamL": 80,
     "teamPct": ".506",
@@ -1744,13 +1750,7 @@
     "name": "Miguel Vargas",
     "pit": null,
     "pos": "3B",
-    "rumors": [
-     {
-      "date": "2026-10-10T17:50-04:00",
-      "title": "AL Central Notes: Vargas, Tigers Staff, Royals Ballpark",
-      "url": "https://www.mlbtraderumors.com/2026/10/al-central-notes-vargas-tigers-staff-royals-ballpark.html"
-     }
-    ],
+    "rumors": [],
     "team": "Chicago White Sox",
     "teamL": 78,
     "teamPct": ".519",
@@ -2038,13 +2038,7 @@
     "name": "Munetaka Murakami",
     "pit": null,
     "pos": "1B",
-    "rumors": [
-     {
-      "date": "2026-10-10T17:50-04:00",
-      "title": "AL Central Notes: Vargas, Tigers Staff, Royals Ballpark",
-      "url": "https://www.mlbtraderumors.com/2026/10/al-central-notes-vargas-tigers-staff-royals-ballpark.html"
-     }
-    ],
+    "rumors": [],
     "team": "Chicago White Sox",
     "teamL": 78,
     "teamPct": ".519",
@@ -2090,11 +2084,6 @@
       "date": "2026-10-12T15:06-04:00",
       "title": "How The Rays Turned Bryan Baker Into An All-Star Closer",
       "url": "https://www.mlbtraderumors.com/2026/10/how-the-rays-turned-bryan-baker-into-an-all-star-closer.html"
-     },
-     {
-      "date": "2026-10-10T11:03-04:00",
-      "title": "AL East Notes: Rays, Feduccia, Red Sox, Kittredge, Akin",
-      "url": "https://www.mlbtraderumors.com/2026/10/al-east-notes-rays-feduccia-red-sox-kittredge-akin.html"
      }
     ],
     "team": "Tampa Bay Rays",
@@ -2178,13 +2167,7 @@
      "whip": "1.10"
     },
     "pos": "P",
-    "rumors": [
-     {
-      "date": "2026-10-10T14:12-04:00",
-      "title": "Braves Weren\u2019t Willing To Include Didier Fuentes In Skubal Trade Offer",
-      "url": "https://www.mlbtraderumors.com/2026/10/braves-werent-willing-to-include-didier-fuentes-in-skubal-trade-offer.html"
-     }
-    ],
+    "rumors": [],
     "team": "Atlanta Braves",
     "teamL": 68,
     "teamPct": ".580",
@@ -3209,13 +3192,7 @@
      "whip": "0.90"
     },
     "pos": "P",
-    "rumors": [
-     {
-      "date": "2026-10-10T11:03-04:00",
-      "title": "AL East Notes: Rays, Feduccia, Red Sox, Kittredge, Akin",
-      "url": "https://www.mlbtraderumors.com/2026/10/al-east-notes-rays-feduccia-red-sox-kittredge-akin.html"
-     }
-    ],
+    "rumors": [],
     "team": "Tampa Bay Rays",
     "teamL": 64,
     "teamPct": ".605",
@@ -4802,7 +4779,13 @@
      "whip": "1.19"
     },
     "pos": "P",
-    "rumors": [],
+    "rumors": [
+     {
+      "date": "2026-10-15T09:29-04:00",
+      "title": "The Opener: Brewers Up 3-0, Bauers/Mitchell, Williams",
+      "url": "https://www.mlbtraderumors.com/2026/10/the-opener-brewers-up-3-0-bauers-mitchell-williams.html"
+     }
+    ],
     "team": "Milwaukee Brewers",
     "teamL": 59,
     "teamPct": ".636",
@@ -4811,20 +4794,48 @@
   ],
   "feed": [
    {
-    "date": "2026-10-14T11:13-04:00",
+    "date": "2026-10-15T10:38-04:00",
     "kind": "rumor",
-    "players": [],
+    "players": [
+     "Tim Mayza"
+    ],
     "source": "MLB Trade Rumors",
-    "summary": "The Astros announced Tuesday that they will not renew manager Joe Espada\u2019s contract, which was set to expire at the end of the month. Espada, who managed Houston from 2024-26, will become a free agent. There will be other changes on the staff. Bench coach Omar Lopez will not be back in that role but [\u2026]",
+    "summary": "The Phillies made a couple of notable moves on Thursday morning, president of baseball operations Dave Dombrowski announced. In addition to re-signing left-handed reliever Tim Mayza to a one-year deal, the Phillies hired former Mets manager Carlos Mendoza as their third base and infield coach (via Matt Gelb of The Athl",
     "tags": [
      "free agency",
      "front office"
     ],
-    "title": "Joe Espada Will Not Return As Astros Manager",
-    "url": "https://www.mlbtraderumors.com/2026/10/astros-manager-joe-espada-wont-return.html"
+    "title": "Phillies Re-Sign Tim Mayza, Hire Carlos Mendoza As Third Base Coach",
+    "url": "https://www.mlbtraderumors.com/2026/10/phillies-re-sign-tim-mayza-hire-carlos-mendoza-as-third-base-coach.html"
    },
    {
-    "date": "2026-10-14T10:01-04:00",
+    "date": "2026-10-15T10:18-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "The Phillies put an end to their managerial search when they promoted interim skipper Don Mattingly to the full-time role on Wednesday. They showed interest in ex-Red Sox manager Alex Cora during the process, but he wasn\u2019t the only outside candidate on their radar. President of baseball operations Dave Dombrowski forma",
+    "tags": [
+     "front office"
+    ],
+    "title": "Phillies Reached Out To Chase Utley, Raul Ibanez In Managerial Search",
+    "url": "https://www.mlbtraderumors.com/2026/10/phillies-reached-out-to-chase-utley-raul-ibanez-in-managerial-search.html"
+   },
+   {
+    "date": "2026-10-15T09:29-04:00",
+    "kind": "rumor",
+    "players": [
+     "Blake Snell",
+     "Jackson Chourio",
+     "Robert Gasser"
+    ],
+    "source": "MLB Trade Rumors",
+    "summary": "Due to weather concerns in Cleveland, Game 3 of the ALCS has been moved up to noon CT. Plan accordingly! 1. Brewers take commanding lead Milwaukee set the tone immediately in Game 3 of the NLCS, with Jackson Chourio taking Blake Snell deep on the first pitch. Snell and Robert Gasser dueled over the first [\u2026]",
+    "tags": [],
+    "title": "The Opener: Brewers Up 3-0, Bauers/Mitchell, Williams",
+    "url": "https://www.mlbtraderumors.com/2026/10/the-opener-brewers-up-3-0-bauers-mitchell-williams.html"
+   },
+   {
+    "date": "2026-10-15T00:00-04:00",
     "kind": "rumor",
     "players": [],
     "source": "MLB Trade Rumors",
@@ -4835,6 +4846,122 @@
     ],
     "title": "Phillies Sign Don Mattingly To Two-Year Deal",
     "url": "https://www.mlbtraderumors.com/2026/10/phillies-to-keep-don-mattingly-as-manager.html"
+   },
+   {
+    "date": "2026-10-14T22:42-04:00",
+    "kind": "rumor",
+    "players": [
+     "Danny Young",
+     "Luke Williams"
+    ],
+    "source": "MLB Trade Rumors",
+    "summary": "The Braves sent utility player Luke Williams through outright waivers, according to the MLB.com transaction log. Atlanta designated him for assignment last week when they added Danny Young to the roster to keep him out of minor league free agency this offseason. Williams hasn\u2019t technically elected free agency, accordin",
+    "tags": [
+     "free agency",
+     "prospect"
+    ],
+    "title": "Braves Outright Luke Williams",
+    "url": "https://www.mlbtraderumors.com/2026/10/braves-outright-luke-williams-3.html"
+   },
+   {
+    "date": "2026-10-14T22:01-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "White Sox general manager Chris Getz spoke with members of the media today, including James Fegan of the Chicago Sun Times, after the club was recently eliminated by the Guardians. Looking ahead to 2027, Getz said the Sox will pursue starting pitching this offseason. It\u2019s not a surprising declaration. Though the Sox ha",
+    "tags": [
+     "front office"
+    ],
+    "title": "White Sox To Pursue Starting Pitching",
+    "url": "https://www.mlbtraderumors.com/2026/10/white-sox-to-pursue-starting-pitching.html"
+   },
+   {
+    "date": "2026-10-14T20:56-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "The Tigers never recovered from an atrocious May. They wound up dealing the two-time defending Cy Young winner at the deadline but didn\u2019t orchestrate any kind of rebuild. They\u2019ll look to reload this offseason and improve upon a 76-86 finish, yet it\u2019s going to take a lot of work on the pitching staff and some [\u2026]",
+    "tags": [],
+    "title": "Offseason Outlook: Detroit Tigers",
+    "url": "https://www.mlbtraderumors.com/2026/10/offseason-outlook-detroit-tigers-16.html"
+   },
+   {
+    "date": "2026-10-14T20:00-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "7:00pm: Matt Gelb of The Athletic confirmed the coaching decisions. His report notes that Long was signed through 2028 as part of an extension he signed after 2025. Gelb reports that Long is expected to get interest from several other clubs. He floats the Mets as a possibility, noting that Long has a good relationship ",
+    "tags": [
+     "free agency",
+     "extension",
+     "front office"
+    ],
+    "title": "Phillies Not Retaining Kevin Long, Bobby Dickerson",
+    "url": "https://www.mlbtraderumors.com/2026/10/phillies-not-retaining-kevin-long-bobby-dickerson.html"
+   },
+   {
+    "date": "2026-10-14T17:51-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "With the regular season in the books, MLBTR is taking a position-by-position look at the 2026-27 free agent market. For the final entry in the series, we head to the right-handed relief market. Player ages are for the 2027 season, and names within each tier are listed alphabetically, not \u201cranked.\u201d Only players who appe",
+    "tags": [
+     "free agency"
+    ],
+    "title": "Previewing The Righty Relief Class",
+    "url": "https://www.mlbtraderumors.com/2026/10/previewing-the-righty-relief-class.html"
+   },
+   {
+    "date": "2026-10-14T15:48-04:00",
+    "kind": "rumor",
+    "players": [
+     "Bryan Reynolds",
+     "Konnor Griffin"
+    ],
+    "source": "MLB Trade Rumors",
+    "summary": "The Pirates took a step forward in 2026 but still missed the playoffs for an 11th consecutive season. They\u2019re now set for a notable set of salary increases in arbitration and could lose one of the best bats available this winter to free agency. Guaranteed Contracts Konnor Griffin, SS: $134MM through 2032 Bryan Reynolds",
+    "tags": [
+     "free agency"
+    ],
+    "title": "Offseason Outlook: Pittsburgh Pirates",
+    "url": "https://www.mlbtraderumors.com/2026/10/offseason-outlook-pittsburgh-pirates-16.html"
+   },
+   {
+    "date": "2026-10-14T14:09-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "The latest episode of the MLB Trade Rumors Podcast is now live on Spotify, Apple Podcasts, and wherever you get your podcasts! Make sure you subscribe as well! You can also use the player at this link to listen, if you don\u2019t use Spotify or Apple for podcasts. This week, host Darragh McDonald is joined by Steve Adams of",
+    "tags": [
+     "trade"
+    ],
+    "title": "MLBTR Podcast: Playoff Storylines And The State Of The White Sox, Yankees, Padres, And Braves",
+    "url": "https://www.mlbtraderumors.com/2026/10/mlbtr-podcast-playoff-storylines-and-the-state-of-the-white-sox-yankees-padres-and-braves.html"
+   },
+   {
+    "date": "2026-10-14T12:38-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "The Twins announced Wednesday that they\u2019ve named Brian Reith their new pitching coach, replacing Pete Maki, whose contract wasn\u2019t renewed at season\u2019s end. Reith has spent the past five seasons as the pitching coach with the Rays\u2019 Triple-A affiliate in Durham, and he pitched in parts of three major league seasons with t",
+    "tags": [
+     "front office"
+    ],
+    "title": "Twins Hire Brian Reith As Pitching Coach",
+    "url": "https://www.mlbtraderumors.com/2026/10/twins-hire-brian-reith-pitching-coach-rays-triple-a-durham.html"
+   },
+   {
+    "date": "2026-10-14T11:13-04:00",
+    "kind": "rumor",
+    "players": [],
+    "source": "MLB Trade Rumors",
+    "summary": "The Astros announced Wednesday that they will not renew manager Joe Espada\u2019s contract, which was set to expire at the end of the month. Espada, who managed Houston from 2024-26, will become a free agent. There will be other changes on the staff. Bench coach Omar Lopez will not be back in that role but [\u2026]",
+    "tags": [
+     "free agency",
+     "front office"
+    ],
+    "title": "Joe Espada Will Not Return As Astros Manager",
+    "url": "https://www.mlbtraderumors.com/2026/10/astros-manager-joe-espada-wont-return.html"
    },
    {
     "date": "2026-10-14T09:57-04:00",
@@ -5256,159 +5383,6 @@
     ],
     "title": "Did The Orioles Extend The Right Pitchers?",
     "url": "https://www.mlbtraderumors.com/2026/10/did-the-orioles-extend-the-right-pitchers.html"
-   },
-   {
-    "date": "2026-10-10T21:20-04:00",
-    "kind": "rumor",
-    "players": [
-     "Miguel Rojas"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "Dodgers infielder Miguel Rojas was removed from Game 3 of the NLDS with a back injury. He was unavailable off the bench in Game 4. Manager Dave Roberts told reporters, including Fabian Ardaya of The Athletic, that Rojas is expected to be on the NLCS roster. He had a cortisone injection that helped loosen up [\u2026]",
-    "tags": [
-     "injury",
-     "front office"
-    ],
-    "title": "Miguel Rojas To Be Available For NLCS After Cortisone Injection",
-    "url": "https://www.mlbtraderumors.com/2026/10/miguel-rojas-to-be-available-for-nlcs-after-cortisone-injection.html"
-   },
-   {
-    "date": "2026-10-10T17:50-04:00",
-    "kind": "rumor",
-    "players": [
-     "Miguel Vargas",
-     "Munetaka Murakami"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "White Sox third baseman Miguel Vargas has been a major part of the club\u2019s turnaround this season. The former top prospect, along with newcomer Munetaka Murakami, fueled an offense that ranked fifth in scoring during the regular season. Vargas has set career highs in virtually every offensive category. The breakthrough ",
-    "tags": [
-     "prospect"
-    ],
-    "title": "AL Central Notes: Vargas, Tigers Staff, Royals Ballpark",
-    "url": "https://www.mlbtraderumors.com/2026/10/al-central-notes-vargas-tigers-staff-royals-ballpark.html"
-   },
-   {
-    "date": "2026-10-10T16:01-04:00",
-    "kind": "rumor",
-    "players": [
-     "Aaron Judge",
-     "Clarke Schmidt",
-     "Giancarlo Stanton"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "Aaron Judge and Clarke Schmidt are the only current Yankees who have been in the organization longer than Giancarlo Stanton, who has now logged nine seasons in the Bronx since the slugger was acquired from the Marlins for a three-player trade package in December 2017. To be more accurate, \u201cparts of\u201d nine seasons is pro",
-    "tags": [
-     "trade"
-    ],
-    "title": "Could The Yankees Move On From Giancarlo Stanton?",
-    "url": "https://www.mlbtraderumors.com/2026/10/could-the-yankees-move-on-from-giancarlo-stanton.html"
-   },
-   {
-    "date": "2026-10-10T14:12-04:00",
-    "kind": "rumor",
-    "players": [
-     "Didier Fuentes",
-     "Tarik Skubal"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "The Braves were one of the teams looking to acquire Tarik Skubal from the Tigers at the trade deadline, with The Athletic\u2019s Ken Rosenthal writing a few days after the deadline that Atlanta \u201cnever got close to a deal for Skubal, even though they made virtually all of their young players available, including right-hander",
-    "tags": [
-     "trade"
-    ],
-    "title": "Braves Weren\u2019t Willing To Include Didier Fuentes In Skubal Trade Offer",
-    "url": "https://www.mlbtraderumors.com/2026/10/braves-werent-willing-to-include-didier-fuentes-in-skubal-trade-offer.html"
-   },
-   {
-    "date": "2026-10-10T12:57-04:00",
-    "kind": "rumor",
-    "players": [],
-    "source": "MLB Trade Rumors",
-    "summary": "Phillies president of business operations Sam Fuld has declined the Athletics\u2019 offer to become the team\u2019s new president of baseball operations, ESPN\u2019s Jeff Passan reports. Fuld\u2019s name surfaced in connection to the A\u2019s job earlier this week, but Fuld has now taken himself out of the running and will stay in Philadelphia",
-    "tags": [],
-    "title": "Sam Fuld Declines Offer To Become A\u2019s President Of Baseball Operations",
-    "url": "https://www.mlbtraderumors.com/2026/10/sam-fuld-declines-offer-to-become-as-president-of-baseball-operations.html"
-   },
-   {
-    "date": "2026-10-10T11:03-04:00",
-    "kind": "rumor",
-    "players": [
-     "Bryan Baker",
-     "Kevin Kelly",
-     "Liam Hicks",
-     "Nick Martinez"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "Bryan Baker, Kevin Kelly, Victor Mesa Jr., Liam Hicks, and Nick Martinez all played huge roles in the Rays\u2019 run to the ALCS this season, and The Athletic\u2019s Will Sammon took a look at the process Tampa Bay used in identifying and acquiring these players. Kelly was a Rule 5 Draft pick acquired from the [\u2026]",
-    "tags": [
-     "trade",
-     "prospect"
-    ],
-    "title": "AL East Notes: Rays, Feduccia, Red Sox, Kittredge, Akin",
-    "url": "https://www.mlbtraderumors.com/2026/10/al-east-notes-rays-feduccia-red-sox-kittredge-akin.html"
-   },
-   {
-    "date": "2026-10-10T08:58-04:00",
-    "kind": "rumor",
-    "players": [],
-    "source": "MLB Trade Rumors",
-    "summary": "On this day 100 years ago, the Cardinals won their first championship by defeating the Yankees in Game 7 of the 1926 World Series. In the only time a caught-stealing play has ever ended a Series, Babe Ruth (who stole 123 bases throughout his career) was thrown out by Cardinals catcher Bob O\u2019Farrell when the [\u2026]",
-    "tags": [],
-    "title": "The Opener: ALDS Game 5, Dodgers, Athletics",
-    "url": "https://www.mlbtraderumors.com/2026/10/the-opener-alds-game-5-dodgers-athletics.html"
-   },
-   {
-    "date": "2026-10-09T23:58-04:00",
-    "kind": "rumor",
-    "players": [
-     "Sonny Gray"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "There were some retirement rumblings around Sonny Gray this year but he\u2019ll be back, per Alex Speier of The Boston Globe. \u201cMy family and I have talked about it and it\u2019s an easy decision,\u201d Gray said in a text message to the Globe. \u201cI still want to win a World Series, whether that is [with] [\u2026]",
-    "tags": [],
-    "title": "Sonny Gray Plans To Pitch In 2027",
-    "url": "https://www.mlbtraderumors.com/2026/10/sonny-gray-plans-to-pitch-in-2027.html"
-   },
-   {
-    "date": "2026-10-09T23:50-04:00",
-    "kind": "rumor",
-    "players": [
-     "Zach Eflin"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "Although Orioles right-hander Zach Eflin slumped to a 5.93 ERA during an injury-limited, 71 1/3-inning campaign in 2025, the O\u2019s brought him back on a one-year, $10MM contract last winter. It didn\u2019t work out for either side, as Eflin left his first start with elbow discomfort and had to undergo Tommy John surgery in ea",
-    "tags": [
-     "injury"
-    ],
-    "title": "Zach Eflin Hopes To Remain With Orioles",
-    "url": "https://www.mlbtraderumors.com/2026/10/zach-eflin-hopes-to-remain-with-orioles.html"
-   },
-   {
-    "date": "2026-10-09T22:48-04:00",
-    "kind": "rumor",
-    "players": [
-     "Danny Young",
-     "Luke Williams"
-    ],
-    "source": "MLB Trade Rumors",
-    "summary": "The Braves have selected left-hander Danny Young from Triple-A Gwinnett, 680 The Fan reports. In a corresponding move, the club designated infielder Luke Williams for assignment. Young had been in line to become a minor league free agent, but he will instead remain with the Atlanta organization. The 32-year-old first j",
-    "tags": [
-     "free agency",
-     "prospect"
-    ],
-    "title": "Braves Select Danny Young, Designate Luke Williams",
-    "url": "https://www.mlbtraderumors.com/2026/10/braves-select-danny-young-designate-luke-williams.html"
-   },
-   {
-    "date": "2026-10-09T22:09-04:00",
-    "kind": "rumor",
-    "players": [],
-    "source": "MLB Trade Rumors",
-    "summary": "There were questions about manager Torey Lovullo\u2019s future after the Diamondbacks\u2019 season ended, but they put those to bed when they gave him a two-year deal on Oct. 1. While the D-backs parted with pitching coach Brian Kaplan five days later, Lovullo\u2019s staff will have the same hitting coach in 2027. Joe Mather will ret",
-    "tags": [
-     "front office"
-    ],
-    "title": "Diamondbacks To Retain Hitting Coach Joe Mather",
-    "url": "https://www.mlbtraderumors.com/2026/10/diamondbacks-to-retain-hitting-coach-joe-mather.html"
    }
   ],
   "teams": [
@@ -5624,5 +5598,5 @@
    }
   ]
  },
- "updated": "2026-10-14T11:47:56-04:00"
+ "updated": "2026-10-15T11:34:04-04:00"
 }

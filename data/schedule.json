@@ -1970,23 +1970,23 @@
     "type": "L"
    },
    {
-    "as": null,
+    "as": 6,
     "away": "Milwaukee Brewers",
     "date": "2026-10-14",
     "home": "Los Angeles Dodgers",
-    "hs": null,
+    "hs": 2,
     "series": "NL Championship Series",
-    "status": "Scheduled",
+    "status": "Final",
     "type": "L"
    },
    {
-    "as": null,
+    "as": 0,
     "away": "Tampa Bay Rays",
     "date": "2026-10-15",
     "home": "Cleveland Guardians",
-    "hs": null,
+    "hs": 0,
     "series": "AL Championship Series",
-    "status": "Scheduled",
+    "status": "Pre-Game",
     "type": "L"
    },
    {
@@ -2141,5 +2141,5 @@
    }
   ]
  },
- "updated": "2026-10-14T11:47:50-04:00"
+ "updated": "2026-10-15T11:33:58-04:00"
 }
