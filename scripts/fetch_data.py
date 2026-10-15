@@ -43,7 +43,7 @@ def write(name, payload):
             return False
     except Exception:
         pass
-    json.dump({"updated": now_et(), "data": payload}, open(p, "w"), indent=1, sort_keys=True)
+    json.dump({"updated": now_et(), "data": payload}, open(p, "w"), separators=(",", ":"), sort_keys=True)  # compact (was indent=1)
     return True
 
 
