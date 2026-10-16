@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-16T08:22:39-04:00",
+ "updated": "2026-10-16T13:56:31-04:00",
  "data": {
-  "lastRun": "2026-10-16T08:22:39-04:00",
+  "lastRun": "2026-10-16T13:56:31-04:00",
   "mode": "full",
   "status": {
    "roster.json": "unchanged",
@@ -19,6 +19,6 @@
    "trade_market.json": "updated",
    "international.json": "unchanged"
   },
-  "lastFull": "2026-10-16T08:22:39-04:00"
+  "lastFull": "2026-10-16T13:56:31-04:00"
  }
 }
