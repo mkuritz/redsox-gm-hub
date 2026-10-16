@@ -2,8 +2,8 @@ name: Update Red Sox data
 
 on:
   schedule:
-    - cron: "7 11 * * *"    # ~7:00 AM ET (6 AM during EST): full refresh
-    - cron: "7 23 * * *"    # ~7:00 PM ET: evening news/rumors/transactions refresh
+    # Primary schedule lives in the Cloudflare sl-scheduler (7:05 AM full / PM news ET). This is a sparse daily backup.
+    - cron: "7 14 * * *"   # ~10 AM ET backup full refresh
   workflow_dispatch:
     inputs:
       mode:
