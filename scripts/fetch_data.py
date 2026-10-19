@@ -3,7 +3,7 @@
 Each source is independent; on failure the previous file is kept. Contracts/calendar/franchise facts are
 hand-maintained in data/*_manual.json (no free licensed source)."""
 import json, os, re, sys, html, urllib.request, traceback
-import xml.etree.ElementTree as ET_
+import defusedxml.ElementTree as ET_  # hardened XML parser (blocks entity-expansion / XXE)
 from datetime import datetime, timezone, timedelta, date
 from zoneinfo import ZoneInfo
 from email.utils import parsedate_to_datetime

@@ -10,8 +10,7 @@ on:
         description: "full or news"
         default: "full"
 
-permissions:
-  contents: write
+permissions: {}   # least privilege by default; write scope granted per job below
 
 concurrency:
   group: update-data
@@ -19,6 +18,8 @@ concurrency:
 
 jobs:
   update:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -26,6 +27,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install Python deps
+        run: python -m pip install --disable-pip-version-check -q -r requirements.txt
       - name: Fetch data
         env:
           MODE: ${{ github.event.inputs.mode || (github.event.schedule == '7 23 * * *' && 'news') || 'full' }}
