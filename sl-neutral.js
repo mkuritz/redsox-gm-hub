@@ -5,14 +5,14 @@
 if(window.__slNeutral)return;window.__slNeutral=1;
 var DRAFT=/\b(draft|round|overall|lottery|first[- ]round|second[- ]round|\d+(st|nd|rd|th)[- ]round|top[- ]\d+|No\.\s*\d+)\s+picks?\b/i;
 var GMHUB=/^(cubs|orioles|redsox|eagles)\./.test(location.hostname);
-var BOOKS=[["DraftKings Sportsbook","DraftKings"],["FanDuel Sportsbook","FanDuel"],["BetMGM"],["Caesars Sportsbook","Caesars"],["Fanatics Sportsbook","Fanatics"],["ESPN BET","ESPN Bet","ESPNBet"],["theScore Bet"],["bet365"],["BetRivers"],["Hard Rock Bet","Hard Rock"],["PointsBet"],["Fliff"],["Bovada"],["BetOnline"],["Unibet"],["WynnBET"],["Borgata"],["PrizePicks"],["Underdog Fantasy"],["SuperDraft"],["Sleeper Picks"]];
+var BOOKS=[["DraftKings Sportsbook","DraftKings"],["FanDuel Sportsbook","FanDuel"],["BetMGM"],["Caesars Sportsbook","Caesars"],["Fanatics Sportsbook","Fanatics"],["ESPNBet","ESPN Bet","ESPN BET"],["theScore Bet"],["bet365"],["BetRivers"],["Hard Rock Bet","Hard Rock"],["PointsBet"],["Fliff"],["Bovada"],["BetOnline"],["Unibet"],["WynnBET"],["Borgata"],["PrizePicks"],["Underdog Fantasy"],["SuperDraft"],["Sleeper Picks"]];
 var EXCH=["Kalshi","Polymarket","Novig","ProphetX","Sporttrade","Betfair","Crypto.com"];
 var ABBR={DK:"DraftKings",FD:"FanDuel",MGM:"BetMGM",CZR:"Caesars",PIN:"Pinnacle"};
 var map={},n=0,xm={},xn=0;
-function lab(name){if(!(name in map))map[name]="Book "+String.fromCharCode(65+(n++%26));return map[name]}
-function xlab(name){if(!(name in xm))xm[name]="Exchange "+String.fromCharCode(65+(xn++%26));return xm[name]}
+var FIX={"DraftKings": "A", "FanDuel": "B", "BetMGM": "C", "Caesars": "D", "Fanatics": "E", "BetRivers": "F", "ESPN BET": "G", "bet365": "H", "Hard Rock": "I", "PointsBet": "J", "Fliff": "K", "Bovada": "L", "BetOnline": "M", "PrizePicks": "N", "Underdog Fantasy": "O", "theScore Bet": "P", "Unibet": "Q", "WynnBET": "R", "Borgata": "S", "SuperDraft": "T", "Sleeper Picks": "U"},XF={"Kalshi": "A", "Polymarket": "B", "Novig": "C", "ProphetX": "D", "Sporttrade": "E", "Betfair": "F", "Crypto.com": "G"};function lab(name){return "Book "+(FIX[name]||"Z")}
+function xlab(name){return "Exchange "+(XF[name]||"Z")}
 function esc(s){return s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}
-var RB=[];BOOKS.forEach(function(g){g.forEach(function(a){RB.push([new RegExp("\\b"+esc(a)+"(?:'s)?\\b","gi"),g[g.length>1?1:0]])})});
+var RB=[];BOOKS.forEach(function(g){g.forEach(function(a){RB.push([new RegExp("\\b"+esc(a)+"(?:'s)?\\b","gi"),g[g.length-1]])})});
 var RX=EXCH.map(function(x){return[new RegExp("\\b"+esc(x)+"\\b","gi"),x]});
 function cap(m,r){return m[0]===m[0].toUpperCase()&&m[0]!==m[0].toLowerCase()?r[0].toUpperCase()+r.slice(1):r}
 var WORD=[
@@ -30,14 +30,14 @@ var PICK=[[/\bTOP PICKS\b/g,"TOP HIGHLIGHTS"],[/\bPICKS\b/g,"HIGHLIGHTS"],[/\bPI
 var PHR=[["Only our highest-conviction picks, where our proven signals agree and we beat the market price.", "Our highest-rated plays, where multiple model signals agree and the model price differs from the market."], ["Locked before start", "Logged before start"], ["locked before start", "logged before start"], ["locked in before the game", "logged before the game"], ["Sports Labs Recommended · today", "Highlighted today"], ["Sports Labs Recommended", "Highlighted"], ["Sharp Picks", "Highlighted"], ["All In Cousins Show Picks", "Third-party plays (credited)"], ["Sharper picks for bettors", "Sharper research for bettors"], ["recommended lineups", "highlighted lineups"], ["Dominate the book and your fantasy leagues.", "Research tools for bettors and fantasy players."], ["Dominate the book and your fantasy leagues", "Research tools for bettors and fantasy players"], ["Beat the book in DFS and on value bets", "Research DFS slates and value plays"], ["Beat the book.", "Research the number before you play."], ["Beat the book", "Research the number before you play"], ["Find the edge before the market does.", "Compare model estimates with market prices."], ["turn free bets and boosts into locked profit", "estimate the value of free bets and boosts, before fees and execution risk"], ["Locked, fee-adjusted value of an arb", "Estimated fee-adjusted value of an arb (prices can move)"], ["near risk-free value", "estimated value (all betting involves risk)"], ["near risk-free", "lower-variance"], ["risk-free", "lower-variance"], ["Risk-free", "Lower-variance"], ["locked profit", "estimated value"], ["Locked profit", "Estimated value"], ["guaranteed profit", "estimated value"], ["show where the number is wrong", "show where the model and market disagree"], ["built to win your slate", "built to help you research your slate"], ["proven signals", "tested signals"], ["Proof, not promises", "Our tracked record"], ["DraftKings NFL daily fantasy", "NFL daily fantasy (salary-based)"], ["DraftKings NFL DFS projections", "NFL DFS projections"], ["live DraftKings slate", "live DFS slate"], ["DraftKings slate", "today's DFS slate"], ["Kalshi, Polymarket and sportsbook prices", "exchange and book prices"], ["DraftKings lines and public game logs", "book lines and public game logs"], ["Statcast", "Advanced batted-ball"], ["not affiliated with ESPN or any league or team", "not affiliated with any media company, league or team"], ["Save ~58% vs $240/yr", "$100/yr (about $8.33/mo)"], ["Save ~58% vs $240", "About $8.33/mo"], ["Property of Michael Kuritz", "© 2026 Sports Labs"]];
 function fix(s){
  if(!s||!/[A-Za-z]/.test(s))return s;var o=s;
- PHR.forEach(function(r){if(s.indexOf(r[0])>-1)s=s.split(r[0]).join(r[1])});
+ PHR.forEach(function(r){if(s.indexOf(r[0])>-1)s=s.split(r[0]).join(r[1])});s=s.replace(/\b(Recommended|recommended) picks\b/g,function(m){return m[0]=="R"?"Highlighted plays":"highlighted plays"});
  RB.forEach(function(r){s=s.replace(r[0],function(){return lab(r[1])})});
  s=s.replace(/\bPinnacle(?:'s)?\b/gi,"sharp book");RX.forEach(function(r){s=s.replace(r[0],function(){return xlab(r[1])})});
  s=s.replace(/\b(DK|FD|MGM|CZR)\b/g,function(m){return lab(ABBR[m])}).replace(/\bvs\.? PIN\b/g,"vs sharp book");
  s=s.replace(/\bsharp book fair\b/gi,"sharp-book fair");
  WORD.forEach(function(r){s=s.replace(r[0],r[1])});
  if(!GMHUB&&!DRAFT.test(s))PICK.forEach(function(r){s=s.replace(r[0],r[1])});
- s=s.replace(/^(\s*)sharp book/,"$1Sharp book");
+ s=s.replace(/\b([Hh])ighlighted highlights\b/g,"$1ighlighted plays").replace(/^(\s*)sharp book/,"$1Sharp book");
  return s===o?o:s}
 var SKIP={SCRIPT:1,STYLE:1,TEXTAREA:1,INPUT:1,CODE:1,PRE:1,NOSCRIPT:1,SELECT:0};
 function walk(root){
