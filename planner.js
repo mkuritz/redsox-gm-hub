@@ -19,14 +19,14 @@ async function load() {
   if (NFL) {
     const cap = await J('cap_manual.json'); const ros = (await J('roster.json')) || [];
     B.years = cap.YEARS; B.limit = Object.fromEntries(B.years.map((y) => [y, cap.LEAGUE_CAP[y]])); B.limitLabel = 'Salary cap';
-    B.limitNote = 'NFL cap: 2026 official (NFL.com); 2027+ Spotrac projections (snapshot in cap_manual.json).';
+    B.limitNote = 'NFL cap: 2026 official (NFL.com); 2027+ cap tracker projections (snapshot in cap_manual.json).';
     B.contracts = cap.CONTRACTS.map((c) => ({ id: c.id, name: c.name, pos: c.pos, age: c.age, hits: Object.fromEntries(B.years.map((y) => [y, +(c.hits[y] || 0)])), src: 'sourced' }));
     const listed = (y) => B.contracts.reduce((a, c) => a + c.hits[y], 0);
-    B.other = Object.fromEntries(B.years.map((y) => [y, Math.max(0, (cap.SPOTRAC_COMMITTED[y] || 0) - listed(y))])); B.otherLabel = 'Other committed (Spotrac total − listed core)';
+    B.other = Object.fromEntries(B.years.map((y) => [y, Math.max(0, (cap.SPOTRAC_COMMITTED[y] || 0) - listed(y))])); B.otherLabel = 'Other committed (cap tracker total − listed core)';
     B.cutInfo = Object.fromEntries((cap.CUT_CANDIDATES || []).map((c) => [norm(c.name), c]));
     B.roster = ros.map((p) => ({ name: p.name, pos: grpNFL(p.pos), age: p.age, inj: p.injury, src: 'sourced' }));
     B.targets = { QB: 3, RB: 3, WR: 6, TE: 3, OT: 4, IOL: 5, DL: 6, EDGE: 4, LB: 5, CB: 6, S: 4, K: 1, P: 1, LS: 1 };
-    B.coaches = null; B.asOf = 'cap snapshot 2026-10-07 · roster ' + 'ESPN';
+    B.coaches = null; B.asOf = 'cap snapshot 2026-10-07 · roster ' + 'league feed';
   } else {
     const T = window.TEAM; const cm = await J('contracts_manual.json'); const ros = (await J('roster.json')) || []; const arb = await J('arbitration.json'); const co = await J('coaches.json'); B.checks = await J('contract_checks.json'); B.rosRaw = ros;
     if (window.PLANNER_EXT) cm.contracts = window.PLANNER_EXT.merge(cm);
@@ -157,7 +157,7 @@ function moveForm() {
     ${(S.ui.mk || 'trade') === 'sign' ? addForm() : `<div class="row"><select id="mT" style="flex:1;min-width:200px">${opts}</select><label class="small">from <select id="mFrom">${yearOpts(B.years[1])}</select></label>
     ${S.ui.mk === 'extend' ? `<input id="mAmt" type="number" step="0.1" placeholder="$M / yr" style="width:90px"><input id="mYears" type="number" min="1" max="5" value="3" style="width:60px">` : NFL ? `<input id="mDead" type="number" step="0.1" placeholder="Dead $M" style="width:90px"><input id="mDead2" type="number" step="0.1" placeholder="Next-yr dead" style="width:100px">` : (S.ui.mk || 'trade') === 'trade' ? `<input id="mRet" type="number" min="0" max="90" placeholder="% retained" style="width:100px">` : ''}
     <button class="btn sm primary" data-a="addMove">Add move</button></div>
-    <p class="small muted" style="margin:0">${NFL ? 'Dead money depends on bonus proration and June 1 timing — enter it (Cut Simulator / Spotrac).' : 'MLB: a released player\'s guaranteed salary stays on the CBT payroll; trading removes it except any cash you retain.'} Figures you type are tagged "You".</p>`}</div>`;
+    <p class="small muted" style="margin:0">${NFL ? 'Dead money depends on bonus proration and June 1 timing — enter it (Cut Simulator / cap tracker).' : 'MLB: a released player\'s guaranteed salary stays on the CBT payroll; trading removes it except any cash you retain.'} Figures you type are tagged "You".</p>`}</div>`;
 }
 
 /* ---------- shell ---------- */
