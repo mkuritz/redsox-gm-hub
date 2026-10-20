@@ -4,12 +4,12 @@
 (function(){
 if(window.__slNeutral)return;window.__slNeutral=1;
 var DRAFT=/\b(draft|round|overall|lottery|first[- ]round|second[- ]round|\d+(st|nd|rd|th)[- ]round|top[- ]\d+|No\.\s*\d+)\s+picks?\b/i;
-var GMHUB=/^(cubs|orioles|redsox|eagles)\./.test(location.hostname);
-var BOOKS=[["DraftKings Sportsbook","DraftKings"],["FanDuel Sportsbook","FanDuel"],["BetMGM"],["Caesars Sportsbook","Caesars"],["Fanatics Sportsbook","Fanatics"],["ESPNBet","ESPN Bet","ESPN BET"],["theScore Bet"],["bet365"],["BetRivers"],["Hard Rock Bet","Hard Rock"],["PointsBet"],["Fliff"],["Bovada"],["BetOnline"],["Unibet"],["WynnBET"],["Borgata"],["PrizePicks"],["Underdog Fantasy"],["SuperDraft"],["Sleeper Picks"]];
-var EXCH=["Kalshi","Polymarket","Novig","ProphetX","Sporttrade","Betfair","Crypto.com"];
+var GMHUB=/^(cubs|orioles|redsox|eagles|frontoffice|hoops)\./.test(location.hostname);
+var BOOKS=[["DraftKings Sportsbook","DraftKings"],["FanDuel Sportsbook","FanDuel"],["BetMGM"],["Caesars Sportsbook","Caesars"],["Fanatics Sportsbook","Fanatics"],["ESPNBet","ESPN Bet","ESPN BET"],["theScore Bet"],["bet365"],["BetRivers"],["Hard Rock Bet","Hard Rock"],["PointsBet"],["Fliff"],["Bovada"],["BetOnline.ag","BetOnline"],["betPARX"],["Bally Bet"],["LowVig.ag","LowVig"],["Circa Sports","Circa"],["Unibet"],["WynnBET"],["Borgata"],["PrizePicks"],["Underdog Fantasy"],["SuperDraft"],["Sleeper Picks"]];
+var EXCH=["Kalshi","Polymarket","Novig","ProphetX","Sporttrade","Betfair","Crypto.com","BetOpenly"];
 var ABBR={DK:"DraftKings",FD:"FanDuel",MGM:"BetMGM",CZR:"Caesars",PIN:"Pinnacle"};
 var map={},n=0,xm={},xn=0;
-var FIX={"DraftKings": "A", "FanDuel": "B", "BetMGM": "C", "Caesars": "D", "Fanatics": "E", "BetRivers": "F", "ESPN BET": "G", "bet365": "H", "Hard Rock": "I", "PointsBet": "J", "Fliff": "K", "Bovada": "L", "BetOnline": "M", "PrizePicks": "N", "Underdog Fantasy": "O", "theScore Bet": "P", "Unibet": "Q", "WynnBET": "R", "Borgata": "S", "SuperDraft": "T", "Sleeper Picks": "U"},XF={"Kalshi": "A", "Polymarket": "B", "Novig": "C", "ProphetX": "D", "Sporttrade": "E", "Betfair": "F", "Crypto.com": "G"};function lab(name){return "Book "+(FIX[name]||"Z")}
+var FIX={"DraftKings": "A", "FanDuel": "B", "BetMGM": "C", "Caesars": "D", "Fanatics": "E", "BetRivers": "F", "ESPN BET": "G", "bet365": "H", "Hard Rock": "I", "PointsBet": "J", "Fliff": "K", "Bovada": "L", "BetOnline": "M", "PrizePicks": "N", "Underdog Fantasy": "O", "theScore Bet": "P", "Unibet": "Q", "WynnBET": "R", "Borgata": "S", "SuperDraft": "T", "Sleeper Picks": "U", "betPARX": "V", "Bally Bet": "W", "LowVig": "X", "Circa": "Y"},XF={"Kalshi": "A", "Polymarket": "B", "Novig": "C", "ProphetX": "D", "Sporttrade": "E", "Betfair": "F", "Crypto.com": "G", "BetOpenly": "H"};function lab(name){return "Book "+(FIX[name]||"Z")}
 function xlab(name){return "Exchange "+(XF[name]||"Z")}
 function esc(s){return s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}
 var RB=[];BOOKS.forEach(function(g){g.forEach(function(a){RB.push([new RegExp("\\b"+esc(a)+"(?:'s)?\\b","gi"),g[g.length-1]])})});
