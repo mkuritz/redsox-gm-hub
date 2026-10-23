@@ -60,7 +60,9 @@ function auto(sel){var tries=0;(function go(){if(document.querySelector('.sls'))
  if(ha){mount(ha,{mode:'menu',compact:true,before:ha.firstChild});return}
  if(rs){mount(rs.parentNode,{mode:'list',before:rs});return}
  if(tries++<40)setTimeout(go,150)})()}
-var me=document.currentScript;if(me&&me.hasAttribute('data-auto')){var sel=me.getAttribute('data-auto');var run=function(){auto(sel)};if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run()}
+var me=document.currentScript;if(me&&me.hasAttribute('data-auto')){var sel=me.getAttribute('data-auto');var run=function(){auto(sel)};if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();
+ /* apps that re-render their header after load: put the switcher back if it was wiped (first 30s) */
+ var mo=new MutationObserver(function(){if(!document.querySelector('.sls')&&!run._t){run._t=setTimeout(function(){run._t=0;auto(sel)},50)}});addEventListener('load',function(){mo.observe(document.body,{childList:true,subtree:true});setTimeout(function(){mo.disconnect()},30000)})}
 window.SLS={sports:S,tools:T,cur:cur,betlab:betlab,mount:mount,
  top:function(){return S.map(function(s){return [s.short,s.k===cur?'index.html':s.url,s.k]})}};
 })();
