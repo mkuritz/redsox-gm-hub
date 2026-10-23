@@ -31,15 +31,15 @@ function esc(t){return String(t).replace(/[&<>"]/g,function(c){return{'&':'&amp;
 var css=':where(.sls-list) a{display:block;padding:6px 10px;border-radius:8px;color:inherit;text-decoration:none;font-weight:600}:where(.sls-list) a:hover{background:rgba(127,127,127,.15)}:where(.sls-list) h4.sls-h{font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.65}.sls{font:inherit;color:inherit}.sls h4.sls-h{margin:16px 8px 6px}.sls-row{display:flex;align-items:center;gap:4px}.sls-row>a.sls-hub{flex:1 1 auto;min-width:0}.sls-row>a.sls-bl{flex:0 0 auto;font-size:11px!important;font-weight:600;opacity:.75;padding:6px 8px!important;white-space:nowrap}.sls-row>a.sls-bl:hover{opacity:1}.sls a[aria-current]{font-weight:800}'+
  '.sls-dd{position:relative;display:inline-block}.sls-dd>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;font-weight:600;min-height:36px;box-sizing:border-box}.sls-dd>summary::-webkit-details-marker{display:none}.sls-dd>summary:after{content:"▾";font-size:.8em;opacity:.7}.sls-dd[open]>summary:after{content:"▴"}'+
  '.sls-pan{position:absolute;z-index:1000;top:calc(100% + 6px);right:0;min-width:250px;max-width:calc(100vw - 16px);max-height:min(75vh,560px);overflow:auto;padding:8px;border-radius:12px;border:1px solid rgba(127,127,127,.35);box-shadow:0 12px 32px rgba(0,0,0,.35);text-align:left}.sls-pan .sls-cap{font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.6;margin:8px 8px 4px}.sls-pan a{display:block;padding:8px 10px;border-radius:8px;color:inherit;text-decoration:none;font-weight:600;line-height:1.3}.sls-pan a:hover,.sls-pan a:focus-visible{background:rgba(127,127,127,.18)}.sls-pan .sls-row>a.sls-bl{border:1px solid rgba(127,127,127,.35)}'+
- '@media (max-width:640px){.sls-pan{position:fixed;left:8px;right:8px;min-width:0;max-width:none}}.sls-lift{z-index:2147483000}';
+ '@media (max-width:640px){.sls-pan{position:fixed;left:8px;right:8px;min-width:0;max-width:none}}.sls-lift{z-index:2147483000}.sls-ico{display:none}@media (max-width:640px){.sls-compact>summary{padding:6px 8px}.sls-compact .sls-ico{display:inline}.sls-compact .sls-lbl{display:none}}';
 function style(){if(document.getElementById('sls-css'))return;var st=document.createElement('style');st.id='sls-css';st.textContent=css;document.head.appendChild(st)}
 function rows(o){var bc=onBL?blCur():null;return S.map(function(s){var here=(s.k===cur)||(onBL&&!s.host&&bc===s.bl);
   var hub='<a class="sls-hub" href="'+s.url+'"'+(here?' aria-current="page"':'')+' data-sls="'+s.k+'">'+s.icon+' '+esc(s.name)+'</a>';
   var bl=s.host?'<a class="sls-bl" href="'+(onBL?'./index.html#sport='+s.bl:s.blurl)+'" data-slsbl="'+s.bl+'" title="'+esc(s.short)+' in Bet Lab" aria-label="'+esc(s.short)+' in Bet Lab">Bet Lab</a>':'';
   return '<div class="sls-row">'+hub+bl+'</div>'}).join('')}
-function tools(){return T.filter(function(t){return !(onBL&&t.name==='Bet Lab')&&t.url.indexOf('//'+location.hostname+'/')<0}).map(function(t){return '<a href="'+t.url+'">'+t.icon+' '+esc(t.name)+'</a>'}).join('')}
+function tools(){return T.filter(function(t){return !(onBL&&t.name==='Bet Lab')&&!((cur||onBL)&&t.name==='GM Hubs')&&t.url.indexOf('//'+location.hostname+'/')<0}).map(function(t){return '<a href="'+t.url+'">'+t.icon+' '+esc(t.name)+'</a>'}).join('')}
 function mount(el,o){o=o||{};if(!el)return null;style();var w=document.createElement(o.mode==='menu'?'details':'div');w.className='sls sls-'+(o.mode||'list');
- if(o.mode==='menu'){w.className+=' sls-dd';w.innerHTML='<summary aria-label="Switch sport">'+esc(o.label||'Sports')+'</summary><div class="sls-pan" role="menu"><div class="sls-cap">Sports</div>'+rows(o)+(o.tools===false?'':'<div class="sls-cap">More from Sports Labs</div>'+tools())+'</div>';
+ if(o.mode==='menu'){w.className+=' sls-dd';if(o.compact)w.className+=' sls-compact';w.innerHTML='<summary aria-label="Switch sport" title="Sports"><span class="sls-ico" aria-hidden="true">🏆</span><span class="sls-lbl">'+esc(o.label||'Sports')+'</span></summary><div class="sls-pan" role="menu"><div class="sls-cap">Sports</div>'+rows(o)+(o.tools===false?'':'<div class="sls-cap">More from Sports Labs</div>'+tools())+'</div>';
   var bg=o.bg;if(!bg){var n=el;while(n&&n.nodeType===1){var c=getComputedStyle(n).backgroundColor;var al=(c.match(/rgba\([^)]*,\s*([\d.]+)\)/)||[])[1];if(c&&c!=='transparent'&&(al===undefined||+al>=.95)){bg=c;break}n=n.parentElement}}w.querySelector('.sls-pan').style.background=bg||'#fff';
   var pan=w.querySelector('.sls-pan');
   /* phones: lift the panel to <body> so a header with overflow/backdrop-filter can't clip it */
@@ -57,7 +57,7 @@ function mount(el,o){o=o||{};if(!el)return null;style();var w=document.createEle
 function auto(sel){var tries=0;(function go(){if(document.querySelector('.sls'))return;
  if(sel){var t=document.querySelector(sel);if(t){mount(t,{mode:'menu',before:t.firstChild});return}}
  var ha=document.querySelector('header.header .header-actions'),rs=document.querySelector('aside#side #slabs');
- if(ha){mount(ha,{mode:'menu',before:ha.firstChild});return}
+ if(ha){mount(ha,{mode:'menu',compact:true,before:ha.firstChild});return}
  if(rs){mount(rs.parentNode,{mode:'list',before:rs});return}
  if(tries++<40)setTimeout(go,150)})()}
 var me=document.currentScript;if(me&&me.hasAttribute('data-auto')){var sel=me.getAttribute('data-auto');var run=function(){auto(sel)};if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run()}
