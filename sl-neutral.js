@@ -5,7 +5,7 @@
 if(window.__slNeutral)return;window.__slNeutral=1;
 var DRAFT=/\b(draft|round|overall|lottery|first[- ]round|second[- ]round|\d+(st|nd|rd|th)[- ]round|top[- ]\d+|No\.\s*\d+)\s+picks?\b/i;
 var GMHUB=/^(cubs|orioles|redsox|eagles|frontoffice|hoops)\./.test(location.hostname);
-var BOOKS=[["DraftKings Sportsbook","DraftKings"],["FanDuel Sportsbook","FanDuel"],["BetMGM"],["Caesars Sportsbook","Caesars"],["Fanatics Sportsbook","Fanatics"],["ESPNBet","ESPN Bet","ESPN BET"],["theScore Bet"],["bet365"],["BetRivers"],["Hard Rock Bet","Hard Rock"],["PointsBet"],["Fliff"],["Bovada"],["BetOnline.ag","BetOnline"],["betPARX"],["Bally Bet"],["LowVig.ag","LowVig"],["Circa Sports","Circa"],["Unibet"],["WynnBET"],["Borgata"],["PrizePicks"],["Underdog Fantasy"],["SuperDraft"],["Sleeper Picks"]];
+var BOOKS=[["DraftKings Sportsbook","DraftKings"],["FanDuel Sportsbook","FanDuel"],["BetMGM"],["Caesars Sportsbook","Caesars"],["Fanatics Sportsbook","Fanatics"],["ESPNBet","ESPN Bet","ESPN BET"],["theScore Bet","theScore","theScore Bet"],["bet365"],["BetRivers"],["Hard Rock Bet","Hard Rock"],["PointsBet"],["Fliff"],["Bovada"],["BetOnline.ag","BetOnline"],["betPARX"],["Bally Bet"],["LowVig.ag","LowVig"],["Circa Sports","Circa"],["Unibet"],["WynnBET"],["Borgata"],["PrizePicks"],["Underdog Fantasy"],["SuperDraft"],["Sleeper Picks"]];
 var EXCH=["Kalshi","Polymarket","Novig","ProphetX","Sporttrade","Betfair","Crypto.com","BetOpenly"];
 var ABBR={DK:"DraftKings",FD:"FanDuel",MGM:"BetMGM",CZR:"Caesars",PIN:"Pinnacle"};
 var map={},n=0,xm={},xn=0;
@@ -33,7 +33,7 @@ function fix(s){
  PHR.forEach(function(r){if(s.indexOf(r[0])>-1)s=s.split(r[0]).join(r[1])});s=s.replace(/\b(Recommended|recommended) picks\b/g,function(m){return m[0]=="R"?"Highlighted plays":"highlighted plays"});
  RB.forEach(function(r){s=s.replace(r[0],function(){return lab(r[1])})});
  s=s.replace(/\bPinnacle(?:'s)?\b/gi,"sharp book");RX.forEach(function(r){s=s.replace(r[0],function(){return xlab(r[1])})});
- s=s.replace(/\b(DK|FD|MGM|CZR)\b/g,function(m){return lab(ABBR[m])}).replace(/\bvs\.? PIN\b/g,"vs sharp book");
+ s=s.replace(/\b(DK|FD|MGM|CZR)\b(?!\s+Metcalf\b)/g,function(m){return lab(ABBR[m])}).replace(/\bvs\.? PIN\b/g,"vs sharp book");
  s=s.replace(/\bsharp book fair\b/gi,"sharp-book fair");
  WORD.forEach(function(r){s=s.replace(r[0],r[1])});
  if(!GMHUB&&!DRAFT.test(s))PICK.forEach(function(r){s=s.replace(r[0],r[1])});
