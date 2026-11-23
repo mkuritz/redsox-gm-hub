@@ -1,34 +1,12 @@
 {
- "generated": "2026-11-22T07:05:52-05:00",
+ "generated": "2026-11-23T07:05:57-05:00",
  "seasons": {
   "nfl": 2026,
   "mlb": 2026,
   "nhl": 20262027
  },
- "checked": 40,
- "conflicts": [
-  {
-   "src": "roster.json",
-   "sport": "mlb",
-   "player": "Connor Wong",
-   "team": "BOS",
-   "why": "not on BOS live 2026 roster for 2026-11-22"
-  },
-  {
-   "src": "roster.json",
-   "sport": "mlb",
-   "player": "Johan Oviedo",
-   "team": "BOS",
-   "why": "not on BOS live 2026 roster for 2026-11-22"
-  },
-  {
-   "src": "roster.json",
-   "sport": "mlb",
-   "player": "Raymond Burgos",
-   "team": "BOS",
-   "why": "not on BOS live 2026 roster for 2026-11-22"
-  }
- ],
+ "checked": 39,
+ "conflicts": [],
  "unverified": [],
  "stale": [],
  "notes": []
