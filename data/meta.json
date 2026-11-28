@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-27T07:05:46-05:00",
+ "updated": "2026-11-28T07:05:40-05:00",
  "data": {
-  "lastRun": "2026-11-27T07:05:46-05:00",
+  "lastRun": "2026-11-28T07:05:40-05:00",
   "mode": "news",
   "status": {
    "transactions.json": "updated",
-   "injuries.json": "unchanged",
-   "news.json": "unchanged",
+   "injuries.json": "updated",
+   "news.json": "updated",
    "rumors.json": "unchanged"
   },
   "lastFull": "2026-11-23T07:05:56-05:00"
